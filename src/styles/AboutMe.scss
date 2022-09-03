@@ -27,7 +27,7 @@
 
 .about_underline{
         @include underline;
-        width: 13rem;
+        width: 16rem;
 }
 .about_me_content>h1::after {
     @include h2TagClose
