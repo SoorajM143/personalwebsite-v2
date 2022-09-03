@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+nav {
+  float: left;
+  position: relative;
+  top: 10rem;
+  left: 0;
+  background: transparent;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+  background: rgb(26, 26, 26);
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+}
+
+nav ul li:after {
+  position: absolute;
+  background: #fbd33c;
+  color: rgb(26, 26, 26);
+  top: 0;
+  left: 70px;
+  width: 70px;
+  height: 100%;
+  opacity: 0.5;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition: all 0.4s ease-out;
+}
+
+nav ul li:nth-child(1):after {
+  content: "Home";
+  line-height: 88px;
+}
+
+nav ul li:nth-child(2):after {
+  content: "About";
+  line-height: 88px;
+}
+
+nav ul li:nth-child(3):after {
+  content: "Work";
+  line-height: 85px;
+}
+
+nav ul li:nth-child(4):after {
+  content: "Say hi";
+  line-height: 70px;
+}
+
+nav ul li:hover {
+  transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+nav ul li > div {
+  display: inline-block;
+  padding: 25px 0;
+  background: transparent;
+}
+
+nav ul li div {
+  position: relative;
+}
+
+.work-icon, .mail-icon, .home-icon, .about-icon {
+  color: gray;
+  font-size: 20px;
+}
+
+.social-media-icons {
+  position: relative;
+  top: 17rem;
+  color: grey;
+  font-size: 20px;
+  line-height: 40px;
+  background-color: rgb(26, 26, 26);
+}
+
+.social-media-list {
+  position: absolute;
+  min-width: 130px;
+  z-index: 4;
+  bottom: 1.5px;
+  left: -120px;
+  transition: 0.3s;
+}
+
+.social-media-list a {
+  color: rgb(26, 26, 26);
+}
+
+.social-media-icons:hover .social-media-list {
+  background-color: rgb(26, 26, 26);
+  z-index: 1000;
+  left: 70px;
+}
+
+.social-media-icons:hover .social-media-list svg {
+  color: #fbd33c;
+}
+
+.social-media-icons:hover > svg {
+  color: #fbd33c;
+}/*# sourceMappingURL=NavBar.css.map */

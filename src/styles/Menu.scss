@@ -1,0 +1,15 @@
+@import "../styles/Variables/Variables.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.mainMenu {
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    background-color: $menubg ;
+}

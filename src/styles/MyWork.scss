@@ -1,0 +1,32 @@
+@import "../styles/Variables/Variables.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+.my-work{
+    position: relative;
+    height: 110vh;
+    top: 30rem;
+}
+
+.my-work  h1 {
+    @include section;
+   
+}
+
+.my-work h1::before{
+    @include h2TagOpen
+}
+
+.my-work h1::after{
+    @include h2TagClose
+}
+
+.mywork_underline {
+    @include underline;
+    width: 10rem;
+}

@@ -1,0 +1,70 @@
+@import "../styles/Variables/Variables.scss";
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.contact_page {
+    position: relative;
+    top: 30rem;
+    height: 90vh;
+}
+
+#contact-form ul li.half:first-child {
+    margin-left: 0;
+}
+
+.contact_info{
+width: 50vw;
+padding-top: 5rem;
+display: block;
+position: relative;
+left: 6rem;
+}
+
+.contact_page > h1 {
+    @include section
+}
+
+.contact_page > h1::before {
+    @include h2TagOpen
+
+}
+
+.contact_page>h1::after {
+    @include h2TagClose
+
+}
+
+.bottom_tags {
+    top: 40rem;
+}
+
+.tags {
+    color: $htmlcolortags;
+    font-style: italic;
+    font-weight: 500;
+    left: 11rem;
+    position: absolute;
+    font-size: 1.3rem;
+    font-family: $tags-Font;
+}
+
+.bottom_tags::before{
+    content: '</body>';
+        font-family: $tags-Font;
+        color: $htmlcolortags;
+        left: -3rem;
+        font-size: 1.25rem;
+        top: -2rem;
+        position: absolute;
+}
+
+.contact_underline {
+    @include  underline;
+    width: 12rem;
+}
+

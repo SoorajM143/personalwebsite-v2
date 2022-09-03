@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.button_main_contact {
+  position: relative;
+  top: 18rem;
+  right: -12rem;
+  z-index: 4;
+  text-align: justify;
+  width: 15rem;
+}
+
+.button_main_contact > button {
+  width: 15rem;
+  height: 7vh;
+  font-family: "Inconsolata", monospace;
+}
+
+.button_main_contact::before {
+  content: "<button>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  font-size: 1.25rem;
+  bottom: 3.5rem;
+  position: absolute;
+}
+
+.button_main_contact::after {
+  content: "</button>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  font-size: 1.25rem;
+  top: 4rem;
+  position: absolute;
+}/*# sourceMappingURL=Contact.css.map */

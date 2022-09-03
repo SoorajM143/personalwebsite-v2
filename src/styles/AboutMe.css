@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.about_me_page {
+  position: relative;
+  min-height: 100vh;
+  top: 30rem;
+  margin-bottom: 10rem;
+}
+
+.about_me_content > h1 {
+  font-size: 4rem;
+  position: relative;
+  left: 12rem;
+  color: white;
+  text-align: justify;
+  font-family: "Inconsolata", monospace;
+}
+
+.about_me_main {
+  display: flex;
+}
+
+.about_me_content > h1::before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  font-size: 1.25rem;
+  bottom: 4rem;
+  position: absolute;
+}
+
+.about_underline {
+  content: "";
+  position: relative;
+  left: 12rem;
+  bottom: 5px;
+  height: 3px;
+  background: #fbd33c;
+  display: block;
+  margin-top: 1px;
+  width: 13rem;
+}
+
+.about_me_content > h1::after {
+  content: "</h2>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: 4rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.about_content {
+  position: relative;
+  line-height: 1.5;
+  top: 4rem;
+  width: 50%;
+  left: 12rem;
+  font-size: 1.3rem;
+  text-align: left;
+  font-family: "Inconsolata", monospace;
+}
+
+.about_content p {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.about_content h3 {
+  color: white;
+  margin-bottom: 1.5rem;
+  padding-bottom: 3rem;
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tagcloud {
+  font-size: 16px;
+}
+
+.tagcloud--item {
+  padding: 2px 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tagcloud--item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #333;
+  border-radius: 2px;
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+.sphere {
+  color: #fbd33c;
+}
+
+.about_content p:first-of-type::before {
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: 8rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.about_content p:last-of-type::after {
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: 27rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.about_content h3:first-of-type::before {
+  content: "<h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: -1.5rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.about_content h3:first-of-type::after {
+  content: "</h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.about-me-animation {
+  position: relative;
+  width: 40rem;
+  bottom: 24rem;
+  left: 50rem;
+}
+
+.about-me-animation.show {
+  transform: translateX(0);
+}
+
+.about-me-animation > img {
+  height: 30rem;
+}
+
+.about_india {
+  position: relative;
+  bottom: 20rem;
+  right: 10rem;
+}
+
+.about_india > img {
+  height: 30rem;
+}
+
+.parachute {
+  position: relative;
+  bottom: 53rem;
+  right: 4rem;
+}
+
+.parachute > img {
+  height: 7rem;
+}/*# sourceMappingURL=AboutMe.css.map */

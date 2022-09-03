@@ -1,0 +1,108 @@
+@import "../../styles/Variables/Variables.scss"; 
+
+.message{
+    display: none;
+}
+#contact-form {
+    width: 100%;
+    padding-top: 5rem;
+    display: block;
+    position: relative;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    width: 100%;
+    border: 0;
+    background: #2b2b2b;
+    height: 50px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus{
+    outline-width: 0;
+    border-bottom: 1px solid $themecolor;
+}
+
+#contact-form form {
+    position: relative;
+}
+
+.half:first-child{
+    margin-left: 0;
+}
+
+.half{
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+#contact-form ul {
+    padding: 0;
+    margin: 0;
+}
+#contact-form::before{
+    content: '<form>';
+    font-family: $tags-Font;
+    font-weight: 100;
+    color: $htmlcolortags;
+    left: 2rem;
+    font-size: 1.25rem;
+    bottom: 18rem;
+    position: absolute;
+}
+#contact-form::after {
+    content: '<form>';
+    font-family: $tags-Font;
+    font-weight: 100;
+    color: $htmlcolortags;
+    left: 2rem;
+    font-size: 1.25rem;
+    bottom: -5rem;
+    position: absolute;
+}
+
+#contact-form textarea {
+    width: 100%;
+    border: 0;
+    background: #2b2b2b;
+    height: 50px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 150px;
+}
+
+#contact-form  button {
+    width: 15rem;
+    position: relative;
+    left:15rem;
+        height: 7vh;
+        font-family: $Font-content;
+}
+
+#contact-form ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative;
+}
+
+#contact-form ul li.half {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}

@@ -1,0 +1,73 @@
+@import "../styles/Variables/Variables.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.mainPage{
+    min-height: 100vh;
+    position: relative;
+    background-color: $bgcolor;
+    font-family: $Font-content;
+    overflow-y: overlay;
+}
+
+.tag_top {
+    top: 1rem;
+    bottom: auto;
+}
+
+.tag_top::after{
+    content: '<body>';
+    font-family: $tags-Font;
+    color: $htmlcolortags;
+    left: -3rem;
+    top: 2rem;
+    position: absolute;
+}
+
+.tags {
+    color: $htmlcolortags;
+    font-style: italic;
+    font-weight: 500;
+    left:  11rem;
+    position: absolute;
+    font-size: 1.3rem;
+    font-family: $tags-Font;
+}
+
+.scroll-down{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 24rem;
+    color: $whitecolor;
+    font-family: $Font-content;
+}
+.scroll-down > span {
+    padding-right: 5px;
+}
+
+.scroll-down svg {
+    animation: bounce2 1s ease infinite;
+}
+@keyframes bounce2 {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}

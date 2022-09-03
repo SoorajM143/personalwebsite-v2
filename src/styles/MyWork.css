@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.my-work {
+  position: relative;
+  height: 110vh;
+  top: 30rem;
+}
+
+.my-work h1 {
+  font-size: 4rem;
+  position: relative;
+  left: 12rem;
+  color: white;
+  text-align: justify;
+  font-family: "Inconsolata", monospace;
+}
+
+.my-work h1::before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  font-size: 1.25rem;
+  bottom: 4rem;
+  position: absolute;
+}
+
+.my-work h1::after {
+  content: "</h2>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: 4rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.mywork_underline {
+  content: "";
+  position: relative;
+  left: 12rem;
+  bottom: 5px;
+  height: 3px;
+  background: #fbd33c;
+  display: block;
+  margin-top: 1px;
+  width: 10rem;
+}/*# sourceMappingURL=MyWork.css.map */
