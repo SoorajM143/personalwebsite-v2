@@ -1,6 +1,5 @@
 import React, { createRef, useEffect, useRef, useState } from 'react';
-import GithubIcon from '../images/github-icon.svg';
-import Jquery from '../images/jquery.svg';
+import { skillSphere } from './utils/util';
 
 const defaultStyles = {
   getContainer: (radius, fullWidth, fullHeight) => ({
@@ -50,26 +49,17 @@ const updateItemPosition = (item, sc, depth) => {
   alpha = parseFloat((alpha > 1 ? 1 : alpha).toFixed(3));
 
   const itemEl = newItem.ref.current;
-  // @ts-ignore
   const left = (newItem.x - itemEl.offsetWidth / 2).toFixed(2);
-  // @ts-ignore
   const top = (newItem.y - itemEl.offsetHeight / 2).toFixed(2);
   const transform = `translate3d(${left}px, ${top}px, 0) scale(${newItem.scale})`;
-
-  // @ts-ignore
   itemEl.style.WebkitTransform = transform;
-  // @ts-ignore
   itemEl.style.MozTransform = transform;
-  // @ts-ignore
   itemEl.style.OTransform = transform;
-  // @ts-ignore
   itemEl.style.transform = transform;
-  // @ts-ignore
   itemEl.style.filter = `grayscale(${(alpha - 1) * -8}) blur(${
     (alpha - 1) * -5 > 1 ? Math.floor((alpha - 1) * -8) : 0
   }px)`;
   itemEl.style.zIndex = Math.floor(alpha * 1000);
-  // @ts-ignore
   itemEl.style.opacity = alpha;
 
   return newItem;
@@ -109,87 +99,9 @@ const createItem = (text, index, textsLength, size, itemRef) => {
 };
 
 const defaultState = {
-  texts: [
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/typescript-icon.svg'}
-      alt={'typescript'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/sass.svg'}
-      alt={'Sass'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/adobe-illustrator.svg'}
-      alt={'adobe-illustrator'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/html-5.svg'}
-      alt={'html'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/javascript.svg'}
-      alt={'Sass'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/adobe-photoshop.svg'}
-      alt={'adobe-photoshop'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/react.svg'}
-      alt={'React'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/google-maps.svg'}
-      alt={'google-maps'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/jira.svg'}
-      alt={'jira'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/jenkins.svg'}
-      alt={'jenkins'}
-    />,
-    <img width={50} src={GithubIcon} alt={'github'} />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/nodejs-icon.svg'}
-      alt={'node'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/postgresql.svg'}
-      alt={'postgres'}
-    />,
-    <img width={90} src={Jquery} alt={'jquery'} />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/material-ui.svg'}
-      alt={'material'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/material-ui.svg'}
-      alt={'material'}
-    />,
-    <img
-      width={50}
-      src={'https://cdn.svgporn.com/logos/css-3.svg'}
-      alt={'css'}
-    />,
-  ],
-  maxSpeed: 10,
-  initialSpeed: 32,
+  texts: skillSphere,
+  maxSpeed: 20,
+  initialSpeed: 25,
   initialDirection: 135,
   keepRollingAfterMouseOut: true,
   useContainerInlineStyles: true,
