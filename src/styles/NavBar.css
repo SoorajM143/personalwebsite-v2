@@ -2,123 +2,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-nav {
-  float: left;
-  position: relative;
-  top: 10rem;
+.button_container {
+  position: fixed;
+  top: 6%;
+  left: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+.button_container:hover {
+  opacity: 0.7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: #fbd33c;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
   left: 0;
-  background: transparent;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
 }
 
-nav ul {
+.overlay {
+  position: fixed;
+  background: #fbd33c;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  width: 97%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  -webkit-animation: fadeInRight 0.5s ease forwards;
+          animation: fadeInRight 0.5s ease forwards;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: 0.45s;
+          animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-family: "Vollkorn", serif;
+  font-weight: 400;
   text-align: center;
 }
-
-nav ul li {
-  position: relative;
-  width: 70px;
-  cursor: pointer;
-  background: rgb(26, 26, 26);
-  text-transform: uppercase;
-  transition: all 0.4s ease-out;
-}
-
-nav ul li:after {
-  position: absolute;
-  background: #fbd33c;
-  color: rgb(26, 26, 26);
-  top: 0;
-  left: 70px;
-  width: 70px;
-  height: 100%;
-  opacity: 0.5;
-  transform: perspective(400px) rotateY(90deg);
-  transform-origin: 0 100%;
-  transition: all 0.4s ease-out;
-}
-
-nav ul li:nth-child(1):after {
-  content: "Home";
-  line-height: 88px;
-}
-
-nav ul li:nth-child(2):after {
-  content: "About";
-  line-height: 88px;
-}
-
-nav ul li:nth-child(3):after {
-  content: "Work";
-  line-height: 85px;
-}
-
-nav ul li:nth-child(4):after {
-  content: "Say hi";
-  line-height: 70px;
-}
-
-nav ul li:hover {
-  transform: translateX(-70px);
-}
-
-nav ul li:hover:after {
-  opacity: 1;
-  transform: perspective(400px) rotateY(0deg) scale(1);
-}
-
-nav ul li > div {
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
   display: inline-block;
-  padding: 25px 0;
-  background: transparent;
-}
-
-nav ul li div {
   position: relative;
+  height: 100%;
 }
-
-.work-icon, .mail-icon, .home-icon, .about-icon {
-  color: gray;
-  font-size: 20px;
-}
-
-.social-media-icons {
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: 25%;
+  min-height: 50px;
   position: relative;
-  top: 17rem;
-  color: grey;
-  font-size: 20px;
-  line-height: 40px;
-  background-color: rgb(26, 26, 26);
+  opacity: 0;
 }
-
-.social-media-list {
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: "";
   position: absolute;
-  min-width: 130px;
-  z-index: 4;
-  bottom: 1.5px;
-  left: -120px;
-  transition: 0.3s;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: 0.35s;
 }
 
-.social-media-list a {
-  color: rgb(26, 26, 26);
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }
 
-.social-media-icons:hover .social-media-list {
-  background-color: rgb(26, 26, 26);
-  z-index: 1000;
-  left: 70px;
-}
-
-.social-media-icons:hover .social-media-list svg {
-  color: #fbd33c;
-}
-
-.social-media-icons:hover > svg {
-  color: #fbd33c;
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }/*# sourceMappingURL=NavBar.css.map */

@@ -3,7 +3,6 @@ import './App.css';
 import MainPage from './components/MainPage';
 import Menu from './components/Menu';
 import './Apploader.css';
-import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
   const [IsLoading, setisLoading] = useState(true);
@@ -11,7 +10,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setisLoading(false);
-    }, 3000);
+    }, 2000);
   }, []);
 
   return (
@@ -33,29 +32,10 @@ function App() {
           </>
         ) : (
           <>
-            <AnimatedCursor
-              innerSize={9}
-              outerSize={8}
-              color="251, 211, 60"
-              outerAlpha={0.2}
-              innerScale={2}
-              outerScale={5}
-              clickables={[
-                'a',
-                'input[type="text"]',
-                'input[type="email"]',
-                'input[type="number"]',
-                'input[type="submit"]',
-                'input[type="image"]',
-                'label[for]',
-                'select',
-                'textarea',
-                'button',
-                '.link',
-              ]}
-            />
-            <Menu />
-            <MainPage />
+            <div className="page-wrap">
+              <Menu />
+              <MainPage />
+            </div>
           </>
         )}
       </div>

@@ -8,47 +8,50 @@ function MainPageHeader() {
   let headerText1 = 'I am Sooraj';
   let headerText2 = 'A Web Developer';
   return (
-    <Fade bottom>
-      <div className="headerText">
-        <h1>
-          {headerText.split(/(\s+)/).map((letter) => {
-            return letter !== ' '
-              ? letter.split('').map((lete, i) => {
-                  return (
-                    <span key={i} className="a">
-                      {lete}
-                    </span>
-                  );
-                })
-              : ' ';
-          })}
-          <br />
-          {headerText1.split(/(\s+)/).map((letter) => {
-            return letter !== ' '
-              ? letter.split('').map((lete, i) => {
-                  return (
-                    <span key={i} className="a">
-                      {lete}
-                    </span>
-                  );
-                })
-              : ' ';
-          })}
-          <br />
-          {headerText2.split(/(\s+)/).map((letter) => {
-            return letter !== ' '
-              ? letter.split('').map((lete, i) => {
-                  return (
-                    <span key={i} className="a">
-                      {lete}
-                    </span>
-                  );
-                })
-              : ' ';
-          })}
-        </h1>
-      </div>
-    </Fade>
+    <>
+      <Fade bottom>
+        <div className="headerText">
+          <h1>
+            {headerText.split(/(\s+)/).map((letter) => {
+              return letter !== ' '
+                ? letter.split('').map((lete, i) => {
+                    return (
+                      <span key={i} className="a">
+                        {lete}
+                      </span>
+                    );
+                  })
+                : ' ';
+            })}
+            <br />
+            {headerText1.split(/(\s+)/).map((letter) => {
+              return letter !== ' '
+                ? letter.split('').map((lete, i) => {
+                    return (
+                      <span key={i} className="a">
+                        {lete}
+                      </span>
+                    );
+                  })
+                : ' ';
+            })}
+            <br />
+            {headerText2.split(/(\s+)/).map((letter) => {
+              return letter !== ' '
+                ? letter.split('').map((lete, i) => {
+                    return (
+                      <span key={i} className="a">
+                        {lete}
+                      </span>
+                    );
+                  })
+                : ' ';
+            })}
+          </h1>
+        </div>
+      </Fade>
+      <Contact />
+    </>
   );
 }
 

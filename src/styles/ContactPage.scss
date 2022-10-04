@@ -65,6 +65,13 @@ left: 6rem;
 
 .contact_underline {
     @include  underline;
-    width: 14rem;
+    background:  $themecolor;
+}
+
+.contact_dot {
+    @include dot;
+    background: $themecolor;
+    left: 27rem;
+    bottom: 2rem;
 }
 

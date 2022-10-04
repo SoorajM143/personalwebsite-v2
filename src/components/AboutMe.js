@@ -1,5 +1,4 @@
 import React from 'react';
-import TagCloud from 'TagCloud';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import '../styles/AboutMe.css';
@@ -19,13 +18,16 @@ function AboutMe() {
     'These days most of my time is spent on research,coding,learning new tech on LinkedIn/Youtube and designing on Illustrator. I care deeply about creating a seemless user experience. Passionate about UI design and learning new technologies.';
   const aboutMeContent4 =
     'Out of Office, you ll find me playing guitar, petting all the good dogs and exploring new cuisines. ';
+  const aboutSubHeader = 'A Brief History';
+
   return (
     <>
-      <section className="about_me_page" id="about_me_section">
+      <div className="about_me_page">
         <div className="about_me_main">
           <div className="about_me_content">
             <Fade top>
-              <h1>{textAnimate(aboutMeheader)}</h1>
+              <h1>{aboutMeheader}</h1>
+              <span className="about_dot"></span>
             </Fade>
             <Slide left>
               <div className="about_underline"></div>
@@ -41,7 +43,12 @@ function AboutMe() {
           </div>
           <Sphere />
         </div>
-      </section>
+        <div className="about_brief_history">
+          <Fade>
+            <h3>{textAnimate(aboutSubHeader)}</h3>
+          </Fade>
+        </div>
+      </div>
     </>
   );
 }

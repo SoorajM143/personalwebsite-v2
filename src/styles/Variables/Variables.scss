@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap');
 
 //Colors
 
@@ -10,11 +11,23 @@ $menubg: rgb(26, 26, 26);
 $htmlcolortags: rgb(79, 77, 77);
 $whitecolor: white;
 $themecolor: #fbd33c;
+$about-themecolor: #9bdabe;
 
 //fonts
 $tags-Font: 'La Belle Aurore', cursive;
-$Font-content: 'Inconsolata',monospace;
-$title-font: 'Bebas Neue',cursive;
+$Font-content: 'Bitter',serif;
+$title-font: 'Bitter',serif;
+
+@mixin dot {
+   content: '.';
+   font-family: $Font-content; 
+   border-radius: 8px;
+   height: 13px;
+   width: 13px;
+   display: block;
+   position: relative;
+   bottom: 1.6rem;
+}
 
 @mixin h2TagOpen {
     content: '<h2>';
@@ -34,7 +47,7 @@ content: '</h2>';
     font-weight: 100;
     color: $htmlcolortags;
     left: -4rem;
-    top: 4rem;
+    top: 5rem;
     font-size: 1.25rem;
     position: absolute;
 }
@@ -43,11 +56,10 @@ content: '</h2>';
     content: "";
     position: relative;
     left: 12rem;
-    bottom: 3px;
     height: 4px;
-    background: $themecolor;
     display: block;
     margin-top: 1px;
+    width: 3.5rem;
 }
 
 @mixin para {
@@ -73,7 +85,7 @@ content: '</h2>';
 }
 
 @mixin section {
-    font-size: 4rem;
+    font-size: 3.8rem;
         position: relative;
         left: 12rem;
         color: $whitecolor;

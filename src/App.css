@@ -1,15 +1,22 @@
 .App {
   text-align: center;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-wrap{
+  min-height: calc(100vh - 40px);
+  position: relative;
+  background: #f7f8f9;
+  overflow: hidden;
+  margin: 20px;
+  
+}
+
+.mainPagebg{
+  margin: 20px 20px;
 }
 
 
-.App-link {
-  color: #61dafb;
-}
+
 
 

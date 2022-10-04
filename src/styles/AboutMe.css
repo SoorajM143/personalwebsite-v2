@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -9,23 +10,28 @@
 }
 
 .about_me_page {
-  position: relative;
   min-height: 100vh;
-  top: 30rem;
-  margin-bottom: 10rem;
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  font-family: "Bitter", serif;
+  overflow-y: overlay;
 }
 
 .about_me_content > h1 {
-  font-size: 4rem;
+  font-size: 4.8rem;
   position: relative;
-  left: 12rem;
   color: white;
   text-align: justify;
-  font-family: "Inconsolata", monospace;
+  font-family: "Bitter", serif;
+  left: 6rem;
 }
 
 .about_me_main {
   display: flex;
+  position: relative;
+  top: 12rem;
+  z-index: 0;
 }
 
 .about_me_content > h1::before {
@@ -39,16 +45,21 @@
   position: absolute;
 }
 
+.a:hover {
+  color: "#9bdabe!important";
+}
+
 .about_underline {
   content: "";
   position: relative;
   left: 12rem;
-  bottom: 3px;
   height: 4px;
-  background: #fbd33c;
   display: block;
   margin-top: 1px;
-  width: 16rem;
+  width: 3.5rem;
+  bottom: 1rem;
+  background: #9bdabe;
+  left: 6rem;
 }
 
 .about_me_content > h1::after {
@@ -57,9 +68,23 @@
   font-weight: 100;
   color: rgb(79, 77, 77);
   left: -4rem;
-  top: 4rem;
+  top: 5rem;
   font-size: 1.25rem;
   position: absolute;
+}
+
+.about_dot {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background: #9bdabe;
+  bottom: 2rem;
+  left: 28rem;
 }
 
 .about_content {
@@ -70,14 +95,14 @@
   left: 12rem;
   font-size: 1.3rem;
   text-align: left;
-  font-family: "Inconsolata", monospace;
+  font-family: "Bitter", serif;
 }
 
 .about_content p {
   color: white;
   margin-bottom: 1.5rem;
   font-size: 18px;
-  font-family: "Inconsolata", monospace;
+  font-family: "Bitter", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -86,32 +111,59 @@
   color: white;
   margin-bottom: 1.5rem;
   padding-bottom: 3rem;
-  font-family: "Inconsolata", monospace;
+  font-family: "Bitter", serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.tagcloud {
-  font-size: 16px;
+.about_brief_history {
+  position: relative;
+  top: 14rem;
+  left: 5rem;
+  width: 50%;
 }
 
-.tagcloud--item {
-  padding: 2px 4px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
+.about_brief_history h3 {
+  color: white;
+  font-family: "Bitter", serif;
+  font-size: 2rem;
 }
 
-.tagcloud--item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid #333;
-  border-radius: 2px;
-  opacity: 1 !important;
-  z-index: 100 !important;
+.about_brief_history h3:first-of-type::before {
+  content: "<h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: -1.5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 10rem;
 }
 
-.sphere {
-  color: #fbd33c;
+.about_brief_underline {
+  content: "";
+  position: relative;
+  left: 12rem;
+  height: 4px;
+  display: block;
+  margin-top: 1px;
+  width: 3.5rem;
+  margin-top: 5px;
+  left: 6rem;
+}
+
+.about_brief_history h3:last-of-type::after {
+  content: "</h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(79, 77, 77);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 10rem;
+  top: 3rem;
 }
 
 .about_content p:first-of-type::before {
@@ -158,37 +210,44 @@
   position: absolute;
 }
 
-.about-me-animation {
+.history_tiles {
+  display: flex;
+  width: 80rem;
   position: relative;
+  top: 8rem;
+  left: 3rem;
+  color: white;
+  gap: 10px;
+}
+
+.history_tiles div {
+  margin: auto;
+  background-color: #222;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.history_tile {
+  position: relative;
+  left: 2rem;
+  background-color: #222;
+  width: 20rem;
+  height: 14rem;
+}
+
+.history_tiles div:last-of-type {
+  width: 20rem;
+  height: 14rem;
+}
+
+.history_tiles :nth-child(2) {
   width: 40rem;
-  bottom: 24rem;
-  left: 50rem;
+  height: 14rem;
 }
 
-.about-me-animation.show {
-  transform: translateX(0);
-}
-
-.about-me-animation > img {
-  height: 30rem;
-}
-
-.about_india {
+.timeline {
   position: relative;
-  bottom: 20rem;
-  right: 10rem;
-}
-
-.about_india > img {
-  height: 30rem;
-}
-
-.parachute {
-  position: relative;
-  bottom: 53rem;
-  right: 4rem;
-}
-
-.parachute > img {
-  height: 7rem;
+  top: 4rem;
+  left: 16rem;
+  width: 1000px;
+  height: 700px;
 }/*# sourceMappingURL=AboutMe.css.map */

@@ -22,6 +22,7 @@ function ContactPage() {
         </Fade>
         <Slide right>
           <div className="contact_underline"></div>
+          <span className="contact_dot"></span>
         </Slide>
         <div className="contact_info">
           <ContactForm />

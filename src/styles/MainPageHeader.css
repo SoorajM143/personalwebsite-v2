@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -18,7 +19,7 @@
   top: 10rem;
   left: 12rem;
   font-size: 3rem;
-  color: white;
+  color: #070d55;
   position: relative;
   text-align: justify;
 }
@@ -29,7 +30,7 @@
   color: rgb(79, 77, 77);
   left: -4rem;
   font-size: 1.25rem;
-  bottom: 17rem;
+  bottom: 21rem;
   position: absolute;
 }
 
@@ -39,7 +40,7 @@
   color: rgb(79, 77, 77);
   left: -4rem;
   font-size: 1.25rem;
-  top: 17.5rem;
+  top: 20.5rem;
   position: absolute;
 }
 
