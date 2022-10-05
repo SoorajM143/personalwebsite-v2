@@ -8,20 +8,20 @@
 
 .about_me_page {
     min-height: 100vh;
-        position: relative;
-        width: 100%;
-        background-color: $bgcolor;
-        font-family: $Font-content;
-        overflow-y: overlay;
+    position: relative;
+    width: 100%;
+    background-color: $whitecolor;
+    font-family: $Font-content;
+    overflow-y: overlay;
 }
 
 .about_me_content > h1  {
     font-size: 4.8rem;
-        position: relative;
-        color: $whitecolor;
-        text-align: justify;
-        font-family: $Font-content;
-        left: 6rem;
+    position: relative;
+    color: #1C494C;
+    text-align: justify;
+    font-family: $Font-content;
+    left: 6rem;
 }
 
 .about_me_main {
@@ -40,9 +40,10 @@
 
 .about_underline{
         @include underline;
-        bottom: 1rem;
+        bottom: 1.5rem;
         background: $about-themecolor;
         left: 6rem;
+        width: 10.5rem
 }
 .about_me_content>h1::after {
     @include h2TagClose
@@ -68,7 +69,7 @@
 }
 
 .about_content p {
-    color: $whitecolor;
+    color: #1C494C;
     margin-bottom: 1.5rem;
     font-size: 18px;
     font-family: $Font-content;
@@ -77,7 +78,7 @@
 }
 
 .about_content h3 {
-    color: $whitecolor;
+    color: #1C494C;
     margin-bottom: 1.5rem;
     padding-bottom: 3rem;
     font-family: $Font-content;

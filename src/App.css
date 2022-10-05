@@ -6,15 +6,13 @@
 .page-wrap{
   min-height: calc(100vh - 40px);
   position: relative;
-  background: #f7f8f9;
+  background: #f4f9fc;
   overflow: hidden;
   margin: 20px;
   
 }
 
-.mainPagebg{
-  margin: 20px 20px;
-}
+
 
 
 

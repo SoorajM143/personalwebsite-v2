@@ -1,45 +1,39 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import MainPage from './components/MainPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Menu from './components/Menu';
 import './Apploader.css';
+import MyWork from './components/MyWork';
+import Main from './components/Main';
+import AboutMe from './components/AboutMe';
+import ContactPage from './components/ContactPage';
+import PreLoader from './components/PreLoader';
 
 function App() {
-  const [IsLoading, setisLoading] = useState(true);
+  const [isLoading, setisLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setisLoading(false);
     }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
-    <React.Fragment>
+    <Router>
+      <PreLoader load={isLoading} />
       <div className="App">
-        {IsLoading ? (
-          <>
-            <div className="mainPagebg">
-              <div class="wrap">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="shadow"></div>
-                <div class="shadow"></div>
-                <div class="shadow"></div>
-                <span class="text"> &nbsp; Testing your patience....</span>
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="page-wrap">
-              <Menu />
-              <MainPage />
-            </div>
-          </>
-        )}
+        <div className="page-wrap">
+          <Menu />
+          <Routes>
+            <Route exact path="/" element={<Main />} />
+            <Route exact path="/about-me" element={<AboutMe />} />
+            <Route exact path="/work" component={<MyWork />} />
+            <Route exact path="/contact" component={<ContactPage />} />
+          </Routes>
+        </div>
       </div>
-    </React.Fragment>
+    </Router>
   );
 }
 

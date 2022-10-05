@@ -9,6 +9,10 @@
   transform: translate(-50%, -50%);
 }
 
+.wrap-none {
+  opacity: 0;
+}
+
 .circle {
   width: 20px;
   height: 20px;
@@ -126,6 +130,12 @@
   min-height: 100vh;
   position: relative;
   background-color: #fbd33c;
+  z-index: 10;
+  margin: 20px 20px;
+}
+
+.mainPg-none {
+  display: none;
 }
 
 .text {
