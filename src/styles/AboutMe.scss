@@ -10,7 +10,7 @@
     min-height: 100vh;
     position: relative;
     width: 100%;
-    background-color: $whitecolor;
+    background-color: transparent;
     font-family: $Font-content;
     overflow-y: overlay;
 }
@@ -32,11 +32,9 @@
 }
 
 .about_me_content > h1::before{
-       @include h2TagOpen
+       @include h2TagOpen;
 }
-.a:hover {
-    color: $about-themecolor + '!important';
-}
+
 
 .about_underline{
         @include underline;
@@ -46,7 +44,7 @@
         width: 10.5rem
 }
 .about_me_content>h1::after {
-    @include h2TagClose
+    @include h2TagClose;
 
 }
 
@@ -82,7 +80,7 @@
     margin-bottom: 1.5rem;
     padding-bottom: 3rem;
     font-family: $Font-content;
-    font-weight: 700;
+    font-weight: 100;
     font-style: normal;
 }
 

@@ -27,7 +27,7 @@
 .button_main_contact::before {
   content: "<button>";
   font-family: "La Belle Aurore", cursive;
-  color: rgb(79, 77, 77);
+  color: rgb(140, 137, 137);
   left: -4rem;
   font-size: 1.25rem;
   bottom: 3.5rem;
@@ -37,7 +37,7 @@
 .button_main_contact::after {
   content: "</button>";
   font-family: "La Belle Aurore", cursive;
-  color: rgb(79, 77, 77);
+  color: rgb(140, 137, 137);
   left: -4rem;
   font-size: 1.25rem;
   top: 4rem;

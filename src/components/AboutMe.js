@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 function AboutMe() {
   const aboutMeheader = 'About Me';
-  const aboutMeContent1 =
-    "I'm a Front-End Engineer working for Informatica on their cloud product in Dublin,Ireland";
+  const aboutMeContent1 = "I'm a";
+  const boldText = 'web developer';
   const aboutMeContent2 =
     "For the past 4 years, I have been working on complex products for Clients such Qatar Airwars and easyJet.In my current role ,I'm working on the cloud Data Marketplace for Informatica's Axon product";
   const aboutMeContent3 =
@@ -25,7 +25,7 @@ function AboutMe() {
       <div className="about_me_page">
         <div className="about_me_main">
           <div className="about_me_content">
-            <Fade top>
+            <Fade top delay={2000}>
               <h1>{aboutMeheader}</h1>
               <span className="about_dot"></span>
             </Fade>
@@ -34,19 +34,13 @@ function AboutMe() {
             </Slide>
             <Fade bottom>
               <div className="about_content">
-                <h3>{aboutMeContent1}</h3>
-                <p>{aboutMeContent2}</p>
-                <p>{aboutMeContent3}</p>
-                <p>{aboutMeContent4}</p>
+                <h3>
+                  {aboutMeContent1}
+                  <strong>{boldText}</strong>
+                </h3>
               </div>
             </Fade>
           </div>
-          <Sphere />
-        </div>
-        <div className="about_brief_history">
-          <Fade>
-            <h3>{textAnimate(aboutSubHeader)}</h3>
-          </Fade>
         </div>
       </div>
     </>

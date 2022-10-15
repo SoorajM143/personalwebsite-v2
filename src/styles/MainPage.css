@@ -24,14 +24,14 @@
 .tag_top::after {
   content: "<body>";
   font-family: "La Belle Aurore", cursive;
-  color: rgb(79, 77, 77);
+  color: rgb(140, 137, 137);
   left: -3rem;
   top: 2rem;
   position: absolute;
 }
 
 .tags {
-  color: rgb(79, 77, 77);
+  color: rgb(140, 137, 137);
   font-style: italic;
   font-weight: 500;
   left: 11rem;
