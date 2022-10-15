@@ -11,11 +11,16 @@
 
 .about_me_page {
   min-height: 100vh;
+  height: 200vh;
   position: relative;
   width: 100%;
   background-color: transparent;
   font-family: "Bitter", serif;
   overflow-y: overlay;
+}
+
+.about_me_content {
+  width: 100%;
 }
 
 .about_me_content > h1 {
@@ -28,7 +33,6 @@
 }
 
 .about_me_main {
-  display: flex;
   position: relative;
   top: 12rem;
   z-index: 0;
@@ -53,7 +57,7 @@
   display: block;
   margin-top: 1px;
   width: 3.5rem;
-  bottom: 1.5rem;
+  bottom: 0.5rem;
   background: #9bdabe;
   left: 6rem;
   width: 10.5rem;
@@ -68,6 +72,7 @@
   top: 5rem;
   font-size: 1.25rem;
   position: absolute;
+  top: 7rem;
 }
 
 .about_dot {
@@ -87,12 +92,29 @@
 .about_content {
   position: relative;
   line-height: 1.5;
-  top: 4rem;
-  width: 50%;
+  top: 7rem;
+  width: 70%;
   left: 12rem;
   font-size: 1.3rem;
   text-align: left;
   font-family: "Bitter", serif;
+}
+
+.about_me_para {
+  position: relative;
+  top: 10rem;
+  line-height: 1.5;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #1C494C;
+  text-align: left;
+}
+
+.skill_sphere {
+  position: relative;
+  left: 24rem;
 }
 
 .about_content p {
@@ -205,6 +227,7 @@
   top: 5rem;
   font-size: 1.25rem;
   position: absolute;
+  top: 7rem;
 }
 
 .history_tiles {
@@ -247,4 +270,45 @@
   left: 16rem;
   width: 1000px;
   height: 700px;
+}
+
+.scroll-animation {
+  position: relative;
+  top: 12rem;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.scroll-animation > svg {
+  font-size: 2rem;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+.about_me_panels {
+  display: flex;
+  position: relative;
+  top: 25rem;
+  z-index: 0;
 }/*# sourceMappingURL=AboutMe.css.map */
