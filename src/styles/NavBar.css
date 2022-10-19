@@ -15,7 +15,7 @@
   position: fixed;
   z-index: 2;
   left: 50px;
-  top: 30px;
+  top: 40px;
   cursor: pointer;
 }
 .menu-icon__line {
@@ -47,6 +47,7 @@
 .nav {
   position: fixed;
   z-index: 1;
+  visibility: hidden;
 }
 .nav.open {
   visibility: visible;

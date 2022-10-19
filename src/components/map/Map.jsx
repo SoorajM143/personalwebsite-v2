@@ -25,12 +25,13 @@ const Map = ({ location, zoomLevel }) => (
         defaultZoom={zoomLevel}
        options={{styles: mapStyle, disableDefaultUI: true, draggable: false}}
       >
-        <Bounce top>
+        <Fade top delay={500}>
         <LocationPin
           lat={location.lat}
           lng={location.lng}
         />
-        </Bounce>
+        </Fade>
+        
       </GoogleMapReact>
     </div>
     </Fade>

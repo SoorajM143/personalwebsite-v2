@@ -17,6 +17,17 @@ $about-themecolor: #9bdabe;
 $tags-Font: 'La Belle Aurore', cursive;
 $Font-content: 'Bitter',serif;
 $title-font: 'Bitter',serif;
+$content-fonts: -apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+'Roboto',
+'Oxygen',
+'Ubuntu',
+'Cantarell',
+'Fira Sans',
+'Droid Sans',
+'Helvetica Neue',
+sans-serif;
 
 @mixin dot {
    content: '.';

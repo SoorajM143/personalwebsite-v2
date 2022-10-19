@@ -16,11 +16,11 @@ function ContactPage() {
   let contactheader = 'Contact';
   return (
     <>
-      <section className="contact_page">
-        <Fade top>
+      <div className="contact_page">
+        <Fade top delay={400}>
           <h1>{textAnimate(contactheader)}</h1>
         </Fade>
-        <Slide right>
+        <Slide right delay={200}>
           <div className="contact_underline"></div>
           <span className="contact_dot"></span>
         </Slide>
@@ -33,7 +33,7 @@ function ContactPage() {
           </Suspense>
         </div>
         <span className="bottom_tags tags">{'</html>'}</span>
-      </section>
+      </div>
     </>
   );
 }

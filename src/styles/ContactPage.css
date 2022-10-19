@@ -10,9 +10,12 @@
 }
 
 .contact_page {
+  min-height: 100vh;
+  height: 100vh;
   position: relative;
-  top: 30rem;
-  height: 90vh;
+  width: 100%;
+  background-color: transparent;
+  top: 9rem;
 }
 
 #contact-form ul li.half:first-child {
@@ -34,6 +37,7 @@
   color: white;
   text-align: justify;
   font-family: "Bitter", serif;
+  color: #47430b;
 }
 
 .contact_page > h1::before {
@@ -72,16 +76,6 @@
   font-family: "La Belle Aurore", cursive;
 }
 
-.bottom_tags::before {
-  content: "</body>";
-  font-family: "La Belle Aurore", cursive;
-  color: rgb(140, 137, 137);
-  left: -3rem;
-  font-size: 1.25rem;
-  top: -2rem;
-  position: absolute;
-}
-
 .contact_underline {
   content: "";
   position: relative;
@@ -90,7 +84,7 @@
   display: block;
   margin-top: 1px;
   width: 3.5rem;
-  background: #fbd33c;
+  background: #ff5708;
 }
 
 .contact_dot {
@@ -102,7 +96,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #fbd33c;
+  background: #ff5708;
   left: 27rem;
   bottom: 2rem;
 }/*# sourceMappingURL=ContactPage.css.map */

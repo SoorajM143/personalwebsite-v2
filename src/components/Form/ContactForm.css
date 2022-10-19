@@ -18,7 +18,7 @@
 #contact-form input[type=email] {
   width: 100%;
   border: 0;
-  background: #2b2b2b;
+  background: #e0dfdf;
   height: 50px;
   font-size: 16px;
   color: #8d8d8d;
@@ -29,7 +29,7 @@
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline-width: 0;
-  border-bottom: 1px solid #fbd33c;
+  border-bottom: 2px solid #ff5708;
 }
 
 #contact-form form {
@@ -77,7 +77,7 @@
 #contact-form textarea {
   width: 100%;
   border: 0;
-  background: #2b2b2b;
+  background: #e0dfdf;
   height: 50px;
   font-size: 16px;
   color: #8d8d8d;

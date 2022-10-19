@@ -1,21 +1,17 @@
 import React from 'react';
-import { Button } from '@mui/material';
-import { Fade } from 'react-reveal';
 import '../styles/Contact.css';
-import { ThemeProvider } from '@mui/material/styles';
-import { theme } from './utils/util';
+import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
 
 function Contact() {
   return (
-    <Fade bottom>
-      <div className="button_main_contact">
-        <ThemeProvider theme={theme}>
-          <Button color="neutral" variant="outlined">
-            Contact me
-          </Button>
-        </ThemeProvider>
-      </div>
-    </Fade>
+    <div className="button_main_contact">
+      <a href="mailto:soorajmohan7@gmail.com">
+        <QuestionAnswerOutlinedIcon />
+        <span>
+          <strong>Say Hi!</strong>
+        </span>
+      </a>
+    </div>
   );
 }
 

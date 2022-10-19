@@ -24,9 +24,7 @@ function AboutMe() {
   const aboutMePara2 =
     " In my current role ,I'm working on the cloud Data Marketplace for ";
   const aboutMeContent3 =
-    'These days most of my time is spent on research,coding,learning new tech on LinkedIn/Youtube and designing on Illustrator. I care deeply about creating a seemless user experience. Passionate about UI design and learning new technologies.';
-  const aboutMeContent4 =
-    'Out of Office, you ll find me playing guitar, petting all the good dogs and exploring new cuisines. ';
+    'These days most of my time is spent on research,coding,learning new tech on LinkedIn/Youtube and designing on Illustrator. I care deeply about creating a seemless user experience. Passionate about UI design and learning new technologies. Out of Office, you ll find me playing guitar, petting all the good dogs and exploring new cuisines. ';
   const aboutSubHeader = 'A Brief History';
 
   return (
@@ -54,20 +52,22 @@ function AboutMe() {
             </Fade>
           </div>
           <div className="scroll-animation">
-            <ArrowDownwardIcon />
+            <span>Scroll Down</span>
+            <div className="vertical_line"></div>
           </div>
         </div>
         <div className="about_me_panels">
-          <Fade top>
+          <Fade delay={500}>
             <div className="about_me_para">
               {aboutMeContent2} <strong>{boldText2}</strong>
               {aboutMePara}
               <strong>{boldtext3}</strong>
               {aboutMePara2}
               <strong>{boldText4}</strong>
+              <br />
+              <span>{aboutMeContent3}</span>
             </div>
           </Fade>
-
           <div className="skill_sphere">
             <Sphere />
           </div>

@@ -38,11 +38,11 @@ const ContactForm = () => {
   };
 
   return (
-    <Fade>
+    <Fade delay={700}>
       <div id="contact-form">
         <form className="contact">
           <ul>
-            <Fade bottom>
+            <Fade bottom delay={1000}>
               <li className="half">
                 <input
                   type="text"
@@ -53,7 +53,7 @@ const ContactForm = () => {
                 <span className="focus-border"></span>
               </li>
             </Fade>
-            <Fade bottom>
+            <Fade bottom delay={1200}>
               <li className="half">
                 <input
                   type="email"
@@ -64,7 +64,7 @@ const ContactForm = () => {
                 <span className="focus-border"></span>
               </li>
             </Fade>
-            <Fade bottom>
+            <Fade bottom delay={1400}>
               <li>
                 <textarea
                   placeholder="Your message"

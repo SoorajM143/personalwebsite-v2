@@ -8,6 +8,7 @@ import Main from './components/Main';
 import AboutMe from './components/AboutMe';
 import ContactPage from './components/ContactPage';
 import PreLoader from './components/PreLoader';
+import Contact from './components/Contact';
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -25,11 +26,12 @@ function App() {
       <div className="App">
         <div className="page-wrap">
           <Menu />
+          <Contact />
           <Routes>
             <Route exact path="/" element={<Main />} />
             <Route exact path="/about-me" element={<AboutMe />} />
             <Route exact path="/work" component={<MyWork />} />
-            <Route exact path="/contact" component={<ContactPage />} />
+            <Route exact path="/contact" element={<ContactPage />} />
           </Routes>
         </div>
       </div>

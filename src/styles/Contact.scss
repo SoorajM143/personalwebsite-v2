@@ -8,38 +8,33 @@
 }
 
 .button_main_contact {
-    position: relative;
-    top: 18rem;
-    right: -12rem;
+    position: fixed;
+    top: 39px;
+    right: 0px;
     z-index:1;
     text-align: justify;
     width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.button_main_contact > button {
-    width: 15rem;
-    height: 7vh;
-    font-family: $Font-content;
+.button_main_contact svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--background-color);
 }
 
-.button_main_contact::before {
-    content: '<button>';
-    font-family: $tags-Font;
-    color: $htmlcolortags;
-    left: -4rem;
-    font-size: 1.25rem;
-    bottom: 3.5rem;
-    position: absolute;
-
+.button_main_contact span {
+    padding: 5px;
+    position: relative;
+    top: -10px;
+    font-family: $content-fonts;
+    font-size: 18px;
+    color: black;
 }
 
-.button_main_contact::after {
-    content: '</button>';
-    font-family: $tags-Font;
-    color: $htmlcolortags;
-    left: -4rem;
-    font-size: 1.25rem;
-    top: 4rem;
-    position: absolute;
-
+.button_main_contact > a {
+   text-decoration: none;
 }
+

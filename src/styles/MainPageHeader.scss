@@ -12,14 +12,49 @@
     position: relative;
 }
 
-.headerText {
-    display:flex;
-    top: 10rem;
-    left: 12rem;
-    font-size: 3rem;
+.headerText{
+    top: 12rem;
+    width: 50%;
+    left: 6rem;
+    font-size: 7rem;
+    font-family: $content-fonts;
+    font-weight: 300;
     color: #070d55;
     position: relative;
     text-align: justify;
+}
+
+.main-page-section{
+    display: flex;
+}
+.avatar {
+    position: relative;
+    top: 6rem;
+    left: 3rem;
+    width: 40rem;
+}
+
+.headerText > h1 {
+    font: inherit;
+}
+
+.headerText p {
+    position: relative;
+    top: 4rem;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: $content-fonts;
+}
+
+.headerText p::before {
+    @include para;
+    top: -2rem;
+}
+
+.headerText p::after{
+    @include paraEnd;
+    top: 2rem;
+
 }
 
 .headerText::before{
@@ -28,7 +63,7 @@
     color: $htmlcolortags;
     left: -4rem;
     font-size: 1.25rem;
-    bottom: 21rem;
+    top: -2rem;
     position: absolute;
 
 }
@@ -39,51 +74,44 @@
     color: $htmlcolortags;
     left: -4rem;
     font-size: 1.25rem;
-    top: 20.5rem;
+    top: 15.5rem;
     position: absolute;
 
 }
 
 
-.a {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
-    display: inline-block;
+.scroll-animation-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 5rem;
+    color: #070d55;
+    font-family: $content-fonts;
+    font-weight: 100;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-.a:hover {
-    color: $themecolor;
-    /* animation: rubberBand 5s infinite; */
-    animation-name: rubberBand;
+.vertical_line-main {
+    content: '';
+    height: 200px;
+    width: 0.5px;
+    padding-top: 2px;
+    position: relative;
+    display: block;
+    background-color: #070d55;
 }
 
-@keyframes rubberBand {
+@keyframes bounce {
     from {
-        transform: scale3d(1, 1, 1);
-    }
-
-    30% {
-        transform: scale3d(1.25, 0.75, 1);
-    }
-
-    40% {
-        transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50% {
-        transform: scale3d(1.15, 0.85, 1);
-    }
-
-    65% {
-        transform: scale3d(.95, 1.05, 1);
-    }
-
-    75% {
-        transform: scale3d(1.05, .95, 1);
+        transform: translateY(0px);
     }
 
     to {
-        transform: scale3d(1, 1, 1);
+        transform: translateY(20px);
     }
+
 }

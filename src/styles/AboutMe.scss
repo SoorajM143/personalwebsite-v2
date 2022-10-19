@@ -74,24 +74,34 @@
 .about_me_para{
     position: relative;
     top: 10rem;
+    left: 3rem;
     line-height: 1.5;
     width: 50%;
     font-size: 1.2rem;
-    font-family: -apple-system,
-        BlinkMacSystemFont,
-        'Segoe UI',
-        'Roboto',
-        'Oxygen',
-        'Ubuntu',
-        'Cantarell',
-        'Fira Sans',
-        'Droid Sans',
-        'Helvetica Neue',
-        sans-serif;
+    font-family: $content-fonts;
     font-weight: 300;
     color: #1C494C;
     text-align: left;
 }
+
+.about_me_para > span {
+    position: relative;
+    top: 2rem;
+    text-align: left;
+}
+
+.about_me_para::before{
+     @include para;
+     top: -2rem;
+     left: -2rem;
+}
+
+.about_me_para::after{
+    @include paraEnd;
+    top: 17rem;
+    left: -2rem;
+}
+
 .skill_sphere{
     position: relative;
     left: 24rem;
@@ -206,15 +216,31 @@
 
 .scroll-animation {
     position: relative;
-    top: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10rem;
+    color:#1C494C;
+    font-family: $content-fonts;
+    font-weight: 100;
     animation-name: bounce;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-.scroll-animation > svg {
-    font-size: 2rem;
+.scroll-animation > span {
+    padding: 5px;
+}
+
+.vertical_line{
+   content: '';
+   height: 200px;
+   width: 0.5px;
+   padding-top: 2px;
+   position: relative;
+   display: block;
+   background-color: #1C494C;
 }
 
 @keyframes bounce {

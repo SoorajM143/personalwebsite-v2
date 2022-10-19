@@ -21,7 +21,7 @@ $nav--theme: var(--background-color);
     position: fixed;
     z-index: 2;
     left: 50px;
-    top: 30px;
+    top: 40px;
     cursor: pointer;
 
     &__line {
@@ -65,6 +65,8 @@ $nav--theme: var(--background-color);
     $transition--easing: cubic-bezier(.77, 0, .175, 1);
     position: fixed;
     z-index: 1;
+    visibility: hidden;
+    
 
     &.open {
 visibility: visible;
