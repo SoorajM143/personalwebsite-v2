@@ -74,7 +74,7 @@ const ContactForm = () => {
                 <span className="focus-border"></span>
               </li>
             </Fade>
-            <Fade bottom>
+            <Fade bottom delay={1600}>
               <li>
                 <ThemeProvider theme={theme}>
                   <Button onClick={submit} color="neutral" variant="outlined">

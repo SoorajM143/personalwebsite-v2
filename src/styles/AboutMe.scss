@@ -71,7 +71,7 @@
     font-family: $Font-content;
 }
 
-.about_me_para{
+.about_me_para_1{
     position: relative;
     top: 10rem;
     left: 3rem;
@@ -84,19 +84,19 @@
     text-align: left;
 }
 
-.about_me_para > span {
+.about_me_para_1 > span {
     position: relative;
     top: 2rem;
     text-align: left;
 }
 
-.about_me_para::before{
+.about_me_para_1::before{
      @include para;
      top: -2rem;
      left: -2rem;
 }
 
-.about_me_para::after{
+.about_me_para_1::after{
     @include paraEnd;
     top: 17rem;
     left: -2rem;
@@ -105,6 +105,7 @@
 .skill_sphere{
     position: relative;
     left: 24rem;
+    display: none;
 }
 
 .about_content p {
@@ -260,6 +261,17 @@
     top: 25rem;
     z-index: 0;
 
+}
+
+.card_job{
+    display: grid;
+    width: 30rem;
+    height: 30rem;
+    grid-template-columns: 7fr 8px 7fr ;
+    grid-template-rows: 2fr 8px 2fr;
+    position: relative;
+    top: 11rem;
+    left: 7rem;
 }
 
 

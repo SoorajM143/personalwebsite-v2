@@ -1,8 +1,8 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import { Fade, Slide } from 'react-reveal';
 import '../styles/ContactPage.css';
 import ContactForm from './Form/ContactForm';
-import { textAnimate } from './utils/util';
+import Constant from './utils/Constant';
 
 const location = {
   address: 'Windmill lane, Dublin, Ireland',
@@ -13,12 +13,16 @@ const location = {
 const Map = lazy(() => import('./map/Map'));
 
 function ContactPage() {
-  let contactheader = 'Contact';
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty('--background-color', '#ffdaa5');
+  }, []);
+
   return (
     <>
       <div className="contact_page">
         <Fade top delay={400}>
-          <h1>{textAnimate(contactheader)}</h1>
+          <h1>{Constant.CONTACT_HEADER}</h1>
         </Fade>
         <Slide right delay={200}>
           <div className="contact_underline"></div>

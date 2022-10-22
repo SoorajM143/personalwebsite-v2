@@ -6,7 +6,7 @@ import '../styles/NavBar.css';
 
 function NavBar() {
   const [sidemenu, setSideMenu] = useState(false);
-  const [navTheme, setNavTheme] = useState('#aadcec');
+  const [navTheme, setNavTheme] = useState('#00d084');
 
   const MenuOpen = (color) => {
     setSideMenu(!sidemenu);
@@ -62,7 +62,7 @@ function NavBar() {
           <ul className="nav__list">
             <Link
               to="/"
-              onClick={() => MenuOpen('#aadcec')}
+              onClick={() => MenuOpen('#00d084')}
               className="nav--list-item"
             >
               Home
@@ -83,7 +83,7 @@ function NavBar() {
             </Link>
             <Link
               to="/contact"
-              onClick={() => MenuOpen('#fedaa5')}
+              onClick={() => MenuOpen('#ffdaa5')}
               className="nav--list-item"
             >
               Contact

@@ -1,0 +1,13 @@
+
+@import "../styles/Variables/Variables.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+.cards {
+    max-width: 245px;
+}

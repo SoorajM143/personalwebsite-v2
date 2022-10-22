@@ -1,34 +1,28 @@
 import React from 'react';
 import '../styles/MainPageHeader.css';
 import { Fade, Bounce } from 'react-reveal';
-import Contact from './Contact';
 import AnimatedMe from './AnimatedMe';
+import Constants from './utils/Constant';
 
 function MainPageHeader() {
-  let headerText = 'Hello,';
-  let headerText1 = "I'm ";
-  let name = 'Sooraj';
-  let headerText2 = "I'm a ";
-  let role = 'Web Developer ';
-  let headerText3 = 'currently based in ';
-  let place = 'Dublin, Ireland';
   return (
     <>
       <div className="main-page-section">
         <div className="headerText">
           <Fade delay={200}>
             <h1>
-              {headerText}
+              {Constants.MAIN_PAGE_HEADER_TEXT_1}
               <br />
-              {headerText1}
-              <strong>{name}</strong>
+              {Constants.MAIN_PAGE_HEADER_TEXT_2}
+              <strong>{Constants.MAIN_PAGE_HEADER_TEXT_3}</strong>
             </h1>
           </Fade>
           <Fade top delay={800}>
             <p>
-              {headerText2} <strong>{role}</strong>
-              {headerText3}
-              <b>{place}</b>
+              {Constants.MAIN_PAGE_HEADER_TEXT_4}
+              <strong>{Constants.MAIN_PAGE_HEADER_TEXT_5}</strong>
+              {Constants.MAIN_PAGE_HEADER_TEXT_6}
+              <b>{Constants.MAIN_PAGE_HEADER_TEXT_7}</b>
             </p>
           </Fade>
         </div>
