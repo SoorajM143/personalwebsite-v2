@@ -5,6 +5,7 @@ import '../styles/AboutMe.css';
 import { Fade, Slide } from 'react-reveal';
 import Sphere from './Sphere';
 import Constants from './utils/Constant';
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,6 +53,11 @@ function AboutMe() {
               <strong>{Constants.ABOUT_ME_WORK_PARA_4}</strong>
               {Constants.ABOUT_ME_WORK_PARA_5}
               <strong>{Constants.ABOUT_ME_WORK_PARA_6}</strong>
+              {Constants.ABOUT_ME_WORK_PARA_8}
+              <Link to="/work">
+                <strong>{Constants.ABOUT_ME_WORK_PARA_9}</strong>
+              </Link>
+              {Constants.ABOUT_ME_WORK_PARA_10}
               <br />
               <span>{Constants.ABOUT_ME_WORK_PARA_7}</span>
             </div>

@@ -4,13 +4,14 @@ import './ContactForm.css';
 import { Button, ThemeProvider } from '@mui/material';
 import { theme } from '../utils/util';
 import { Fade } from 'react-reveal';
-import { ReactDialogBox } from 'react-js-dialog-box';
+import ConfirmationDialog from './ConfirmationDialog';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailSent, setEmailSent] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const submit = () => {
     if (name && email && message) {
@@ -22,7 +23,6 @@ const ContactForm = () => {
         email,
         message,
       };
-
       emailjs
         .send(serviceId, templateId, templateParams, userId)
         .then((response) => console.log(response))
@@ -32,9 +32,14 @@ const ContactForm = () => {
       setEmail('');
       setMessage('');
       setEmailSent(true);
+      setOpen(true);
     } else {
       alert('Please fill in all fields.');
     }
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -82,23 +87,7 @@ const ContactForm = () => {
                   </Button>
                 </ThemeProvider>
                 {emailSent && (
-                  <>
-                    <ReactDialogBox
-                      modalWidth="60%"
-                      headerBackgroundColor="red"
-                      headerTextColor="white"
-                      headerHeight="65"
-                      closeButtonColor="white"
-                      bodyBackgroundColor="white"
-                      bodyTextColor="black"
-                      bodyHeight="200px"
-                      headerText="Title"
-                    >
-                      <div>
-                        <h1>Dialog Content</h1>
-                      </div>
-                    </ReactDialogBox>
-                  </>
+                  <ConfirmationDialog open={open} onClose={handleClose} />
                 )}
               </li>
             </Fade>

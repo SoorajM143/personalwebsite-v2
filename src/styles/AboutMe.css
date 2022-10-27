@@ -113,6 +113,11 @@
   text-align: left;
 }
 
+.about_me_para_1 a {
+  text-decoration: none;
+  color: #1C494C;
+}
+
 .about_me_para_1 > span {
   position: relative;
   top: 2rem;
