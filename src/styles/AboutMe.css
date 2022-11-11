@@ -11,7 +11,7 @@
 
 .about_me_page {
   min-height: 100vh;
-  height: 200vh;
+  height: 300vh;
   position: relative;
   width: 100%;
   background-color: transparent;
@@ -113,6 +113,48 @@
   text-align: left;
 }
 
+.about_me_para2 {
+  position: relative;
+  top: 10rem;
+  left: 15rem;
+  line-height: 1.5;
+  width: 40%;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #1C494C;
+  text-align: left;
+}
+
+.about_me_para3 {
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  line-height: 1.5;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  color: #1C494C;
+  text-align: left;
+}
+
+.about_me_para3 span {
+  display: block;
+}
+
+.about_me_para2 span {
+  display: block;
+}
+
+.about_me_para2 span:last-of-type {
+  margin-top: 2rem;
+}
+
+.about_me_para3 span:last-of-type {
+  margin-top: 2rem;
+}
+
 .about_me_para_1 a {
   text-decoration: none;
   color: #1C494C;
@@ -146,14 +188,90 @@
   top: 29rem;
   font-size: 1.25rem;
   position: absolute;
-  top: 17rem;
+  top: 18.5rem;
+  left: -2rem;
+}
+
+.about_me_para2::before {
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 8rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
+.about_me_para3::before {
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 8rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+}
+
+.about_me_para3::after {
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 29rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 17.5rem;
+  left: -2rem;
+}
+
+.about_me_para2::after {
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 29rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 17.5rem;
   left: -2rem;
 }
 
 .skill_sphere {
   position: relative;
-  left: 24rem;
-  display: none;
+  left: 16rem;
+}
+
+.about_me_skills svg {
+  position: relative;
+  top: 8rem;
+  right: 11rem;
+  color: #1C494C;
+  width: 2rem;
+  height: 2rem;
+}
+
+.about_me_skills svg:last-of-type {
+  height: 2rem;
+  width: 2rem;
+  top: 10rem;
+  right: 13rem;
+}
+
+.sphere_info {
+  position: relative;
+  top: 8rem;
+  right: 12rem;
+  color: #1C494C;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
 }
 
 .about_content p {
@@ -172,56 +290,6 @@
   font-family: "Bitter", serif;
   font-weight: 100;
   font-style: normal;
-}
-
-.about_brief_history {
-  position: relative;
-  top: 14rem;
-  left: 5rem;
-  width: 50%;
-}
-
-.about_brief_history h3 {
-  color: white;
-  font-family: "Bitter", serif;
-  font-size: 2rem;
-}
-
-.about_brief_history h3:first-of-type::before {
-  content: "<h3>";
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 100;
-  color: rgb(140, 137, 137);
-  left: -4rem;
-  top: -1.5rem;
-  font-size: 1.25rem;
-  position: absolute;
-  left: 10rem;
-}
-
-.about_brief_underline {
-  content: "";
-  position: relative;
-  left: 12rem;
-  height: 4px;
-  display: block;
-  margin-top: 1px;
-  width: 3.5rem;
-  margin-top: 5px;
-  left: 6rem;
-}
-
-.about_brief_history h3:last-of-type::after {
-  content: "</h3>";
-  font-family: "La Belle Aurore", cursive;
-  font-weight: 100;
-  color: rgb(140, 137, 137);
-  left: -4rem;
-  top: 5rem;
-  font-size: 1.25rem;
-  position: absolute;
-  left: 10rem;
-  top: 3rem;
 }
 
 .about_content p:first-of-type::before {
@@ -267,48 +335,6 @@
   font-size: 1.25rem;
   position: absolute;
   top: 7rem;
-}
-
-.history_tiles {
-  display: flex;
-  width: 80rem;
-  position: relative;
-  top: 8rem;
-  left: 3rem;
-  color: white;
-  gap: 10px;
-}
-
-.history_tiles div {
-  margin: auto;
-  background-color: #222;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.history_tile {
-  position: relative;
-  left: 2rem;
-  background-color: #222;
-  width: 20rem;
-  height: 14rem;
-}
-
-.history_tiles div:last-of-type {
-  width: 20rem;
-  height: 14rem;
-}
-
-.history_tiles :nth-child(2) {
-  width: 40rem;
-  height: 14rem;
-}
-
-.timeline {
-  position: relative;
-  top: 4rem;
-  left: 16rem;
-  width: 1000px;
-  height: 700px;
 }
 
 .scroll-animation {
@@ -362,19 +388,45 @@
   }
 }
 .about_me_panels {
+  display: none;
+  position: relative;
+  top: 25rem;
+  z-index: 0;
+}
+
+.about_me_skills {
+  display: flex;
+  position: relative;
+  top: 45rem;
+  z-index: 0;
+}
+
+.about_me_history {
   display: flex;
   position: relative;
   top: 25rem;
   z-index: 0;
 }
 
-.card_job {
-  display: grid;
-  width: 30rem;
-  height: 30rem;
-  grid-template-columns: 7fr 8px 7fr;
-  grid-template-rows: 2fr 8px 2fr;
+.cityscapes {
   position: relative;
-  top: 11rem;
-  left: 7rem;
+  top: 5rem;
+  left: 20rem;
+}
+
+.cityscape_kochi {
+  position: relative;
+  right: 5rem;
+}
+
+.cityscape_balloon {
+  position: relative;
+  right: 37rem;
+  top: 2rem;
+}
+
+.cityscape_dublin {
+  position: relative;
+  top: 15rem;
+  right: 24rem;
 }/*# sourceMappingURL=AboutMe.css.map */

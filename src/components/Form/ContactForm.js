@@ -5,16 +5,21 @@ import { Button, ThemeProvider } from '@mui/material';
 import { theme } from '../utils/util';
 import { Fade } from 'react-reveal';
 import ConfirmationDialog from './ConfirmationDialog';
+import AlertDialog from './AlertDialog';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailSent, setEmailSent] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const [alertOpen, setAlertOpen] = useState(false);
+  const [value, setValue] = useState('');
+  const [error, setError] = useState(false);
+  const [formError, setFormError] = useState(null);
 
   const submit = () => {
-    if (name && email && message) {
+    if (name.length && email && message.length && formError == null) {
       const serviceId = 'service_l5dtajc';
       const templateId = 'template_gp15u2c';
       const userId = '-UCRSjfcZvDKLXw3l';
@@ -32,14 +37,36 @@ const ContactForm = () => {
       setEmail('');
       setMessage('');
       setEmailSent(true);
-      setOpen(true);
+      setConfirmOpen(true);
     } else {
-      alert('Please fill in all fields.');
+      setAlertOpen(true);
+      setError(true);
+      if (formError === null) setValue('Enter All Mandatory Fields');
+      else setValue('Errors found in the Form');
     }
   };
 
   const handleClose = () => {
-    setOpen(false);
+    setConfirmOpen(false);
+  };
+
+  const handleAlertClose = () => {
+    setAlertOpen(false);
+  };
+
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+
+  const handleChange = (ev) => {
+    if (!isValidEmail(ev.target.value)) {
+      setFormError('Invalid Email');
+    } else {
+      setFormError(null);
+      setEmail(ev.target.value);
+    }
+
+    setEmail(ev.target.value);
   };
 
   return (
@@ -54,6 +81,7 @@ const ContactForm = () => {
                   placeholder="Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
                 />
                 <span className="focus-border"></span>
               </li>
@@ -64,8 +92,14 @@ const ContactForm = () => {
                   type="email"
                   placeholder="Your email address"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={handleChange}
+                  required
                 />
+                {formError && (
+                  <h5 style={{ color: 'red', paddingTop: '2px' }}>
+                    {formError}
+                  </h5>
+                )}
                 <span className="focus-border"></span>
               </li>
             </Fade>
@@ -75,6 +109,7 @@ const ContactForm = () => {
                   placeholder="Your message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  required
                 ></textarea>
                 <span className="focus-border"></span>
               </li>
@@ -87,7 +122,17 @@ const ContactForm = () => {
                   </Button>
                 </ThemeProvider>
                 {emailSent && (
-                  <ConfirmationDialog open={open} onClose={handleClose} />
+                  <ConfirmationDialog
+                    open={confirmOpen}
+                    onClose={handleClose}
+                  />
+                )}
+                {!emailSent && error && (
+                  <AlertDialog
+                    open={alertOpen}
+                    onClose={handleAlertClose}
+                    value={value}
+                  ></AlertDialog>
                 )}
               </li>
             </Fade>

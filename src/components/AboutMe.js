@@ -6,6 +6,11 @@ import { Fade, Slide } from 'react-reveal';
 import Sphere from './Sphere';
 import Constants from './utils/Constant';
 import { Link } from 'react-router-dom';
+import GestureIcon from '@mui/icons-material/Gesture';
+import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
+import Kochi from '../images/Kochi.png';
+import Dublin from '../images/Dublin.png';
+import Balloon from '../images/Balloon.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,6 +49,68 @@ function AboutMe() {
             <div className="vertical_line"></div>
           </div>
         </div>
+
+        <div className="about_me_history">
+          <Fade delay={300}>
+            <div className="about_me_para3">
+              <span>
+                {Constants.ABOUT_ME_HISTORY_PARA_1}
+                <strong>{Constants.ABOUT_ME_HISTORY_PARA_2}</strong>
+                {Constants.ABOUT_ME_HISTORY_PARA_3}
+              </span>
+              <span>
+                {Constants.ABOUT_ME_HISTORY_PARA_4}
+                <strong>{Constants.ABOUT_ME_HISTORY_PARA_5}</strong>
+                {Constants.ABOUT_ME_HISTORY_PARA_6}
+              </span>
+            </div>
+          </Fade>
+          <div className="cityscapes">
+            <Fade right delay={1500}>
+              <img
+                className="cityscape_kochi"
+                width={300}
+                src={Kochi}
+                alt="Kochi"
+              />
+            </Fade>
+            <Fade right delay={2500}>
+              <img
+                className="cityscape_dublin"
+                width={350}
+                src={Dublin}
+                alt="dublin"
+              />
+            </Fade>
+            <Fade top delay={2000}>
+              <img
+                className="cityscape_balloon"
+                width={40}
+                src={Balloon}
+                alt="balloon"
+              />
+            </Fade>
+          </div>
+        </div>
+
+        <div className="about_me_skills">
+          <div className="skill_sphere">
+            <Sphere />
+            <GestureIcon />
+            <PanToolAltIcon />
+            <span className="sphere_info">Interact with sphere</span>
+          </div>
+          <Fade delay={300}>
+            <div className="about_me_para2">
+              <span>
+                {Constants.ABOUT_ME_SKILL_PARA_1}
+                <strong>{Constants.ABOUT_ME_SKILL_PARA_3}</strong>
+                {Constants.ABOUT_ME_SKILL_PARA_4}
+              </span>
+              <span>{Constants.ABOUT_ME_SKILL_PARA_2}</span>
+            </div>
+          </Fade>
+        </div>
         <div className="about_me_panels">
           <Fade delay={300}>
             <div className="about_me_para_1">
@@ -62,10 +129,8 @@ function AboutMe() {
               <span>{Constants.ABOUT_ME_WORK_PARA_7}</span>
             </div>
           </Fade>
-          <div className="skill_sphere">
-            <Sphere />
-          </div>
         </div>
+        <div className="work-info"></div>
       </div>
     </>
   );

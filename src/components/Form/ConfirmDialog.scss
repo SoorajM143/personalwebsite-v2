@@ -1,0 +1,16 @@
+@import "../../styles/Variables/Variables.scss";
+
+
+.confirm-dialog h1,div.MuiDialogContent-root{
+    font-family: $content-fonts;
+}
+
+.confirm-dialog h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.confirm-dialog h5 {
+    font-family: $content-fonts;
+    font-size: 1.05rem;
+}
