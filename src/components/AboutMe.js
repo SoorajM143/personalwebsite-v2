@@ -11,6 +11,10 @@ import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
 import Kochi from '../images/Kochi.png';
 import Dublin from '../images/Dublin.png';
 import Balloon from '../images/Balloon.png';
+import Walmart from '../images/Walmart.png';
+import Qatar from '../images/Qatar.png';
+import Informatica from '../images/Informatica.png';
+import Wipro from '../images/Wipro.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -129,8 +133,27 @@ function AboutMe() {
               <span>{Constants.ABOUT_ME_WORK_PARA_7}</span>
             </div>
           </Fade>
+          <Fade right cascade delay={1500}>
+            <div className="container-about">
+              <div className="card-about">
+                <img className="wipro-icon" alt="wipro-icon" src={Wipro} />
+              </div>
+              <div className="card-about">
+                <img
+                  className="walmart-icon"
+                  src={Walmart}
+                  alt="Walmart-icon"
+                />
+              </div>
+              <div className="card-about">
+                <img className="qatar-icon" src={Qatar} alt="Qatar-icon" />
+              </div>
+              <div className="card-about">
+                <img className="infa-icon" src={Informatica} alt="infa-icon " />
+              </div>
+            </div>
+          </Fade>
         </div>
-        <div className="work-info"></div>
       </div>
     </>
   );
