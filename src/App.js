@@ -21,21 +21,24 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <PreLoader load={isLoading} />
-      <div className="App">
-        <div className="page-wrap">
-          <Menu />
-          <Contact />
-          <Routes>
-            <Route exact path="/" element={<Main />} />
-            <Route exact path="/about-me" element={<AboutMe />} />
-            <Route exact path="/work" component={<MyWork />} />
-            <Route exact path="/contact" element={<ContactPage />} />
-          </Routes>
+    <>
+      <Router>
+        <PreLoader load={isLoading} />
+        <div className="App">
+          <div className="page-wrap">
+            <Menu />
+            <Contact />
+            <Routes>
+              <Route exact path="/" element={<Main />} />
+              <Route exact path="/about-me" element={<AboutMe />} />
+              <Route exact path="/work" component={<MyWork />} />
+              <Route exact path="/contact" element={<ContactPage />} />
+            </Routes>
+            <small className="footer">© MMXXII - Built by Sooraj Mohan</small>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </>
   );
 }
 

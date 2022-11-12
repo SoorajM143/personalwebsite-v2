@@ -8,7 +8,7 @@
 }
 
 .contact_page {
-    min-height: 100vh;
+    min-height: 130vh;
     height: 100vh;
     position: relative;
     width: 100%;
@@ -41,10 +41,6 @@ left: 6rem;
 .contact_page>h1::after {
     @include h2TagClose
 
-}
-
-.bottom_tags {
-    top: 40rem;
 }
 
 .tags {

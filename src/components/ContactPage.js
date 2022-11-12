@@ -36,7 +36,6 @@ function ContactPage() {
             <Map location={location} zoomLevel={10} />
           </Suspense>
         </div>
-        <span className="bottom_tags tags">{'</html>'}</span>
       </div>
     </>
   );

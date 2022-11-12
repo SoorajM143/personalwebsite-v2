@@ -13,7 +13,10 @@
   display: flex;
   align-items: center;
   width: 80px;
-  color: red;
+}
+
+.pin > svg {
+  fill: red;
 }
 
 .pin-icon {

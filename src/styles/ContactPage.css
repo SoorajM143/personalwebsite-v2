@@ -10,7 +10,7 @@
 }
 
 .contact_page {
-  min-height: 100vh;
+  min-height: 130vh;
   height: 100vh;
   position: relative;
   width: 100%;
@@ -60,10 +60,6 @@
   top: 5rem;
   font-size: 1.25rem;
   position: absolute;
-}
-
-.bottom_tags {
-  top: 40rem;
 }
 
 .tags {
