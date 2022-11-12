@@ -55,7 +55,7 @@ function AboutMe() {
         </div>
 
         <div className="about_me_history">
-          <Fade delay={300}>
+          <Fade delay={100}>
             <div className="about_me_para3">
               <span>
                 {Constants.ABOUT_ME_HISTORY_PARA_1}
