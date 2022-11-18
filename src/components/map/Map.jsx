@@ -11,16 +11,14 @@ const LocationPin = ({ text }) => (
     <GeoAltFill className="pin-icon" />
   </div>
 );
-  
 
-const {REACT_APP_GOOGLE_MAPS_API_KEY} = process.env;
 
 const Map = ({ location, zoomLevel }) => (
   <div className="map">
     <Fade>
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: REACT_APP_GOOGLE_MAPS_API_KEY }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
         defaultCenter={location}
         defaultZoom={zoomLevel}
        options={{styles: mapStyle, disableDefaultUI: true, draggable: false}}
