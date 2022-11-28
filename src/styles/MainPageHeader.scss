@@ -116,3 +116,47 @@
     }
 
 }
+
+
+@media(max-width: 700px){
+    .headerText {
+       top: 27rem;
+       font-size: 2rem;
+       width: 142%;
+       text-align: center;
+    }
+
+    .headerText  > h1 {
+        width: 11rem;
+        font-size: 39px;
+    }
+
+    .headerText::after{
+        top: 5.5rem;
+    }
+
+    .headerText p {
+        top: 5rem;
+        font-size: 18px;
+    }
+
+    .headerText p::after{
+        top: 4rem;
+    }
+
+    .avatar{
+        left: -10.5rem;
+    }
+
+    .avatar svg {
+        height: 18rem;
+    }
+
+    .headerText br {
+        display:none
+    }
+
+    .scroll-animation-main{
+        bottom: 68rem;
+    }
+} 

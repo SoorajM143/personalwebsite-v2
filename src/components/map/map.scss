@@ -47,3 +47,15 @@
     font-size: 5vw;
   }
 }
+
+@media(max-width: 700px){
+  .google-map{
+    width: 88vw;
+    height: 46vh;
+  }
+
+  .map{
+    left: 1%;
+    top:2rem;
+  }
+}

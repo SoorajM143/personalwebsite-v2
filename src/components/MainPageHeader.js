@@ -13,7 +13,7 @@ function MainPageHeader() {
             <h1>
               {Constants.MAIN_PAGE_HEADER_TEXT_1}
               <br />
-              {Constants.MAIN_PAGE_HEADER_TEXT_2}
+              &#8203; {Constants.MAIN_PAGE_HEADER_TEXT_2}
               <strong>{Constants.MAIN_PAGE_HEADER_TEXT_3}</strong>
             </h1>
           </Fade>
