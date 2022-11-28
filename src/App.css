@@ -54,6 +54,18 @@
   background: #919795;
 }
 
+@media(max-width: 700px){
+  .footer{
+    font-size: 0.5rem;
+  }
+  .footer::before{
+    width: 2rem;
+  }
+  .footer::after{
+    width: 2rem;
+  }
+}
+
 
 
 
