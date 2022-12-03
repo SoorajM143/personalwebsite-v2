@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *,
 *::before,
 *::after {
@@ -19,8 +20,8 @@
   top: 12rem;
   width: 50%;
   left: 6rem;
-  font-size: 7rem;
-  font-family: "Bitter", serif;
+  font-size: 5rem;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #070d55;
   position: relative;
@@ -48,7 +49,7 @@
   top: 4rem;
   font-size: 28px;
   font-weight: 300;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .headerText p::before {
@@ -91,7 +92,7 @@
   color: rgb(140, 137, 137);
   left: -4rem;
   font-size: 1.25rem;
-  top: 15.5rem;
+  top: 12.5rem;
   position: absolute;
 }
 
@@ -100,10 +101,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  bottom: 60rem;
-  color: #070d55;
-  font-family: "Bitter", serif;
+  bottom: 56rem;
+  right: 20rem;
+  color: #919795;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
+  font-size: 14px;
   -webkit-animation-name: bounce;
           animation-name: bounce;
   -webkit-animation-duration: 0.5s;
@@ -121,7 +124,7 @@
   padding-top: 2px;
   position: relative;
   display: block;
-  background-color: #070d55;
+  background-color: #46464a;
 }
 
 @-webkit-keyframes bounce {
@@ -141,27 +144,27 @@
     transform: translateY(20px);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 512px) {
   .headerText {
     top: 27rem;
-    font-size: 1rem;
-    width: 142%;
     text-align: center;
+    left: 2rem;
   }
   .headerText > h1 {
-    width: 11rem;
+    width: 18rem;
     font-size: 29px;
   }
   .headerText::after {
     top: 4.5rem;
+    left: 1.5rem;
     font-size: 1rem;
   }
   .headerText::before {
     font-size: 1rem;
+    left: 1.5rem;
   }
   .headerText p {
-    top: 5rem;
-    font-size: 18px;
+    display: none;
   }
   .headerText p::after {
     top: 4rem;
@@ -180,7 +183,8 @@
     display: none;
   }
   .scroll-animation-main {
-    bottom: 34rem;
+    bottom: 18rem;
+    left: 0.1rem;
     font-size: 0.7rem;
   }
   .vertical_line-main {

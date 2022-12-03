@@ -11,9 +11,9 @@ function MainPageHeader() {
         <div className="headerText">
           <Fade delay={200}>
             <h1>
-              {Constants.MAIN_PAGE_HEADER_TEXT_1}
+              {Constants.MAIN_PAGE_HEADER_TEXT_1}  &#8203; 
               <br />
-              &#8203; {Constants.MAIN_PAGE_HEADER_TEXT_2}
+             {Constants.MAIN_PAGE_HEADER_TEXT_2}
               <strong>{Constants.MAIN_PAGE_HEADER_TEXT_3}</strong>
             </h1>
           </Fade>

@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *,
 *::before,
 *::after {
@@ -108,7 +109,7 @@
   line-height: 1.5;
   width: 50%;
   font-size: 1.2rem;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #1C494C;
   text-align: left;
@@ -121,7 +122,7 @@
   line-height: 1.5;
   width: 40%;
   font-size: 1.2rem;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #1C494C;
   text-align: left;
@@ -134,7 +135,7 @@
   line-height: 1.5;
   width: 50%;
   font-size: 1.2rem;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #1C494C;
   text-align: left;
@@ -271,7 +272,7 @@
   top: 8rem;
   right: 12rem;
   color: #1C494C;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -345,7 +346,7 @@
   align-items: center;
   top: 10rem;
   color: #1C494C;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   -webkit-animation-name: bounce;
           animation-name: bounce;
