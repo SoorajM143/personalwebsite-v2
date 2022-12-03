@@ -121,18 +121,23 @@
 @media(max-width: 700px){
     .headerText {
        top: 27rem;
-       font-size: 2rem;
+       font-size: 1rem;
        width: 142%;
        text-align: center;
     }
 
     .headerText  > h1 {
         width: 11rem;
-        font-size: 39px;
+        font-size: 29px;
     }
 
     .headerText::after{
-        top: 5.5rem;
+        top: 4.5rem;
+        font-size: 1rem;
+    }
+
+    .headerText::before{
+        font-size: 1rem;
     }
 
     .headerText p {
@@ -142,6 +147,11 @@
 
     .headerText p::after{
         top: 4rem;
+        font-size: 1rem;
+    }
+
+    .headerText p::before{
+        font-size: 1rem;
     }
 
     .avatar{
@@ -157,6 +167,11 @@
     }
 
     .scroll-animation-main{
-        bottom: 68rem;
+        bottom: 34rem;
+        font-size: 0.7rem;
+    }
+
+    .vertical_line-main{
+        height: 115px;
     }
 } 

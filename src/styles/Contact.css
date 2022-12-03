@@ -39,4 +39,17 @@
 
 .button_main_contact > a {
   text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .button_main_contact {
+    right: -50px;
+  }
+  .button_main_contact span {
+    font-size: 14px;
+  }
+  .button_main_contact svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }/*# sourceMappingURL=Contact.css.map */
