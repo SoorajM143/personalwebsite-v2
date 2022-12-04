@@ -8,8 +8,7 @@
 }
 
 .contact_page {
-    min-height: 130vh;
-    height: 100vh;
+    height: 150vh;
     position: relative;
     width: 100%;
     background-color: transparent;
@@ -66,41 +65,115 @@ left: 6rem;
     bottom: 2rem;
 }
 
-@media(max-width: 512px){
+@media screen and (max-width: 1000px){
     .contact_page{
-        height: 200vh;
+        height: 98vh ;
+    }
+
+    #contact-form{
+        width: 81% !important;
     }
 
     .contact_info{
-        width: 82vw;
-        left: 1rem;
-    }
-
-    #contact-form::before{
-        left: 1rem !important;
-    }
-
-    #contact-form::after{
-        bottom: -2rem !important;
-        left: 1rem !important;
+        left: 3rem;
+        padding-top: 0 !important;
     }
 
     #contact-form button{
-        width: 10rem !important;
-        left: 5rem !important;
+        width: 12rem !important;
+        left: 5.5rem !important;
+        height: 4vh !important;
+    }
+
+    #contact-form::before{
+        left:0rem !important;
+    }
+
+    #contact-form::after{
+        left: 0rem !important;
     }
 
     .contact_page > h1{
-        font-size: 3.2rem;
-        left: 4rem;
+        left: 5rem;
     }
 
     .contact_page > h1::before{
-        left: -2rem;
+          left: -2rem;
     }
 
     .contact_page > h1::after{
         left: -2rem;
     }
+
+    .contact_dot{
+        left: 19.5rem;
+    }
+
+    .contact_underline{
+        left: 5.5rem;
+    }
+   
 }
+
+@media screen and(max-width: 480px){
+    .contact_page{
+        height: 160vh;
+    }
+
+    .contact_info{
+        width: 81vw;
+        left: 1rem;
+    }
+
+    .contact_underline{
+        left:2.5rem;
+    }
+
+    .contact_dot{
+        height: 9px;
+        width: 9px;
+        left: 10.5rem;
+        bottom: 1.5rem;
+    }
+
+    #contact-form{
+        width: 100% !important;
+    }
+
+    #contact-form::before{
+        left: 0rem !important;
+        font-size: 1rem !important;
+        bottom: 16rem !important;
+    }
+
+    #contact-form::after{
+        bottom: -2rem !important;
+        left: 0rem !important;
+        font-size: 1rem !important;
+    }
+
+    #contact-form button{
+        width: 10rem !important;
+        left: 4rem !important;
+    }
+
+    .contact_page > h1{
+        font-size: 2.2rem;
+        left: 2rem;
+    }
+
+    .contact_page > h1::before{
+        font-size: 1rem;
+        left: -1rem;
+        bottom: 2.5rem;
+    }
+
+    .contact_page > h1::after{
+        font-size: 1rem;
+        left: -1rem;
+        top: 4rem;
+    }
+}
+
+
 

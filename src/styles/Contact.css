@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *,
 *::before,
 *::after {
@@ -32,7 +33,7 @@
   padding: 5px;
   position: relative;
   top: -10px;
-  font-family: "Bitter", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: black;
 }

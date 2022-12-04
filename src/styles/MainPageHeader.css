@@ -144,7 +144,7 @@
     transform: translateY(20px);
   }
 }
-@media (max-width: 512px) {
+@media screen and (max-width: 512px) {
   .headerText {
     top: 27rem;
     text-align: center;
