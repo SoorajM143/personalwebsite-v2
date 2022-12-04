@@ -178,3 +178,21 @@
         height: 115px;
     }
 } 
+
+@media screen and (max-width: 1000px){
+
+    .headerText {
+        top:35rem;
+        text-align: center;
+        left: 5rem;
+     }
+
+     .headerText  > h1 {
+        width: 18rem;
+        font-size: 41px;
+    }
+
+    .headerText p {
+        display: none;
+    }
+}
