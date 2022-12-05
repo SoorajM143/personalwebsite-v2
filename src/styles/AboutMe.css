@@ -551,4 +551,59 @@ svg {
 .wipro-icon {
   height: 9rem;
   width: 11rem;
+}
+
+@media screen and (max-width: 512px) {
+  .about_me_main {
+    top: 8rem !important;
+  }
+  .about_me_content > h1 {
+    font-size: 2.2rem !important;
+    left: 2rem !important;
+    bottom: 2rem !important;
+  }
+  .about_me_content > h1::before {
+    left: -1rem !important;
+    font-size: 1rem !important;
+    bottom: 2.7rem !important;
+  }
+  .about_me_content > h1::after {
+    left: -1rem !important;
+    font-size: 1rem !important;
+    top: 4rem !important;
+  }
+  .about_underline {
+    width: 5rem !important;
+    left: 2rem !important;
+    bottom: 2.5rem !important;
+  }
+  .about_dot {
+    left: 12.2rem !important;
+    bottom: 3.1rem !important;
+    height: 10px !important;
+    width: 10px !important;
+  }
+  .about_content {
+    left: 2rem !important;
+    top: 5.5rem !important;
+    font-size: 1rem !important;
+  }
+  .about_content h3:first-of-type::before {
+    left: -1rem !important;
+    font-size: 1rem !important;
+  }
+  .about_content h3:first-of-type::after {
+    left: -1rem !important;
+    font-size: 1rem !important;
+    top: 14.2rem !important;
+  }
+  .scroll-animation {
+    top: 4rem !important;
+  }
+  .scroll-animation > span {
+    font-size: 10px !important;
+  }
+  .vertical_line {
+    width: 0.2px !important;
+  }
 }/*# sourceMappingURL=AboutMe.css.map */
