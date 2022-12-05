@@ -220,4 +220,32 @@
   gap: 3rem;
   align-items: flex-start;
   padding: 2rem;
+}
+
+@media screen and (max-width: 512px) {
+  .nav--list-item {
+    font-size: 2.5rem !important;
+  }
+  .nav::after {
+    width: 89vw !important;
+  }
+  .social-links {
+    bottom: 0rem !important;
+  }
+  .social-links li svg {
+    width: 1em !important;
+    height: 1em !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav--list-item {
+    font-size: 5rem;
+  }
+  .nav::after {
+    width: 96vw;
+  }
+  .social-links li svg {
+    height: 4rem;
+    width: 10rem;
+  }
 }/*# sourceMappingURL=NavBar.css.map */
