@@ -146,62 +146,77 @@
 }
 @media screen and (max-width: 512px) {
   .headerText {
-    top: 27rem;
-    text-align: center;
-    left: 2rem;
+    top: 24rem !important;
+    text-align: center !important;
+    left: 2rem !important;
   }
   .headerText > h1 {
-    width: 18rem;
-    font-size: 29px;
+    width: 18rem !important;
+    font-size: 29px !important;
   }
   .headerText::after {
-    top: 4.5rem;
-    left: 1.5rem;
-    font-size: 1rem;
+    top: 4.5rem !important;
+    left: 1.5rem !important;
+    font-size: 1rem !important;
   }
   .headerText::before {
-    font-size: 1rem;
-    left: 1.5rem;
+    font-size: 1rem !important;
+    left: 1.5rem !important;
   }
   .headerText p {
     display: none;
   }
-  .headerText p::after {
-    top: 4rem;
-    font-size: 1rem;
-  }
-  .headerText p::before {
-    font-size: 1rem;
-  }
   .avatar {
-    left: -10.5rem;
+    left: -9.5rem !important;
   }
   .avatar svg {
-    height: 18rem;
+    height: 18rem !important;
   }
   .headerText br {
     display: none;
   }
   .scroll-animation-main {
-    bottom: 18rem;
-    left: 0.1rem;
-    font-size: 0.7rem;
+    bottom: 51rem !important;
+    left: 0.1rem !important;
+    font-size: 0.7rem !important;
   }
   .vertical_line-main {
-    height: 115px;
+    height: 125px !important;
   }
 }
 @media screen and (max-width: 1000px) {
+  .main-page-section {
+    display: block;
+  }
   .headerText {
-    top: 35rem;
+    top: 44rem;
     text-align: center;
-    left: 5rem;
+    left: 17rem;
+  }
+  .headerText::before {
+    font-size: 2rem;
+  }
+  .headerText::after {
+    font-size: 2rem;
+    top: 9.5rem;
   }
   .headerText > h1 {
-    width: 18rem;
-    font-size: 41px;
+    width: 22rem;
+    font-size: 47px;
   }
   .headerText p {
     display: none;
+  }
+  .avatar {
+    top: 0rem;
+    left: 7rem;
+  }
+  .scroll-animation-main {
+    bottom: 100rem;
+    left: 0.1rem;
+    font-size: 1.5rem;
+  }
+  .vertical_line-main {
+    height: 20rem;
   }
 }/*# sourceMappingURL=MainPageHeader.css.map */
