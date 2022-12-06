@@ -70,7 +70,7 @@ function AboutMe() {
             </div>
           </Fade>
           <div className="cityscapes">
-            <Fade right delay={1500}>
+            <Fade right delay={2000}>
               <img
                 className="cityscape_kochi"
                 width={300}
@@ -78,7 +78,7 @@ function AboutMe() {
                 alt="Kochi"
               />
             </Fade>
-            <Fade right delay={2500}>
+            <Fade right delay={3000}>
               <img
                 className="cityscape_dublin"
                 width={350}
@@ -86,7 +86,7 @@ function AboutMe() {
                 alt="dublin"
               />
             </Fade>
-            <Fade top delay={2000}>
+            <Fade top delay={2500}>
               <img
                 className="cityscape_balloon"
                 width={40}

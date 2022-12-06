@@ -510,6 +510,50 @@ svg {
     .vertical_line{
         width: 0.2px !important;
     }
+
+    .about_me_history{
+        display: block !important;
+    }
+
+    .about_me_para3{
+        font-size: 1rem !important;
+        top: 36rem !important;
+        width: 75% !important;
+    }
+
+    .about_me_para3::before{
+        font-size: 1rem !important;
+    }
+
+    .about_me_para3::after{
+        font-size: 1rem !important;
+        top: 30.5rem !important;
+    }
+
+    .cityscapes{
+        top: -30rem !important;
+        left: 5rem !important;
+    }
+
+    .cityscape_kochi{
+        width: 14rem !important;
+    }
+
+    .cityscape_dublin {
+        width: 16rem !important;
+        right: 4rem !important;
+        top: 9rem !important;
+    }
+
+    .cityscape_balloon{
+        right: 13rem !important;
+        top: -4rem !important;
+    }
+
+    .about_me_skills{
+        display: block !important;
+    }
+
 }
 
 
