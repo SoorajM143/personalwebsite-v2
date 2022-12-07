@@ -516,7 +516,7 @@ svg {
     }
 
     .about_me_para3{
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
         top: 36rem !important;
         width: 75% !important;
     }
@@ -527,7 +527,7 @@ svg {
 
     .about_me_para3::after{
         font-size: 1rem !important;
-        top: 30.5rem !important;
+        top: 27.5rem !important;
     }
 
     .cityscapes{
@@ -553,6 +553,46 @@ svg {
     .about_me_skills{
         display: block !important;
     }
+
+    .skill_sphere{
+        left: 11.5rem !important;
+    }
+
+   .skill_sphere span img {
+     width: 2rem !important;
+   }
+
+   .sphere_info{
+    font-size: 12px !important;
+   }
+
+   .about_me_skills svg {
+    width: 19px !important;
+   }
+
+   .about_me_skills svg:last-of-type{
+    top:9.5rem !important;
+    right: 12.3rem !important;
+   }
+
+
+   .about_me_para2{
+    left: 3rem !important;
+    font-size: 0.9rem !important;
+    width: 70% !important;
+    top: 14rem !important;
+   }
+
+   .about_me_para2::before{
+    font-size: 1rem !important;
+   }
+
+   .about_me_para2::after{
+    top: 24.5rem !important;
+    font-size: 1rem !important;
+   }
+
+
 
 }
 

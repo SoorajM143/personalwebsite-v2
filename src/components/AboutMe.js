@@ -99,7 +99,10 @@ function AboutMe() {
 
         <div className="about_me_skills">
           <div className="skill_sphere">
-            <Sphere />
+            { window.screen.width <= 512 ?
+              <Sphere radius={180}/> : <Sphere />
+            }
+            
             <GestureIcon />
             <PanToolAltIcon />
             <span className="sphere_info">Interact with sphere</span>

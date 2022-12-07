@@ -65,7 +65,7 @@ const updateItemPosition = (item, sc, depth) => {
   return newItem;
 };
 
-const createItem = (text, index, textsLength, size, itemRef) => {
+const createItem = (text, id, index, textsLength, size, itemRef) => {
   const transformOrigin = '50% 50%';
   const transform = 'translate3d(-50%, -50%, 0) scale(1)';
   const itemStyles = {
@@ -86,7 +86,7 @@ const createItem = (text, index, textsLength, size, itemRef) => {
     transform: transform,
   };
   const itemEl = (
-    <span ref={itemRef} key={index} style={itemStyles}>
+    <span id ={id} ref={itemRef} key={index} style={itemStyles}>
       {text}
     </span>
   );
@@ -136,7 +136,7 @@ function Sphere(props) {
   useEffect(() => {
     setItems(() =>
       texts.map((text, index) =>
-        createItem(text, index, texts.length, size, itemHooks[index])
+        createItem(text, text.props.id, index, texts.length, size, itemHooks[index])
       )
     );
   }, [texts]);
@@ -174,7 +174,7 @@ function Sphere(props) {
 
   const next = () => {
     setItems((items) => {
-      if (lessSpeed == 0) return items;
+      if (lessSpeed === 0) return items;
 
       let a, b;
       if (!keepRollingAfterMouseOut && !active && !firstRender) {
