@@ -542,6 +542,60 @@ svg {
   width: 11rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .about_content h3:first-of-type::after {
+    top: 9rem;
+  }
+  .about_me_main {
+    top: 23rem;
+  }
+  .scroll-animation {
+    top: 30rem;
+  }
+  .about_me_history {
+    top: 60rem;
+  }
+  .about_me_skills {
+    top: 88rem;
+  }
+  .about_me_content > h1 {
+    font-size: 4.2rem;
+  }
+  .cityscape_dublin {
+    right: 16rem;
+  }
+  .cityscape_balloon {
+    top: -2rem;
+    right: 29rem;
+  }
+  .cityscape_kochi {
+    top: 5rem;
+    right: 18rem;
+  }
+  .about_me_para3::after {
+    top: 35rem;
+  }
+  .about_me_panels {
+    top: 120rem;
+  }
+  .about_me_para2 {
+    left: 7rem;
+  }
+  .about_me_para2::after {
+    top: 25.5rem;
+  }
+  .skill_sphere {
+    left: 14rem;
+  }
+  .container-about {
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 17rem 17rem;
+  }
+  .card-about:not(:first-child) {
+    margin-left: 0px;
+  }
+}
 @media screen and (max-width: 512px) {
   .about_me_main {
     top: 8rem !important;
@@ -682,33 +736,33 @@ svg {
     box-shadow: 1rem 1rem 3rem #000;
   }
   .card-about:not(:first-child) {
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
   .walmart-icon {
-    height: 7rem;
-    width: 7rem;
+    height: 7rem !important;
+    width: 7rem !important;
   }
   .wipro-icon {
     height: 6rem;
     width: 7rem;
   }
   .qatar-icon {
-    height: 7rem;
-    width: 9rem;
+    height: 7rem !important;
+    width: 9rem !important;
   }
   .infa-icon {
-    height: 3rem;
-    width: 9rem;
+    height: 3rem !important;
+    width: 9rem !important;
   }
   .card-about:hover {
-    transform: none;
-    transition: none;
+    transform: none !important;
+    transition: none !important;
   }
   .card-about:hover ~ .card-about {
-    transition: none;
+    transition: none !important;
   }
   .about_me_para_1::before {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .about_me_para_1::after {
     font-size: 1rem !important;

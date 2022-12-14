@@ -100,7 +100,7 @@ function AboutMe() {
         <div className="about_me_skills">
           <div className="skill_sphere">
             { window.screen.width <= 512 ?
-              <Sphere radius={170}/> : <Sphere />
+              <Sphere radius={170}/> : window.screen.width <= 1000 ? <Sphere radius={200} /> : <Sphere />
             }
             
             <GestureIcon />
