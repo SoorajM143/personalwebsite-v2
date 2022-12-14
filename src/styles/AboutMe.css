@@ -494,17 +494,6 @@
   height: 100%;
 }
 
-.filledbar-about {
-  position: absolute;
-  top: 0px;
-  z-index: 3;
-  width: 0px;
-  height: 100%;
-  background: rgb(0, 154, 217);
-  background: linear-gradient(90deg, rgb(0, 154, 217) 0%, rgb(217, 147, 0) 65%, rgb(255, 186, 0) 100%);
-  transition: 0.6s ease-out;
-}
-
 .card-about:hover .filledbar-about {
   width: 120px;
   transition: 0.4s ease-out;
@@ -556,6 +545,9 @@ svg {
 @media screen and (max-width: 512px) {
   .about_me_main {
     top: 8rem !important;
+  }
+  .about_me_page {
+    height: 620vh !important;
   }
   .about_me_content > h1 {
     font-size: 2.2rem !important;
@@ -668,5 +660,58 @@ svg {
   .about_me_para2::after {
     top: 24.5rem !important;
     font-size: 1rem !important;
+  }
+  .about_me_panels {
+    display: block !important;
+  }
+  .about_me_para_1 {
+    font-size: 0.9rem !important;
+    width: 70% !important;
+    top: 25rem !important;
+  }
+  .container-about {
+    display: grid;
+    grid-template-columns: 8rem 8rem;
+    grid-template-rows: 9rem 9rem;
+    top: -23rem !important;
+    left: 2rem;
+  }
+  .card-about {
+    width: 150px;
+    height: 144px;
+    box-shadow: 1rem 1rem 3rem #000;
+  }
+  .card-about:not(:first-child) {
+    margin-left: 0px;
+  }
+  .walmart-icon {
+    height: 7rem;
+    width: 7rem;
+  }
+  .wipro-icon {
+    height: 6rem;
+    width: 7rem;
+  }
+  .qatar-icon {
+    height: 7rem;
+    width: 9rem;
+  }
+  .infa-icon {
+    height: 3rem;
+    width: 9rem;
+  }
+  .card-about:hover {
+    transform: none;
+    transition: none;
+  }
+  .card-about:hover ~ .card-about {
+    transition: none;
+  }
+  .about_me_para_1::before {
+    font-size: 1rem;
+  }
+  .about_me_para_1::after {
+    font-size: 1rem !important;
+    top: 27.5rem !important;
   }
 }/*# sourceMappingURL=AboutMe.css.map */
