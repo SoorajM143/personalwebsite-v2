@@ -14,7 +14,7 @@ function MyWork() {
     <section className="panel my-work ">
       <div className="my-works">
         <Fade top>
-          <h1>{textAnimate(myworkHeader)}</h1>
+          <h1>{myworkHeader}</h1>
         </Fade>
         <Slide right>
           <div className="mywork_underline"></div>

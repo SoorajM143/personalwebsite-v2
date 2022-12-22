@@ -31,7 +31,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Main />} />
               <Route exact path="/about-me" element={<AboutMe />} />
-              <Route exact path="/work" component={<MyWork />} />
+              <Route exact path="/work" element={<MyWork />} />
               <Route exact path="/contact" element={<ContactPage />} />
             </Routes>
             <small className="footer">© MMXXII - Built by Sooraj Mohan</small>

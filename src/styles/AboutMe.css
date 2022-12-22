@@ -392,7 +392,7 @@
 .about_me_panels {
   display: flex;
   position: relative;
-  top: 70rem;
+  top: 60rem;
   z-index: 0;
 }
 
