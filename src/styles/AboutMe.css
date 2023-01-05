@@ -654,6 +654,7 @@ svg {
   }
   .about_me_history {
     display: block !important;
+    top: 30rem !important;
   }
   .about_me_para3 {
     font-size: 0.9rem !important;
@@ -673,6 +674,7 @@ svg {
   }
   .cityscape_kochi {
     width: 14rem !important;
+    right: 5rem !important;
   }
   .cityscape_dublin {
     width: 16rem !important;
@@ -681,7 +683,7 @@ svg {
   }
   .cityscape_balloon {
     right: 13rem !important;
-    top: -4rem !important;
+    top: -1rem !important;
   }
   .about_me_skills {
     display: block !important;
