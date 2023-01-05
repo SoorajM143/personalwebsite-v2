@@ -86,9 +86,9 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #9bdabe;
+  background: #9bdabe !important;
   bottom: 2rem;
-  left: 28rem;
+  left: 28rem !important;
 }
 
 .about_content {

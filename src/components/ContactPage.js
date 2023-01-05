@@ -10,6 +10,8 @@ const location = {
   lng: -6.2455611,
 };
 
+document.title = 'Contact - Sooraj'
+
 const Map = lazy(() => import('./map/Map'));
 
 function ContactPage() {

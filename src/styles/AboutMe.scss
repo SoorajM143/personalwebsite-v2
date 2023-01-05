@@ -55,9 +55,9 @@
 
 .about_dot {
     @include dot;
-    background: $about-themecolor;
-    bottom: 2rem;
-    left: 28rem;
+    background: $about-themecolor !important;
+    bottom: 2rem ;
+    left: 28rem !important;
 }
 
 .about_content {

@@ -10,12 +10,20 @@
 .my-work{
     position: relative;
     height: 110vh;
-    top: 30rem;
+    top: 10rem;
+}
+
+.my-works{
+    width: 100%;
 }
 
 .my-work  h1 {
-    @include section;
-   
+    font-size: 4.8rem;
+    position: relative;
+    color: #021963;
+    text-align: justify;
+    font-family: $Font-content;
+    left: 6rem;
 }
 
 .my-work h1::before{
@@ -23,9 +31,21 @@
 }
 
 .my-work h1::after{
-    @include h2TagClose
+    @include h2TagClose;
+    top: 7rem;
 }
 
-.mywork_underline {
+.work_underline{
     @include underline;
+    bottom: 0.5rem;
+    background: $work-themecolor;
+    left: 7rem ;
+    width: 6.5rem ;
+}
+
+.work_dot {
+    @include dot;
+    background: $work-themecolor;
+    bottom: 2rem;
+    left: 21rem;
 }
