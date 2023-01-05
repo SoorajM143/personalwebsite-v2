@@ -10,7 +10,6 @@ const location = {
   lng: -6.2455611,
 };
 
-document.title = 'Contact - Sooraj'
 
 const Map = lazy(() => import('./map/Map'));
 
@@ -18,6 +17,7 @@ function ContactPage() {
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--background-color', '#ffdaa5');
+    document.title = 'Contact - Sooraj'
   }, []);
 
   return (

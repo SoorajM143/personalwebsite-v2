@@ -6,6 +6,7 @@ function Main() {
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--background-color', '#00d084');
+    document.title = 'Home - Sooraj';
   }, []);
   return (
     <>

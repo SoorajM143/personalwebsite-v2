@@ -22,6 +22,7 @@ function AboutMe() {
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--background-color', '#9bdabe');
+    document.title = 'About - Sooraj';
   }, []);
 
   return (

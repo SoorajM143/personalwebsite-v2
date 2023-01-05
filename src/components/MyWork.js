@@ -3,11 +3,11 @@ import { Fade, Slide } from 'react-reveal';
 import '../styles/MyWork.css';
 function MyWork() {
   const myworkHeader = 'Works';
-  document.title = 'My works - Sooraj';
 
   useEffect(() => {
     const root = document.documentElement;
     root.style.setProperty('--background-color', '#fcc5d3');
+    document.title = 'Works - Sooraj';
   }, []);
 
   return (
