@@ -13,7 +13,8 @@
 
 .my-work {
   position: relative;
-  height: 110vh;
+  min-height: 100vh;
+  height: 300vh;
   top: 10rem;
 }
 
@@ -50,7 +51,7 @@
   top: 5rem;
   font-size: 1.25rem;
   position: absolute;
-  top: 7rem;
+  top: 6rem;
 }
 
 .work_underline {
@@ -79,4 +80,98 @@
   background: #F67796;
   bottom: 2rem;
   left: 21rem;
+}
+
+.works-subheader {
+  position: relative;
+  line-height: 1.5;
+  top: 7rem;
+  width: 70%;
+  left: 12rem;
+  font-size: 1.3rem;
+  text-align: left;
+  font-family: "Bitter", serif;
+}
+
+.works-subheader > h3 {
+  color: #021963;
+  margin-bottom: 1.5rem;
+  padding-bottom: 3rem;
+  font-family: "Bitter", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.works-subheader > h3::before {
+  content: "<h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: -1.5rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.works-subheader > h3::after {
+  content: "</h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 7rem;
+}
+
+.scroll-animation-work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 8rem;
+  color: #1C494C;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.scroll-animation-work > span {
+  padding: 5px;
+}
+
+.vertical_line-work {
+  content: "";
+  height: 200px;
+  width: 0.5px;
+  padding-top: 2px;
+  position: relative;
+  display: block;
+  background-color: #1C494C;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(20px);
+  }
 }/*# sourceMappingURL=MyWork.css.map */

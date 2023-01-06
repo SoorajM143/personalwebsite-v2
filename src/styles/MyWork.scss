@@ -9,7 +9,8 @@
 
 .my-work{
     position: relative;
-    height: 110vh;
+    min-height: 100vh;
+    height: 300vh;
     top: 10rem;
 }
 
@@ -32,7 +33,7 @@
 
 .my-work h1::after{
     @include h2TagClose;
-    top: 7rem;
+    top: 6rem;
 }
 
 .work_underline{
@@ -48,4 +49,73 @@
     background: $work-themecolor;
     bottom: 2rem;
     left: 21rem;
+}
+
+.works-subheader{
+    position: relative;
+    line-height: 1.5;
+    top: 7rem;
+    width: 70%;
+    left: 12rem;
+    font-size: 1.3rem;
+    text-align: left;
+    font-family: $Font-content;
+}
+
+.works-subheader > h3 {
+    color: #021963;
+    margin-bottom: 1.5rem;
+    padding-bottom: 3rem;
+    font-family: $Font-content;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.works-subheader > h3::before {
+    @include h3TagOpen
+}
+
+.works-subheader > h3::after {
+    @include h3TagClose;
+    top: 7rem;
+}
+
+.scroll-animation-work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 8rem;
+    color:#1C494C;
+    font-family: $content-fonts;
+    font-weight: 100;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.scroll-animation-work > span {
+    padding: 5px;
+}
+
+.vertical_line-work{
+    content: '';
+    height: 200px;
+    width: 0.5px;
+    padding-top: 2px;
+    position: relative;
+    display: block;
+    background-color: #1C494C;
+ }
+
+ @keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(20px);
+    }
+    
 }

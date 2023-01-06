@@ -49,6 +49,12 @@ const APPLICATION_CONST = {
   CONTACT_CONFIRM_HEADER: 'Awesome!',
   CONTACT_CONFIRM_MESSAGE:
     "Thank you for the message. I'll be in Touch with you soon.",
+  WORK_HEADER: 'Works',
+  WORK_SUBHEADER_1: 'I design and build ',
+  WORK_SUBHEADER_2: 'interactive, accessible website and products ',
+  WORK_SUBHEADER_3: 'that live on the web. ',
+  WORK_SUBHEADER_4: 'Having worked on complex projects for several global clients, I have spend more than half a decade making the internet ',
+  WORK_SUBHEADER_5: 'a little bit brighter. '
 };
 
 export default APPLICATION_CONST;
