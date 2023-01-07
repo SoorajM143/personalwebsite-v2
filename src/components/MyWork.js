@@ -43,6 +43,10 @@ function MyWork() {
               <div className='work-left-img'>
                 <img id='qatar' src={QatarTops} alt='qatar-tops'/>
               </div>
+              <div className='work-left-detail'>
+                <h4>{Constants.WORK_DETAIL_1}</h4>
+                <span className='work-detail-dot'></span>
+              </div>
             </div>
             <div className='work-right'></div>
           </div>

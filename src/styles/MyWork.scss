@@ -163,3 +163,31 @@
     transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1.1);
 }
 
+.work-left-detail{
+    display: flex;
+    width: 40%;
+    position: relative;
+    bottom: 6rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+}
+
+.work-left-detail > h4{
+    font-size: 1.5rem;
+    position: relative;
+    color: #021963;
+    text-align: justify;
+    font-family: $Font-content;
+}
+
+.work-detail-dot{
+    @include dot;
+    background: $work-themecolor;
+    bottom: 0.8rem;
+    left: 9.5rem;
+    height: 8px;
+    width: 8px;
+}
+
