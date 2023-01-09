@@ -5,6 +5,7 @@ import { theme } from './utils/util';
 import '../styles/MyWork.css';
 import Constants from './utils/Constant';
 import QatarTops from '../images/Qatar-tops.PNG';
+import Infa from '../images/infa.PNG';
 
 function MyWork() {
 
@@ -42,21 +43,46 @@ function MyWork() {
           </div>
           <div className='all-works'>
             <div className='work-left'>
+            <Fade left delay={800}>
               <div className='work-left-img'>
                 <img id='qatar' src={QatarTops} alt='qatar-tops'/>
               </div>
+              </Fade>
+              <Fade delay={200}>
               <div className='work-left-detail'>
                 <h4>{Constants.WORK_DETAIL_1}</h4>
                 <span className='work-detail-dot'></span>
+                <h5>{Constants.WORK_SUBDETAIL_1}</h5>
+                
                 <p>{Constants.WORK_DETAIL_2}</p>
                 <ThemeProvider theme={theme}>
                   <Button href='https://www.qatarairways.com/en-gr/press-releases/2016/May/pressrelease_fleetmanagementsystem.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit --{'>'}
+                    Visit {'→'}
                   </Button>
                 </ThemeProvider>
               </div>
+              </Fade>
             </div>
-            <div className='work-right'></div>
+            <div className='work-left reverse'>
+              <Fade right delay={800}>
+            <div className='work-left-img'>
+                <img id='infa' src={Infa} alt='infa'/>
+              </div>
+              </Fade>
+              <Fade delay={200}>
+            <div className='work-left-detail'>
+              <h4>{Constants.WORK_DETAIL_3}</h4>
+              <span className='work-detail-dot-infa'></span>
+              <h5>{Constants.WORK_SUBDETAIL_2}</h5>
+              <p>{Constants.WORK_DETAIL_4}</p>
+              <ThemeProvider theme={theme}>
+                  <Button href='https://www.informatica.com/products/data-governance/cloud-data-marketplace.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
+                    Visit {'→'}
+                  </Button>
+                </ThemeProvider>
+            </div>
+            </Fade>
+            </div>
           </div>
     </section>
   );

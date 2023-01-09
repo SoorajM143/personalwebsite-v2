@@ -190,6 +190,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 14rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .work-left-img {
@@ -224,7 +229,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #f2f1f1;
+  background-color: #f6f5f5;
 }
 
 .work-left-detail > h4 {
@@ -232,6 +237,14 @@
   position: relative;
   color: #021963;
   text-align: justify;
+  font-family: "Bitter", serif;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail h5 {
+  position: relative;
+  bottom: 1rem;
+  color: #021963;
   font-family: "Bitter", serif;
   margin-bottom: 2rem;
 }
@@ -267,4 +280,20 @@
 .work-left-detail a:hover {
   transition: all 0.3s ease-in-out;
   transform: translateY(-6px);
+}
+
+.work-detail-dot-infa {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background: #F67796;
+  bottom: 2.8rem;
+  left: 8.7rem;
+  height: 8px;
+  width: 8px;
 }/*# sourceMappingURL=MyWork.css.map */
