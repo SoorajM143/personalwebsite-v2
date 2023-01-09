@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { Fade, Slide } from 'react-reveal';
+import { Button, ThemeProvider } from '@mui/material';
+import { theme } from './utils/util';
 import '../styles/MyWork.css';
 import Constants from './utils/Constant';
 import QatarTops from '../images/Qatar-tops.PNG';
@@ -46,6 +48,12 @@ function MyWork() {
               <div className='work-left-detail'>
                 <h4>{Constants.WORK_DETAIL_1}</h4>
                 <span className='work-detail-dot'></span>
+                <p>{Constants.WORK_DETAIL_2}</p>
+                <ThemeProvider theme={theme}>
+                  <Button href='https://www.qatarairways.com/en-gr/press-releases/2016/May/pressrelease_fleetmanagementsystem.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
+                    Visit --{'>'}
+                  </Button>
+                </ThemeProvider>
               </div>
             </div>
             <div className='work-right'></div>

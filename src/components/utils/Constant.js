@@ -56,6 +56,7 @@ const APPLICATION_CONST = {
   WORK_SUBHEADER_4: 'Having worked on complex projects for several global clients, I have spend more than half a decade making the internet ',
   WORK_SUBHEADER_5: 'a little bit brighter. ',
   WORK_DETAIL_1: 'TOPS - Fleet Management',
+  WORK_DETAIL_2: 'Flight Watch(part of TOPS) consolidates all flight data into a single graphical source for ease of tracking, communicating and managing more than 500 daily flights to 150 destinations across 6 continents. '
 };
 
 export default APPLICATION_CONST;

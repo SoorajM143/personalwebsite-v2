@@ -20,8 +20,8 @@ import ReactIcon from '../../images/react.svg';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#ff5708',
-      darker: '#ff5708',
+      main: '#F67796',
+      darker: '#F67796',
     },
     neutral: {
       main: '#ff5708',
