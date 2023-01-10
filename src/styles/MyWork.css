@@ -175,13 +175,56 @@
     transform: translateY(20px);
   }
 }
+.all-works-header {
+  color: #021963;
+  font-family: "Bitter", serif;
+  text-align: left;
+  position: relative;
+  top: 20rem;
+  left: 2rem;
+  width: 50%;
+}
+
+.all-works-header > h2 {
+  font-size: 2rem;
+}
+
+.all-work-underline {
+  content: "";
+  position: relative;
+  left: 12rem;
+  height: 4px;
+  display: block;
+  margin-top: 1px;
+  width: 3.5rem;
+  background-color: #F67796;
+  left: 0rem;
+  width: 5.5rem;
+}
+
+.all-work-dot {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background-color: #F67796;
+  left: 15.2rem;
+  height: 8px;
+  width: 8px;
+  bottom: 1.3rem;
+}
+
 .all-works {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 20rem;
+  top: 33rem;
   transition: all 0.6s ease;
 }
 

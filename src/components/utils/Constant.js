@@ -50,6 +50,7 @@ const APPLICATION_CONST = {
   CONTACT_CONFIRM_MESSAGE:
     "Thank you for the message. I'll be in Touch with you soon.",
   WORK_HEADER: 'Works',
+  WORK_FEATURED: 'Featured Works',
   WORK_SUBHEADER_1: 'I design and build ',
   WORK_SUBHEADER_2: 'interactive, accessible website and products ',
   WORK_SUBHEADER_3: 'that live on the web. ',
@@ -62,7 +63,8 @@ const APPLICATION_CONST = {
   WORK_SUBDETAIL_2: 'Informatica',
   WORK_DETAIL_4: "Industry’s only cloud-native, intelligent,enterprise-scale governed data marketplace. CDMP allows a data owner to organize data intocategories, and data consumers to browse and shop for data that is relevant to their topic ordomain of interest",
   WORK_DETAIL_5: "Walmart Mexico",
-  WORK_SUBDETAIL_3: "Walmart/Wipro"
+  WORK_SUBDETAIL_3: "Walmart/Wipro",
+  WORK_DETAIL_6: 'E-commerce website for the Mexico and Central American division of Walmart'
 };
 
 export default APPLICATION_CONST;

@@ -41,7 +41,16 @@ function MyWork() {
       <div className="scroll-animation-work">
             <span>Scroll Down</span>
             <div className="vertical_line-work"></div>
-          </div>
+      </div>
+      <div className='all-works-header'>
+      <Fade top delay={300}>
+        <h2>{Constants.WORK_FEATURED}</h2>
+        </Fade>
+        <Slide right delay={200}>
+        <div className='all-work-underline'></div>
+        <span className='all-work-dot'></span>
+        </Slide>
+      </div>
           <div className='all-works'>
             <div className='work-left'>
             <Fade left delay={800}>
@@ -95,7 +104,7 @@ function MyWork() {
               <h4>{Constants.WORK_DETAIL_5}</h4>
               <span className='work-detail-dot-walmart'></span>
               <h5>{Constants.WORK_SUBDETAIL_3}</h5>
-              <p>{Constants.WORK_DETAIL_4}</p>
+              <p>{Constants.WORK_DETAIL_6}</p>
               <ThemeProvider theme={theme}>
                   <Button href='https://super.walmart.com.mx/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
                     Visit {'→'}

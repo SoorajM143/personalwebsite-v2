@@ -120,6 +120,36 @@
     
 }
 
+.all-works-header{
+    color: #021963;
+    font-family: $Font-content;
+    text-align: left;
+    position: relative;
+    top: 20rem;
+    left: 2rem;
+    width: 50%;
+}
+
+.all-works-header > h2 {
+    font-size: 2rem;;
+}
+
+.all-work-underline{
+    @include underline;
+    background-color: $work-themecolor;
+    left: 0rem;
+    width: 5.5rem;
+}
+
+.all-work-dot{
+    @include dot;
+    background-color: $work-themecolor;
+    left: 15.2rem;
+    height: 8px;
+    width: 8px;
+    bottom: 1.3rem;
+}
+
 
 .all-works{
     display: flex;
@@ -127,7 +157,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 20rem;
+    top: 33rem;
     transition: all .6s ease;
 
 }
