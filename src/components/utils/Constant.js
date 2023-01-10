@@ -60,7 +60,9 @@ const APPLICATION_CONST = {
   WORK_DETAIL_2: 'Flight Watch(part of TOPS) consolidates all flight data into a single graphical source for ease of tracking, communicating and managing more than 500 daily flights to 150 destinations across 6 continents. ',
   WORK_DETAIL_3: 'Cloud Data Marketplace',
   WORK_SUBDETAIL_2: 'Informatica',
-  WORK_DETAIL_4: "Industry’s only cloud-native, intelligent,enterprise-scale governed data marketplace. CDMP allows a data owner to organize data intocategories, and data consumers to browse and shop for data that is relevant to their topic ordomain of interest"
+  WORK_DETAIL_4: "Industry’s only cloud-native, intelligent,enterprise-scale governed data marketplace. CDMP allows a data owner to organize data intocategories, and data consumers to browse and shop for data that is relevant to their topic ordomain of interest",
+  WORK_DETAIL_5: "Walmart Mexico",
+  WORK_SUBDETAIL_3: "Walmart/Wipro"
 };
 
 export default APPLICATION_CONST;

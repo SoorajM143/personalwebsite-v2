@@ -296,4 +296,20 @@
   left: 8.7rem;
   height: 8px;
   width: 8px;
+}
+
+.work-detail-dot-walmart {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background-color: #F67796;
+  bottom: 2.8rem;
+  left: 6.2rem;
+  height: 8px;
+  width: 8px;
 }/*# sourceMappingURL=MyWork.css.map */

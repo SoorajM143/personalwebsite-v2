@@ -6,6 +6,7 @@ import '../styles/MyWork.css';
 import Constants from './utils/Constant';
 import QatarTops from '../images/Qatar-tops.PNG';
 import Infa from '../images/infa.PNG';
+import Walmart from '../images/Walmart-mexico.PNG'
 
 function MyWork() {
 
@@ -77,6 +78,26 @@ function MyWork() {
               <p>{Constants.WORK_DETAIL_4}</p>
               <ThemeProvider theme={theme}>
                   <Button href='https://www.informatica.com/products/data-governance/cloud-data-marketplace.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
+                    Visit {'→'}
+                  </Button>
+                </ThemeProvider>
+            </div>
+            </Fade>
+            </div>
+            <div className='work-left'>
+            <Fade left delay={800}>
+              <div className='work-left-img'>
+              <img id='walmart' src={Walmart} alt='walmart'/>
+              </div>
+              </Fade>
+              <Fade delay={200}>
+            <div className='work-left-detail'>
+              <h4>{Constants.WORK_DETAIL_5}</h4>
+              <span className='work-detail-dot-walmart'></span>
+              <h5>{Constants.WORK_SUBDETAIL_3}</h5>
+              <p>{Constants.WORK_DETAIL_4}</p>
+              <ThemeProvider theme={theme}>
+                  <Button href='https://super.walmart.com.mx/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
                     Visit {'→'}
                   </Button>
                 </ThemeProvider>

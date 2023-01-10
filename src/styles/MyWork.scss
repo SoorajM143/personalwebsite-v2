@@ -231,3 +231,12 @@
     width: 8px;
 }
 
+.work-detail-dot-walmart{
+    @include dot;
+    background-color: $work-themecolor;
+    bottom: 2.8rem;
+    left: 6.2rem;
+    height: 8px;
+    width: 8px;
+}
+
