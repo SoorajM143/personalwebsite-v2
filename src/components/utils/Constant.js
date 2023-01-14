@@ -51,6 +51,7 @@ const APPLICATION_CONST = {
     "Thank you for the message. I'll be in Touch with you soon.",
   WORK_HEADER: 'Works',
   WORK_FEATURED: 'Featured Works',
+  WORK_OTHER: 'Other Works',
   WORK_SUBHEADER_1: 'I design and build ',
   WORK_SUBHEADER_2: 'interactive, accessible website and products ',
   WORK_SUBHEADER_3: 'that live on the web. ',
@@ -64,7 +65,17 @@ const APPLICATION_CONST = {
   WORK_DETAIL_4: "Industry’s only cloud-native, intelligent,enterprise-scale governed data marketplace. CDMP allows a data owner to organize data intocategories, and data consumers to browse and shop for data that is relevant to their topic ordomain of interest",
   WORK_DETAIL_5: "Walmart Mexico",
   WORK_SUBDETAIL_3: "Walmart/Wipro",
-  WORK_DETAIL_6: 'E-commerce website for the Mexico and Central American division of Walmart'
+  WORK_DETAIL_6: 'E-commerce website for the Mexico and Central American division of Walmart. Maintained and devloped by Wipro Technologies.',
+  WORK_TECH_JS: 'Javascript',
+  WORK_TECH_MAP: 'Google Maps',
+  WORK_TECH_REACT: 'React',
+  WORK_TECH_TS: 'Typescript',
+  WORK_TECH_OL: 'Openlayers',
+  WORK_TECH_JAVA: 'Java',
+  WORK_TECH_PG: 'Postgres',
+  WORK_OTHER_1: 'Personal Portfolio- v1',
+  WORK_OTHER_DETAIL_1: 'The first iteration of Personal Portfolio website created from scratch using React '
+
 };
 
 export default APPLICATION_CONST;

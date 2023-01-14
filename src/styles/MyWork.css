@@ -14,7 +14,7 @@
 .my-work {
   position: relative;
   min-height: 100vh;
-  height: 500vh;
+  height: 700vh;
   top: 10rem;
 }
 
@@ -185,6 +185,20 @@
   width: 50%;
 }
 
+.other-works-header {
+  color: #021963;
+  font-family: "Bitter", serif;
+  text-align: left;
+  position: relative;
+  top: 35rem;
+  left: 2rem;
+  width: 50%;
+}
+
+.other-works-header > h2 {
+  font-size: 2rem;
+}
+
 .all-works-header > h2 {
   font-size: 2rem;
 }
@@ -200,6 +214,22 @@
   background-color: #F67796;
   left: 0rem;
   width: 5.5rem;
+}
+
+.other-work-dot {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background-color: #F67796;
+  left: 12.2rem;
+  height: 8px;
+  width: 8px;
+  bottom: 1.3rem;
 }
 
 .all-work-dot {
@@ -353,6 +383,50 @@
   background-color: #F67796;
   bottom: 2.8rem;
   left: 6.2rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-tech {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  right: 20px;
+  margin: 1rem 0 2rem;
+}
+
+.work-tech li {
+  color: #021963;
+  font-family: "Bitter", serif;
+  white-space: nowrap;
+  margin: 0 0 5px 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.other-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 40rem;
+  transition: all 0.6s ease;
+}
+
+.work-other-dot {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background-color: #F67796;
+  left: 8rem;
+  bottom: 2.9rem;
   height: 8px;
   width: 8px;
 }/*# sourceMappingURL=MyWork.css.map */
