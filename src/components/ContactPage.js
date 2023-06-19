@@ -19,6 +19,7 @@ function ContactPage() {
     root.style.setProperty('--background-color', '#ffdaa5');
     document.title = 'Contact - Sooraj'
   }, []);
+  
 
   return (
     <>

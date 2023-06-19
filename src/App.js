@@ -9,6 +9,7 @@ import AboutMe from './components/AboutMe';
 import ContactPage from './components/ContactPage';
 import PreLoader from './components/PreLoader';
 import Contact from './components/Contact';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
@@ -19,10 +20,12 @@ function App() {
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
+  
 
   return (
     <>
       <Router>
+        <ScrollToTop />
         <PreLoader load={isLoading} />
         <div className="App">
           <div className="page-wrap">
