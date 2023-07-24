@@ -21,7 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 function AboutMe() {
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty('--background-color', '#9bdabe');
+    root.style.setProperty('--background-color', '#88F3CC');
     document.title = 'About - Sooraj';
   }, []);
 

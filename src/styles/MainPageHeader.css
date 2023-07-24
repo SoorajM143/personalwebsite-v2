@@ -101,20 +101,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  bottom: 56rem;
-  right: 20rem;
+  bottom: 75rem;
   color: #919795;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   font-size: 14px;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .vertical_line-main {
@@ -125,15 +120,6 @@
   position: relative;
   display: block;
   background-color: #46464a;
-}
-
-@-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(20px);
-  }
 }
 
 @keyframes bounce {

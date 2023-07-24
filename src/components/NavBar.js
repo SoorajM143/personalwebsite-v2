@@ -6,7 +6,7 @@ import '../styles/NavBar.css';
 
 function NavBar() {
   const [sidemenu, setSideMenu] = useState(false);
-  const [navTheme, setNavTheme] = useState('#00d084');
+  const [navTheme, setNavTheme] = useState('#88F3CC');
 
   const MenuOpen = (color) => {
     setSideMenu(!sidemenu);

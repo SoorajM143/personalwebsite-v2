@@ -25,7 +25,7 @@
 .my-work h1 {
   font-size: 4.8rem;
   position: relative;
-  color: #021963;
+  color: #024463;
   text-align: justify;
   font-family: "Bitter", serif;
   left: 6rem;
@@ -63,7 +63,7 @@
   margin-top: 1px;
   width: 3.5rem;
   bottom: 0.5rem;
-  background: #F67796;
+  background: #D25380;
   left: 7rem;
   width: 6.5rem;
 }
@@ -77,7 +77,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #F67796;
+  background: #D25380;
   bottom: 2rem;
   left: 21rem;
 }
@@ -94,7 +94,7 @@
 }
 
 .works-subheader > h3 {
-  color: #021963;
+  color: #024463;
   margin-bottom: 1.5rem;
   padding-bottom: 3rem;
   font-family: "Bitter", serif;
@@ -134,14 +134,10 @@
   color: #1C494C;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .scroll-animation-work > span {
@@ -158,15 +154,6 @@
   background-color: #1C494C;
 }
 
-@-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(20px);
-  }
-}
-
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -176,7 +163,7 @@
   }
 }
 .all-works-header {
-  color: #021963;
+  color: #024463;
   font-family: "Bitter", serif;
   text-align: left;
   position: relative;
@@ -186,7 +173,7 @@
 }
 
 .other-works-header {
-  color: #021963;
+  color: #024463;
   font-family: "Bitter", serif;
   text-align: left;
   position: relative;
@@ -211,7 +198,7 @@
   display: block;
   margin-top: 1px;
   width: 3.5rem;
-  background-color: #F67796;
+  background-color: #D25380;
   left: 0rem;
   width: 5.5rem;
 }
@@ -225,7 +212,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #F67796;
+  background-color: #D25380;
   left: 12.2rem;
   height: 8px;
   width: 8px;
@@ -241,7 +228,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #F67796;
+  background-color: #D25380;
   left: 15.2rem;
   height: 8px;
   width: 8px;
@@ -280,7 +267,7 @@
 .work-left-img > img {
   width: 600px;
   border-radius: 15px;
-  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42), 0 35px 75px -35px hsla(225deg, 2%, 62%, 0.08);
+  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42), 0 35px 75px -35px hsla(225, 2%, 62%, 0.08);
   filter: blur(0);
   opacity: 1;
   transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
@@ -302,13 +289,13 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #f6f5f5;
+  background-color: #ddeff5;
 }
 
 .work-left-detail > h4 {
   font-size: 1.5rem;
   position: relative;
-  color: #021963;
+  color: #024463;
   text-align: justify;
   font-family: "Bitter", serif;
   margin-bottom: 2rem;
@@ -317,7 +304,7 @@
 .work-left-detail h5 {
   position: relative;
   bottom: 1rem;
-  color: #021963;
+  color: #024463;
   font-family: "Bitter", serif;
   margin-bottom: 2rem;
 }
@@ -331,7 +318,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #F67796;
+  background: #D25380;
   bottom: 2.8rem;
   left: 9.5rem;
   height: 8px;
@@ -339,7 +326,7 @@
 }
 
 .work-left-detail > p {
-  color: #021963;
+  color: #024463;
   font-family: "Bitter", serif;
   text-align: center;
   margin: 0 0 3rem;
@@ -364,7 +351,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #F67796;
+  background: #D25380;
   bottom: 2.8rem;
   left: 8.7rem;
   height: 8px;
@@ -380,7 +367,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #F67796;
+  background-color: #D25380;
   bottom: 2.8rem;
   left: 6.2rem;
   height: 8px;
@@ -397,7 +384,7 @@
 }
 
 .work-tech li {
-  color: #021963;
+  color: #024463;
   font-family: "Bitter", serif;
   white-space: nowrap;
   margin: 0 0 5px 20px;
@@ -424,7 +411,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #F67796;
+  background-color: #D25380;
   left: 8rem;
   bottom: 2.9rem;
   height: 8px;

@@ -16,8 +16,7 @@
   left: 1.5rem;
   background-color: #fff;
   width: 80px;
-  -webkit-animation: animateErrorIcon 0.5s;
-          animation: animateErrorIcon 0.5s;
+  animation: animateErrorIcon 0.5s;
 }
 .sa-error:after, .sa-error:before {
   background: #fff;
@@ -42,8 +41,7 @@
   top: -11px;
   transform-origin: 0 60px;
   transform: rotate(-45deg);
-  -webkit-animation: rotatePlaceholder 4.25s ease-in;
-          animation: rotatePlaceholder 4.25s ease-in;
+  animation: rotatePlaceholder 4.25s ease-in;
 }
 .sa-error-x {
   display: block;
@@ -84,23 +82,12 @@
 .sa-error-left {
   left: 17px;
   transform: rotate(45deg);
-  -webkit-animation: animateXLeft 0.75s;
-          animation: animateXLeft 0.75s;
+  animation: animateXLeft 0.75s;
 }
 .sa-error-right {
   right: 16px;
   transform: rotate(-45deg);
-  -webkit-animation: animateXRight 0.75s;
-          animation: animateXRight 0.75s;
-}
-
-@-webkit-keyframes rotatePlaceholder {
-  0%, 5% {
-    transform: rotate(-45deg);
-  }
-  100%, 12% {
-    transform: rotate(-405deg);
-  }
+  animation: animateXRight 0.75s;
 }
 
 @keyframes rotatePlaceholder {
@@ -111,16 +98,6 @@
     transform: rotate(-405deg);
   }
 }
-@-webkit-keyframes animateErrorIcon {
-  0% {
-    transform: rotateX(100deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(0deg);
-    opacity: 1;
-  }
-}
 @keyframes animateErrorIcon {
   0% {
     transform: rotateX(100deg);
@@ -129,23 +106,6 @@
   100% {
     transform: rotateX(0deg);
     opacity: 1;
-  }
-}
-@-webkit-keyframes animateXLeft {
-  0%, 65% {
-    left: 82px;
-    top: 95px;
-    width: 0;
-  }
-  84% {
-    left: 14px;
-    top: 33px;
-    width: 47px;
-  }
-  100% {
-    left: 17px;
-    top: 37px;
-    width: 47px;
   }
 }
 @keyframes animateXLeft {
@@ -161,23 +121,6 @@
   }
   100% {
     left: 17px;
-    top: 37px;
-    width: 47px;
-  }
-}
-@-webkit-keyframes animateXRight {
-  0%, 65% {
-    right: 82px;
-    top: 95px;
-    width: 0;
-  }
-  84% {
-    right: 14px;
-    top: 33px;
-    width: 47px;
-  }
-  100% {
-    right: 16px;
     top: 37px;
     width: 47px;
   }

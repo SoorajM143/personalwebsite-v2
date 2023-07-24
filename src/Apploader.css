@@ -21,25 +21,7 @@
   background-color: black;
   left: 15%;
   transform-origin: 50%;
-  -webkit-animation: circle 0.5s alternate infinite ease;
-          animation: circle 0.5s alternate infinite ease;
-}
-
-@-webkit-keyframes circle {
-  0% {
-    top: 60px;
-    height: 5px;
-    border-radius: 50px 50px 25px 25px;
-    transform: scaleX(1.7);
-  }
-  40% {
-    height: 20px;
-    border-radius: 50%;
-    transform: scaleX(1);
-  }
-  100% {
-    top: 0%;
-  }
+  animation: circle 0.5s alternate infinite ease;
 }
 
 @keyframes circle {
@@ -60,15 +42,13 @@
 }
 .circle:nth-child(2) {
   left: 45%;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
   left: auto;
   right: 15%;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .shadow {
@@ -82,22 +62,7 @@
   z-index: -1;
   left: 15%;
   filter: blur(1px);
-  -webkit-animation: shadow 0.5s alternate infinite ease;
-          animation: shadow 0.5s alternate infinite ease;
-}
-
-@-webkit-keyframes shadow {
-  0% {
-    transform: scaleX(1.5);
-  }
-  40% {
-    transform: scaleX(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scaleX(0.2);
-    opacity: 0.4;
-  }
+  animation: shadow 0.5s alternate infinite ease;
 }
 
 @keyframes shadow {
@@ -115,15 +80,13 @@
 }
 .shadow:nth-child(4) {
   left: 45%;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .shadow:nth-child(5) {
   left: auto;
   right: 15%;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .mainPagebg {
@@ -165,25 +128,7 @@
   border-radius: 50%;
   background-color: black;
   transform-origin: 50%;
-  -webkit-animation: bounce 500ms alternate infinite ease;
-          animation: bounce 500ms alternate infinite ease;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    top: 30px;
-    height: 5px;
-    border-radius: 60px 60px 20px 20px;
-    transform: scaleX(2);
-  }
-  35% {
-    height: 20px;
-    border-radius: 50%;
-    transform: scaleX(1);
-  }
-  100% {
-    top: 0;
-  }
+  animation: bounce 500ms alternate infinite ease;
 }
 
 @keyframes bounce {

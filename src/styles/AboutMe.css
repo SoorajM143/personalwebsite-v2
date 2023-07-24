@@ -60,7 +60,7 @@
   margin-top: 1px;
   width: 3.5rem;
   bottom: 0.5rem;
-  background: #9bdabe;
+  background: #88F3CC;
   left: 6rem;
   width: 10.5rem;
 }
@@ -86,7 +86,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #9bdabe !important;
+  background: #88F3CC !important;
   bottom: 2rem;
   left: 28rem !important;
 }
@@ -348,14 +348,10 @@
   color: #1C494C;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .scroll-animation > span {
@@ -370,15 +366,6 @@
   position: relative;
   display: block;
   background-color: #1C494C;
-}
-
-@-webkit-keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(20px);
-  }
 }
 
 @keyframes bounce {

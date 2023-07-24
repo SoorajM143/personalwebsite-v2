@@ -10,12 +10,13 @@ import Walmart from '../images/Walmart-mexico.PNG'
 import Portfolio from '../images/portfolio.PNG';
 import Mood from '../images/Mood.PNG';
 import Spotify from '../images/spotify.PNG';
+import MDM from '../images/mdm.png'
 
 function MyWork() {
 
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty('--background-color', '#fcc5d3');
+    root.style.setProperty('--background-color', '#FCC8D1');
     document.title = 'Works - Sooraj';
   }, []);
 
@@ -108,6 +109,31 @@ function MyWork() {
             </Fade>
             </div>
             <div className='work-left'>
+              <Fade right delay={800}>
+            <div className='work-left-img'>
+                <img id='infa' src={MDM} alt='infa'/>
+              </div>
+              </Fade>
+              <Fade delay={200}>
+            <div className='work-left-detail'>
+              <h4>{Constants.WORK_DETAIL_7}</h4>
+              <span className='work-detail-dot-infa'></span>
+              <h5>{Constants.WORK_SUBDETAIL_2}</h5>
+              <p>{Constants.WORK_DETAIL_4}</p>
+              <ul className='work-tech'>
+                  <li>{Constants.WORK_TECH_REACT}</li>
+                 <li>{Constants.WORK_TECH_TS}</li>
+                 <li>{Constants.WORK_TECH_JAVA}</li>
+                </ul>
+              <ThemeProvider theme={theme}>
+                  <Button href='https://www.informatica.com/products/master-data-management.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
+                    Visit {'→'}
+                  </Button>
+                </ThemeProvider>
+            </div>
+            </Fade>
+            </div>
+            <div className='work-left reverse'>
             <Fade left delay={800}>
               <div className='work-left-img'>
               <img id='walmart' src={Walmart} alt='walmart'/>

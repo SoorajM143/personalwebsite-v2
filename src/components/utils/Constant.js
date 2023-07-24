@@ -66,6 +66,7 @@ const APPLICATION_CONST = {
   WORK_DETAIL_5: "Walmart Mexico",
   WORK_SUBDETAIL_3: "Walmart/Wipro",
   WORK_DETAIL_6: 'E-commerce website for the Mexico and Central American division of Walmart. Maintained and devloped by Wipro Technologies.',
+  WORK_DETAIL_7: 'Cloud Master Data Management',
   WORK_TECH_JS: 'Javascript',
   WORK_TECH_MAP: 'Google Maps',
   WORK_TECH_REACT: 'React',
