@@ -78,17 +78,37 @@
 .mainPage-message {
   position: relative;
   top: 6rem;
-  left: 9rem;
+  left: 10%;
   line-height: 1.5;
-  width: 50%;
+  width: 80%;
+  text-align: left;
+}
+
+.mainPage-message > * {
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #1C494C;
+}
+
+.mainPage-message > div {
+  padding: 3px;
+  text-align: center;
+  display: flex;
+}
+
+.mainPage-message span:first-of-type {
+  position: relative;
+  margin: 10px;
+  width: 50%;
   text-align: left;
 }
 
-.mainPage-message::before {
+.mainPage-message button {
+  border-radius: 6px;
+}
+
+.mainPage-message span::before {
   content: "<p>";
   font-family: "La Belle Aurore", cursive;
   font-weight: 100;
@@ -101,7 +121,7 @@
   left: -2rem;
 }
 
-.mainPage-message::after {
+.mainPage-message span::after {
   content: "</p>";
   font-family: "La Belle Aurore", cursive;
   font-weight: 100;

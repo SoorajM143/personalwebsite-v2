@@ -47,9 +47,8 @@ const APPLICATION_CONST = {
   MAIN_PAGE_HEADER_TEXT_6: 'based in ',
   MAIN_PAGE_HEADER_TEXT_7: 'Dublin, Ireland',
   MAIN_PAGE_CONTENT_HEADRER: 'Lets Talk',
-  MAIN_PAGE_MESSAGE_1: "I'm always open to discussing new ideas and opportunities ",
-  MAIN_PAGE_MESSAGE_2: 'Interested in working together? ',
-  MAIN_PAGE_MESSAGE_3: 'We should queue up for a time to chat.',
+  MAIN_PAGE_MESSAGE_2: "I'm always open to discussing new ideas and opportunities. We should queue up for a time to chat.",
+  MAIN_PAGE_MESSAGE_1: 'Interested in working together? ',
   CONTACT_CONFIRM_HEADER: 'Awesome!',
   CONTACT_CONFIRM_MESSAGE:
     "Thank you for the message. I'll be in Touch with you soon.",

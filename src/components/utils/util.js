@@ -30,6 +30,19 @@ export const theme = createTheme({
   },
 });
 
+export const Maintheme = createTheme({
+  palette: {
+    primary: {
+      main: '#2986cc',
+      darker: '#2986cc',
+    },
+    neutral: {
+      main: '#ff5708',
+      contrastText: '#fff',
+    },
+  },
+});
+
 export const textAnimate = (text) => {
   return text.split(/(\s+)/).map((letter) => {
     return letter !== ' '

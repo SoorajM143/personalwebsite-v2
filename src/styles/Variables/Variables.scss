@@ -120,4 +120,24 @@ content: '</h2>';
     position: absolute;
 }
 
+@mixin divOpen {
+    content: '<div>';
+    font-family: $tags-Font;
+    color: $htmlcolortags;
+    left: -4rem;
+    top: 5rem;
+    font-size: 1.25rem;
+    position: absolute;
+}
+
+@mixin divClose {
+    content: '</div>';
+    font-family: $tags-Font;
+    color: $htmlcolortags;
+    left: -4rem;
+    top: 5rem;
+    font-size: 1.25rem;
+    position: absolute;
+}
+
 

@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { Fade, Slide } from 'react-reveal';
+import { Button, ThemeProvider } from '@mui/material';
+import { Maintheme } from './utils/util';
 import MainPageHeader from './MainPageHeader';
 import '../styles/MainPage.css';
 import Constant from './utils/Constant';
@@ -25,7 +27,14 @@ function Main() {
           <div className="main_underline"></div>
           </Slide>
           <div className='mainPage-message'>
-            <span>{Constant.MAIN_PAGE_MESSAGE_1}</span>
+            <div>
+            <span>{Constant.MAIN_PAGE_MESSAGE_2}</span> 
+             <a>
+              <span></span>
+             </a>
+           </div>
+              
+             
           </div>
         </div>
       </div>
