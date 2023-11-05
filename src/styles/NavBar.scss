@@ -1,4 +1,6 @@
+@use 'sass:math';
 @import "../styles/Variables/Variables.scss";
+
 
 *,
 *::before,
@@ -34,11 +36,11 @@ $nav--theme: var(--background-color);
     }
 
     &__line-left {
-        width: $size / 2;
+        width: math.div($size ,2);
     }
 
     &__line-right {
-        width: $size / 2;
+        width: math.div($size , 2);
         float: right;
     }
 
@@ -91,7 +93,7 @@ visibility: visible;
 
         @for $i from 0 through 4 {
             &:nth-child(#{$i}) {
-                transition-delay: $transition--length * $i / 8 + .9 + s;
+                transition-delay: math.div($transition--length * $i,8) + .9 + s;
                 text-decoration: none;
                 color:black
             }
@@ -103,12 +105,26 @@ visibility: visible;
             transition: opacity .3s ease, transform .3s ease, color .3s ease;
             @for $i from 0 through 1 {
                     &:nth-child(#{$i}) {
-                        transition-delay: $transition--length * $i / 8 + .5 + s;
+                        transition-delay: math.div($transition--length * $i, 8) + .5 + s;
                         text-decoration: none;
                         color: black;
                     }
                 }
     }
+    & .desc_link_item {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: opacity 1.3s ease, transform 1.3s ease, color 1.3s ease;
+
+        @for $i from 0 through 4 {
+            &:nth-child(#{$i}) {
+                transition-delay: math.div($transition--length * $i,8) + .9 + s;
+                text-decoration: none;
+                color:black
+            }
+        }
+    }
+
     }
 
     &:before,
@@ -210,6 +226,7 @@ visibility: visible;
 position: relative;
 text-align: left;
 bottom: 5rem;
+left: 2rem;
 margin: 0 0 30px;
 padding-left: 100px;
 z-index: 1;
@@ -217,6 +234,16 @@ list-style: none;
 opacity: 0;
 transform: translate(0%, 100%);
     transition: opacity .2s ease, transform .3s ease;
+}
+
+.social-links::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 80px;
+    background-color: #7f00e0 ;
+    top:63%;
+    left: 0;
 }
 
 .social-links li {
@@ -274,6 +301,21 @@ transform: translate(0%, 100%);
     height: 4rem;
     width: 10rem;;
    }
+}
+
+.nav__list_desc{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 40rem;
+}
+
+.desc_link_item{
+    font-size: 1.2rem;
+    width: 80%;
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: opacity .2s ease, transform .3s ease;
 }
 
 

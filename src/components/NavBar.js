@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { LinkedIn, GitHub, Email } from '@mui/icons-material';
+import { LinkedIn, GitHub, Email, MarkunreadTwoTone, RssFeedTwoTone } from '@mui/icons-material';
 
 import '../styles/NavBar.css';
 
@@ -46,7 +46,7 @@ function NavBar() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <Email />
+                <MarkunreadTwoTone />
               </a>
             </li>
             <li>
@@ -60,6 +60,7 @@ function NavBar() {
             </li>
           </ul>
           <ul className="nav__list">
+            <li className='nav__list_desc'>
             <Link
               to="/"
               onClick={() => MenuOpen('#00d084')}
@@ -67,6 +68,9 @@ function NavBar() {
             >
               Home
             </Link>
+            <span id='desc_home' className='desc_link_item'>Back to the home page</span>
+            </li>
+            <li className='nav__list_desc'>
             <Link
               to="/about-me"
               onClick={() => MenuOpen('#9bdabe')}
@@ -74,6 +78,9 @@ function NavBar() {
             >
               About
             </Link>
+            <span id='desc_about' className='desc_link_item'>Something about me and my background</span>
+            </li>
+            <li className='nav__list_desc'>
             <Link
               to="/work"
               onClick={() => MenuOpen('#fcc5d3')}
@@ -81,6 +88,9 @@ function NavBar() {
             >
               Works
             </Link>
+            <span id='desc_work' className='desc_link_item'>History of my work</span>
+            </li>
+            <li className='nav__list_desc'>
             <Link
               to="/contact"
               onClick={() => MenuOpen('#ffdaa5')}
@@ -88,6 +98,8 @@ function NavBar() {
             >
               Contact
             </Link>
+            <span id='desc_contact' className='desc_link_item'>Want to work together ?</span>
+            </li>
           </ul>
         </div>
       </div>
