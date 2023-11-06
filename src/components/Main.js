@@ -33,7 +33,8 @@ function Main() {
           </div> 
           </Fade>
           <div className='more_links'>
-            <span>More Links</span>
+            <div>More Links</div>
+            <span className="more_links_dot"></span>
           </div>
           <div className='home-page-button'>
             <button className="button-52" role="button">About Me</button>

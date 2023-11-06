@@ -61,6 +61,20 @@
   left: 20.5rem !important;
 }
 
+.more_links_dot {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background: #88CDEC !important;
+  bottom: 1.2rem;
+  left: 57.8rem !important;
+}
+
 .main_underline {
   content: "";
   position: relative;
@@ -211,7 +225,7 @@
   right: 40rem;
 }
 
-.more_links > span {
+.more_links > div {
   font-size: 2.5rem;
   font-family: "eurostile", sans-serif;
   font-weight: bold;
