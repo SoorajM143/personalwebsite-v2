@@ -20,7 +20,7 @@
   font-size: 3.8rem;
   position: relative;
   font-family: "Bitter", serif;
-  color: #1C494C;
+  color: #070d55;
   text-align: justify;
   left: 6rem;
 }
@@ -77,6 +77,8 @@
 
 .mainPage-message {
   position: relative;
+  display: flex;
+  gap: 3rem;
   top: 6rem;
   left: 10%;
   line-height: 1.5;
@@ -88,13 +90,29 @@
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  color: #1C494C;
+  color: #070d55;
 }
 
-.mainPage-message > div {
+.mainPage-message svg {
+  font-size: 3.5rem;
+  animation-name: bouncer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bouncer {
+  from {
+    transform: translateX(-40px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+.mainPage-message > button {
   padding: 3px;
   text-align: center;
-  display: flex;
+  width: 20rem;
 }
 
 .mainPage-message span:first-of-type {
@@ -130,6 +148,58 @@
   top: 29rem;
   font-size: 1.25rem;
   position: absolute;
-  top: 4.5rem;
+  top: 5.5rem;
   left: -2rem;
+}
+
+.home-page-button {
+  display: flex;
+  gap: 10rem;
+  position: relative;
+  top: 20rem;
+  left: 20rem;
+}
+
+.button-52 {
+  font-size: 20px;
+  font-weight: 200;
+  height: 3rem;
+  width: 20rem;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 9;
+}
+
+.button-52::after {
+  content: "";
+  border: 5px solid #88CDEC;
+  border-radius: 10px;
+  width: 98%;
+  z-index: -1;
+  position: absolute;
+  height: 94%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
 }/*# sourceMappingURL=Main.css.map */
