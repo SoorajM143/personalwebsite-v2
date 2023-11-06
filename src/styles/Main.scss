@@ -18,7 +18,7 @@
 .mainPage-content > h2{
     font-size: 3.8rem;
     position: relative;
-    font-family: $Font-content;
+    font-family: $content-fonts;
     color: #070d55;
     text-align: justify;
     left: 6rem;
@@ -35,8 +35,8 @@
 .main_dot {
     @include dot;
     background: #88CDEC !important;
-    bottom: 1.8rem ;
-    left: 22.5rem !important;
+    bottom: 1.4rem ;
+    left: 20.5rem !important;
 }
 
 .main_underline{
@@ -50,6 +50,7 @@
 .mainPage-message{
     position: relative;
     display: flex;
+    align-items: center;
     gap: 3rem;
     top: 6rem;
     left: 10%;
@@ -59,7 +60,7 @@
 }
 
 .mainPage-message > * {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: $content-fonts;
     font-weight: 300;
     color: #070d55;
@@ -110,7 +111,7 @@
 
 .mainPage-message span::after {
     @include paraEnd;
-    top: 5.5rem;
+    top: 6.5rem;
     left: -2rem;
 
 }
@@ -119,8 +120,13 @@
     display: flex;
     gap: 10rem;
     position: relative;
-    top: 20rem;
+    align-items: center;
+    top: 30rem;
     left: 20rem;
+}
+
+.home-page-button svg{
+    font-size: 3.5rem;
 }
 
 .button-52{
@@ -135,16 +141,16 @@
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #88CDEC;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  z-index: 9;
+  z-index: 2;
 }
 
 .button-52::after {
   content: "";
-  border: 5px solid #88CDEC;
+  border: 5px solid black;
   border-radius: 10px;
   width: 98%;
   z-index: -1;
@@ -158,6 +164,19 @@
 .button-52:hover::after {
   top: 0px;
   left: 0px;
+  background-color: rgb(193, 193, 193);
+}
+
+.more_links{
+    position: relative;
+    top: 25rem;
+    right: 40rem;
+}
+.more_links >span {
+    font-size: 2.5rem;
+    font-family: $content-fonts;
+    font-weight: bold;
+    color: #070d55;
 }
 
 @media (min-width: 768px) {

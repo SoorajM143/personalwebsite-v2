@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .alert-dialog h2, div.MuiDialogContent-root {
-  font-family: "Open Sans", sans-serif;
+  font-family: "eurostile", sans-serif;
 }
 
 .alert-dialog h2 {
@@ -16,6 +16,6 @@
 }
 
 .alert-dialog h5 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "eurostile", sans-serif;
   font-size: 1.05rem;
 }/*# sourceMappingURL=AlertDialog.css.map */

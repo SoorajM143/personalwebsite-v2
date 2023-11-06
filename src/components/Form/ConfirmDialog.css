@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 .confirm-dialog h1, div.MuiDialogContent-root {
-  font-family: "Open Sans", sans-serif;
+  font-family: "eurostile", sans-serif;
 }
 
 .confirm-dialog h1 {
@@ -15,6 +15,6 @@
 }
 
 .confirm-dialog h5 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "eurostile", sans-serif;
   font-size: 1.05rem;
 }/*# sourceMappingURL=ConfirmDialog.css.map */

@@ -25,13 +25,20 @@ function Main() {
           <Slide right>
           <div className="main_underline"></div>
           </Slide>
-          <div className='mainPage-message'>  
+          <Fade top dealy={1500}>
+          <div className='mainPage-message'>          
             <span>{Constant.MAIN_PAGE_MESSAGE_2}</span> 
            <SendRounded />
            <button className="button-52" role="button">Say Hi</button>  
+          </div> 
+          </Fade>
+          <div className='more_links'>
+            <span>More Links</span>
           </div>
-          <div className='home-page-button'><button className="button-52" role="button">Button 52</button>
-          <button className="button-52" role="button">Button 52</button>
+          <div className='home-page-button'>
+            <button className="button-52" role="button">About Me</button>
+            <DoubleArrowRounded />
+          <button className="button-52" role="button">Some of my works</button>
           </div>
         </div>
       </div>
