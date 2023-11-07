@@ -137,3 +137,23 @@ $content-fonts: "eurostile", sans-serif;
   font-size: 1.25rem;
   position: absolute;
 }
+
+@mixin imgTagOpen {
+  content: "<img>";
+  font-family: $tags-Font;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+@mixin imgTagClose {
+  content: "</img>";
+  font-family: $tags-Font;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+}

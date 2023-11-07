@@ -59,7 +59,7 @@ const APPLICATION_CONST = {
   WORK_SUBHEADER_2: 'interactive, accessible website and products ',
   WORK_SUBHEADER_3: 'that live on the web. ',
   WORK_SUBHEADER_4: 'Having worked on complex projects for several global clients, I have spend more than half a decade making the internet ',
-  WORK_SUBHEADER_5: 'a little bit brighter. ',
+  WORK_SUBHEADER_5: 'a little bit colorful. ',
   WORK_DETAIL_1: 'TOPS - Fleet Management',
   WORK_SUBDETAIL_1: 'Qatar Airways / Wipro',
   WORK_DETAIL_2: 'Flight Watch(part of TOPS) consolidates all flight data into a single graphical source for ease of tracking, communicating and managing more than 500 daily flights to 150 destinations across 6 continents. ',
@@ -69,7 +69,7 @@ const APPLICATION_CONST = {
   WORK_DETAIL_5: "Walmart Mexico",
   WORK_SUBDETAIL_3: "Walmart/Wipro",
   WORK_DETAIL_6: 'E-commerce website for the Mexico and Central American division of Walmart. Maintained and devloped by Wipro Technologies.',
-  WORK_DETAIL_7: 'Cloud Master Data Management',
+  WORK_DETAIL_7: 'Master Data Management SAAS',
   WORK_TECH_JS: 'Javascript',
   WORK_TECH_MAP: 'Google Maps',
   WORK_TECH_REACT: 'React',
@@ -77,8 +77,14 @@ const APPLICATION_CONST = {
   WORK_TECH_OL: 'Openlayers',
   WORK_TECH_JAVA: 'Java',
   WORK_TECH_PG: 'Postgres',
+  WORK_TECH_SPOTIFY: 'Spotify API',
+  WORK_TECH_SASS: 'SASS',
   WORK_OTHER_1: 'Personal Portfolio- v1',
-  WORK_OTHER_DETAIL_1: 'The first iteration of Personal Portfolio website created from scratch using React '
+  WORK_OTHER_2: 'MOOD - Music PLayer',
+  WORK_OTHER_3: 'Spotify Profle',
+  WORK_OTHER_DETAIL_1: 'The first iteration of Personal Portfolio website created from scratch using React ',
+  WORK_OTHER_DETAIL_2: "Music player created using Spotify's public API. Listen to your favorite songs and playlists from to your spotify account.",
+  WORK_OTHER_DETAIL_3: "Web app for visualizing Spotify data. View your top artists, top tracks, recent played tracks, and detailed audio information for each track."
 
 };
 

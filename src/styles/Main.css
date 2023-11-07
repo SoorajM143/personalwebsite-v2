@@ -67,7 +67,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #88CDEC !important;
+  background: #88cdec !important;
   bottom: 1.4rem;
   left: 20.5rem !important;
 }
@@ -81,7 +81,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #88CDEC !important;
+  background: #88cdec !important;
   bottom: 1.2rem;
   left: 57.8rem !important;
 }
@@ -95,7 +95,7 @@
   margin-top: 1px;
   width: 3.5rem;
   bottom: 0.5rem;
-  background: #88CDEC;
+  background: #88cdec;
   left: 6rem;
   width: 10.5rem;
 }
@@ -203,7 +203,7 @@
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  background-color: #88CDEC;
+  background-color: #88cdec;
   -moz-user-select: none;
        user-select: none;
   -webkit-user-select: none;

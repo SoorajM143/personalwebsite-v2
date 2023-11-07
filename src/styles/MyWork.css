@@ -14,7 +14,7 @@
 .my-work {
   position: relative;
   min-height: 100vh;
-  height: 700vh;
+  height: 620vh;
   top: 10rem;
 }
 
@@ -27,7 +27,7 @@
   position: relative;
   color: #024463;
   text-align: justify;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   left: 6rem;
 }
 
@@ -63,7 +63,7 @@
   margin-top: 1px;
   width: 3.5rem;
   bottom: 0.5rem;
-  background: #D25380;
+  background: #d25380;
   left: 7rem;
   width: 6.5rem;
 }
@@ -77,9 +77,9 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #D25380;
+  background: #d25380;
   bottom: 2rem;
-  left: 21rem;
+  left: 20rem;
 }
 
 .works-subheader {
@@ -90,14 +90,14 @@
   left: 12rem;
   font-size: 1.3rem;
   text-align: left;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
 }
 
 .works-subheader > h3 {
   color: #024463;
   margin-bottom: 1.5rem;
   padding-bottom: 3rem;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
@@ -122,7 +122,7 @@
   top: 5rem;
   font-size: 1.25rem;
   position: absolute;
-  top: 7rem;
+  top: 5rem;
 }
 
 .scroll-animation-work {
@@ -131,7 +131,7 @@
   flex-direction: column;
   align-items: center;
   top: 8rem;
-  color: #1C494C;
+  color: #1c494c;
   font-family: "eurostile", sans-serif;
   font-weight: 100;
   animation-name: bounce;
@@ -151,7 +151,7 @@
   padding-top: 2px;
   position: relative;
   display: block;
-  background-color: #1C494C;
+  background-color: #1c494c;
 }
 
 @keyframes bounce {
@@ -164,7 +164,7 @@
 }
 .all-works-header {
   color: #024463;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   text-align: left;
   position: relative;
   top: 20rem;
@@ -172,9 +172,35 @@
   width: 50%;
 }
 
+.all-works-header::before {
+  content: "<h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: -1.5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: -10px;
+  top: -2.5rem;
+}
+
+.all-works-header::after {
+  content: "</h3>";
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 100;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: -1rem;
+  top: 4rem;
+}
+
 .other-works-header {
   color: #024463;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   text-align: left;
   position: relative;
   top: 35rem;
@@ -198,7 +224,7 @@
   display: block;
   margin-top: 1px;
   width: 3.5rem;
-  background-color: #D25380;
+  background-color: #d25380;
   left: 0rem;
   width: 5.5rem;
 }
@@ -212,11 +238,11 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #D25380;
-  left: 12.2rem;
+  background-color: #d25380;
+  left: 11rem;
   height: 8px;
   width: 8px;
-  bottom: 1.3rem;
+  bottom: 1.1rem;
 }
 
 .all-work-dot {
@@ -228,8 +254,8 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #D25380;
-  left: 15.2rem;
+  background-color: #d25380;
+  left: 14rem;
   height: 8px;
   width: 8px;
   bottom: 1.3rem;
@@ -264,6 +290,30 @@
   justify-content: center;
 }
 
+.work-left-img::before {
+  content: "<img>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 4rem;
+  top: -8rem;
+}
+
+.work-left-img::after {
+  content: "</img>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 4rem;
+  top: 20rem;
+}
+
 .work-left-img > img {
   width: 600px;
   border-radius: 15px;
@@ -290,6 +340,31 @@
   align-items: center;
   padding: 2rem;
   background-color: #ddeff5;
+  left: 2px;
+}
+
+.work-left-detail::before {
+  content: "<div>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: -3rem;
+  left: 0.4rem;
+}
+
+.work-left-detail::after {
+  content: "</div>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 26rem;
+  left: 0.4rem;
 }
 
 .work-left-detail > h4 {
@@ -297,7 +372,7 @@
   position: relative;
   color: #024463;
   text-align: justify;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -318,9 +393,9 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #D25380;
+  background: #d25380;
   bottom: 2.8rem;
-  left: 9.5rem;
+  left: 8.5rem;
   height: 8px;
   width: 8px;
 }
@@ -351,9 +426,25 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #D25380;
+  background: #d25380;
   bottom: 2.8rem;
-  left: 8.7rem;
+  left: 7.9rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-detail-dot-infa-mdm {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background: #d25380;
+  bottom: 2.8rem;
+  left: 10.9rem;
   height: 8px;
   width: 8px;
 }
@@ -367,9 +458,9 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #D25380;
+  background-color: #d25380;
   bottom: 2.8rem;
-  left: 6.2rem;
+  left: 5.6rem;
   height: 8px;
   width: 8px;
 }
@@ -398,11 +489,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 40rem;
+  top: 45rem;
   transition: all 0.6s ease;
 }
 
-.work-other-dot {
+.work-other-dot-mood {
   content: ".";
   font-family: "Bitter", serif;
   border-radius: 8px;
@@ -411,9 +502,41 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background-color: #D25380;
-  left: 8rem;
-  bottom: 2.9rem;
+  background-color: #d25380;
+  left: 7.2rem;
+  bottom: 2.7rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-other-dot-portfolio {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background-color: #d25380;
+  left: 7.2rem;
+  bottom: 2.7rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-other-dot-profile {
+  content: ".";
+  font-family: "Bitter", serif;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
+  background-color: #d25380;
+  left: 4.5rem;
+  bottom: 2.7rem;
   height: 8px;
   width: 8px;
 }/*# sourceMappingURL=MyWork.css.map */

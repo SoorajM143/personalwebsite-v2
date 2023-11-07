@@ -9,7 +9,7 @@
 .my-work {
   position: relative;
   min-height: 100vh;
-  height: 700vh;
+  height: 620vh;
   top: 10rem;
 }
 
@@ -22,7 +22,7 @@
   position: relative;
   color: #024463;
   text-align: justify;
-  font-family: $Font-content;
+  font-family: $content-fonts;
   left: 6rem;
 }
 
@@ -47,7 +47,7 @@
   @include dot;
   background: $work-themecolor;
   bottom: 2rem;
-  left: 21rem;
+  left: 20rem;
 }
 
 .works-subheader {
@@ -58,14 +58,14 @@
   left: 12rem;
   font-size: 1.3rem;
   text-align: left;
-  font-family: $Font-content;
+  font-family: $content-fonts;
 }
 
 .works-subheader > h3 {
   color: #024463;
   margin-bottom: 1.5rem;
   padding-bottom: 3rem;
-  font-family: $Font-content;
+  font-family: $content-fonts;
   font-weight: 100;
   font-style: normal;
 }
@@ -76,7 +76,7 @@
 
 .works-subheader > h3::after {
   @include h3TagClose;
-  top: 7rem;
+  top: 5rem;
 }
 
 .scroll-animation-work {
@@ -120,7 +120,7 @@
 
 .all-works-header {
   color: #024463;
-  font-family: $Font-content;
+  font-family: $content-fonts;
   text-align: left;
   position: relative;
   top: 20rem;
@@ -128,9 +128,21 @@
   width: 50%;
 }
 
+.all-works-header::before {
+  @include h3TagOpen;
+  left: -10px;
+  top: -2.5rem;
+}
+
+.all-works-header::after {
+  @include h3TagClose;
+  left: -1rem;
+  top: 4rem;
+}
+
 .other-works-header {
   color: #024463;
-  font-family: $Font-content;
+  font-family: $content-fonts;
   text-align: left;
   position: relative;
   top: 35rem;
@@ -156,16 +168,16 @@
 .other-work-dot {
   @include dot;
   background-color: $work-themecolor;
-  left: 12.2rem;
+  left: 11rem;
   height: 8px;
   width: 8px;
-  bottom: 1.3rem;
+  bottom: 1.1rem;
 }
 
 .all-work-dot {
   @include dot;
   background-color: $work-themecolor;
-  left: 15.2rem;
+  left: 14rem;
   height: 8px;
   width: 8px;
   bottom: 1.3rem;
@@ -200,6 +212,18 @@
   justify-content: center;
 }
 
+.work-left-img::before {
+  @include imgTagOpen;
+  left: 4rem;
+  top: -8rem;
+}
+
+.work-left-img::after {
+  @include imgTagClose;
+  left: 4rem;
+  top: 20rem;
+}
+
 .work-left-img > img {
   width: 600px;
   border-radius: 15px;
@@ -228,6 +252,19 @@
   align-items: center;
   padding: 2rem;
   background-color: #ddeff5;
+  left: 2px;
+}
+
+.work-left-detail::before {
+  @include divOpen;
+  top: -3rem;
+  left: 0.4rem;
+}
+
+.work-left-detail::after {
+  @include divClose;
+  top: 26rem;
+  left: 0.4rem;
 }
 
 .work-left-detail > h4 {
@@ -235,7 +272,7 @@
   position: relative;
   color: #024463;
   text-align: justify;
-  font-family: $Font-content;
+  font-family: $content-fonts;
   margin-bottom: 2rem;
 }
 
@@ -251,7 +288,7 @@
   @include dot;
   background: $work-themecolor;
   bottom: 2.8rem;
-  left: 9.5rem;
+  left: 8.5rem;
   height: 8px;
   width: 8px;
 }
@@ -277,7 +314,16 @@
   @include dot;
   background: $work-themecolor;
   bottom: 2.8rem;
-  left: 8.7rem;
+  left: 7.9rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-detail-dot-infa-mdm {
+  @include dot;
+  background: $work-themecolor;
+  bottom: 2.8rem;
+  left: 10.9rem;
   height: 8px;
   width: 8px;
 }
@@ -286,7 +332,7 @@
   @include dot;
   background-color: $work-themecolor;
   bottom: 2.8rem;
-  left: 6.2rem;
+  left: 5.6rem;
   height: 8px;
   width: 8px;
 }
@@ -315,15 +361,33 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 40rem;
+  top: 45rem;
   transition: all 0.6s ease;
 }
 
-.work-other-dot {
+.work-other-dot-mood {
   @include dot;
   background-color: $work-themecolor;
-  left: 8rem;
-  bottom: 2.9rem;
+  left: 7.2rem;
+  bottom: 2.7rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-other-dot-portfolio {
+  @include dot;
+  background-color: $work-themecolor;
+  left: 7.2rem;
+  bottom: 2.7rem;
+  height: 8px;
+  width: 8px;
+}
+
+.work-other-dot-profile {
+  @include dot;
+  background-color: $work-themecolor;
+  left: 4.5rem;
+  bottom: 2.7rem;
   height: 8px;
   width: 8px;
 }

@@ -117,7 +117,7 @@ function MyWork() {
               <Fade delay={200}>
             <div className='work-left-detail'>
               <h4>{Constants.WORK_DETAIL_7}</h4>
-              <span className='work-detail-dot-infa'></span>
+              <span className='work-detail-dot-infa-mdm'></span>
               <h5>{Constants.WORK_SUBDETAIL_2}</h5>
               <p>{Constants.WORK_DETAIL_4}</p>
               <ul className='work-tech'>
@@ -177,10 +177,12 @@ function MyWork() {
               <Fade delay={200}>
             <div className='work-left-detail'>
               <h4>{Constants.WORK_OTHER_1}</h4>
-              <span className='work-other-dot'></span>
+              <span className='work-other-dot-portfolio'></span>
               <p>{Constants.WORK_OTHER_DETAIL_1}</p>
               <ul className='work-tech'>
                   <li>{Constants.WORK_TECH_REACT}</li>
+                  <li>{Constants.WORK_TECH_JS}</li>
+                  <li>{Constants.WORK_TECH_SASS}</li>
                 </ul>
               <ThemeProvider theme={theme}>
                   <Button href='https://www.soorajmohan.com/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
@@ -198,11 +200,13 @@ function MyWork() {
               </Fade>
               <Fade delay={200}>
             <div className='work-left-detail'>
-              <h4>{Constants.WORK_OTHER_1}</h4>
-              <span className='work-other-dot'></span>
-              <p>{Constants.WORK_OTHER_DETAIL_1}</p>
+              <h4>{Constants.WORK_OTHER_2}</h4>
+              <span className='work-other-dot-mood'></span>
+              <p>{Constants.WORK_OTHER_DETAIL_2}</p>
               <ul className='work-tech'>
                   <li>{Constants.WORK_TECH_REACT}</li>
+                  <li>{Constants.WORK_TECH_SPOTIFY}</li>
+                  <li>{Constants.WORK_TECH_SASS}</li>
                 </ul>
               <ThemeProvider theme={theme}>
                   <Button href='https://www.soorajmohan.com/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
@@ -221,11 +225,13 @@ function MyWork() {
               </Fade>
               <Fade delay={200}>
             <div className='work-left-detail'>
-              <h4>{Constants.WORK_OTHER_1}</h4>
-              <span className='work-other-dot'></span>
-              <p>{Constants.WORK_OTHER_DETAIL_1}</p>
+              <h4>{Constants.WORK_OTHER_3}</h4>
+              <span className='work-other-dot-profile'></span>
+              <p>{Constants.WORK_OTHER_DETAIL_3}</p>
               <ul className='work-tech'>
                   <li>{Constants.WORK_TECH_REACT}</li>
+                  <li>{Constants.WORK_TECH_SPOTIFY}</li>
+                  <li>{Constants.WORK_TECH_SASS}</li>
                 </ul>
               <ThemeProvider theme={theme}>
                   <Button href='https://www.soorajmohan.com/' rel='noreferrer' target='_blank' color="primary" variant="outlined">

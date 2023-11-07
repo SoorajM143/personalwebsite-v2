@@ -28,7 +28,7 @@
 .about_me_content > h1 {
   font-size: 4.8rem;
   position: relative;
-  color: #1C494C;
+  color: #1c494c;
   text-align: justify;
   font-family: "eurostile", sans-serif;
   left: 6rem;
@@ -60,7 +60,7 @@
   margin-top: 1px;
   width: 3.5rem;
   bottom: 0.5rem;
-  background: #88F3CC;
+  background: #88f3cc;
   left: 6rem;
   width: 10.5rem;
 }
@@ -86,7 +86,7 @@
   display: block;
   position: relative;
   bottom: 1.6rem;
-  background: #88F3CC !important;
+  background: #88f3cc !important;
   bottom: 1.5rem;
   left: 26rem !important;
 }
@@ -111,7 +111,7 @@
   font-size: 1.2rem;
   font-family: "eurostile", sans-serif;
   font-weight: 300;
-  color: #1C494C;
+  color: #1c494c;
   text-align: left;
 }
 
@@ -124,7 +124,7 @@
   font-size: 1.2rem;
   font-family: "eurostile", sans-serif;
   font-weight: 300;
-  color: #1C494C;
+  color: #1c494c;
   text-align: left;
 }
 
@@ -137,7 +137,7 @@
   font-size: 1.2rem;
   font-family: "eurostile", sans-serif;
   font-weight: 300;
-  color: #1C494C;
+  color: #1c494c;
   text-align: left;
 }
 
@@ -159,7 +159,7 @@
 
 .about_me_para_1 a {
   text-decoration: none;
-  color: #1C494C;
+  color: #1c494c;
 }
 
 .about_me_para_1 > span {
@@ -255,7 +255,7 @@
   position: relative;
   top: 8rem;
   right: 11rem;
-  color: #1C494C;
+  color: #1c494c;
   width: 2rem;
   height: 2rem;
 }
@@ -271,13 +271,13 @@
   position: relative;
   top: 8rem;
   right: 12rem;
-  color: #1C494C;
+  color: #1c494c;
   font-family: "eurostile", sans-serif;
   font-weight: 300;
 }
 
 .about_content p {
-  color: #1C494C;
+  color: #1c494c;
   margin-bottom: 1.5rem;
   font-size: 18px;
   font-family: "Bitter", serif;
@@ -286,7 +286,7 @@
 }
 
 .about_content h3 {
-  color: #1C494C;
+  color: #1c494c;
   margin-bottom: 1.5rem;
   padding-bottom: 3rem;
   font-family: "eurostile", sans-serif;
@@ -345,7 +345,7 @@
   flex-direction: column;
   align-items: center;
   top: 10rem;
-  color: #1C494C;
+  color: #1c494c;
   font-family: "eurostile", sans-serif;
   font-weight: 100;
   animation-name: bounce;
@@ -365,7 +365,7 @@
   padding-top: 2px;
   position: relative;
   display: block;
-  background-color: #1C494C;
+  background-color: #1c494c;
 }
 
 @keyframes bounce {
@@ -433,7 +433,7 @@
   display: flex;
   height: 280px;
   width: 200px;
-  background-color: #1C494C;
+  background-color: #1c494c;
   border-radius: 10px;
   box-shadow: -1rem 0 3rem #000;
   /*   margin-left: -50px; */
