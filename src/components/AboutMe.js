@@ -1,28 +1,28 @@
-import React, { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import '../styles/AboutMe.css';
-import { Fade, Slide } from 'react-reveal';
-import Sphere from './Sphere';
-import Constants from './utils/Constant';
-import { Link } from 'react-router-dom';
-import GestureIcon from '@mui/icons-material/Gesture';
-import PanToolAltIcon from '@mui/icons-material/PanToolAlt';
-import Kochi from '../images/Kochi.png';
-import Dublin from '../images/Dublin.png';
-import Balloon from '../images/Balloon.png';
-import Walmart from '../images/Walmart.png';
-import Qatar from '../images/Qatar.png';
-import Informatica from '../images/Informatica.png';
-import Wipro from '../images/Wipro.png';
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "../styles/AboutMe.css";
+import { Fade, Slide } from "react-reveal";
+import Sphere from "./Sphere";
+import Constants from "./utils/Constant";
+import { Link } from "react-router-dom";
+import GestureIcon from "@mui/icons-material/Gesture";
+import PanToolAltIcon from "@mui/icons-material/PanToolAlt";
+import Kochi from "../images/Kochi.png";
+import Dublin from "../images/Dublin.png";
+import Balloon from "../images/Balloon.png";
+import Walmart from "../images/Walmart.png";
+import Qatar from "../images/Qatar.png";
+import Informatica from "../images/Informatica.png";
+import Wipro from "../images/Wipro.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function AboutMe() {
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty('--background-color', '#88F3CC');
-    document.title = 'About - Sooraj';
+    root.style.setProperty("--background-color", "#88F3CC");
+    document.title = "About - Sooraj";
   }, []);
 
   return (
@@ -100,10 +100,14 @@ function AboutMe() {
 
         <div className="about_me_skills">
           <div className="skill_sphere">
-            { window.screen.width <= 480 ?
-              <Sphere radius={170}/> : window.screen.width <= 1000 ? <Sphere radius={200} /> : <Sphere />
-            }
-            
+            {window.screen.width <= 480 ? (
+              <Sphere radius={170} />
+            ) : window.screen.width <= 1000 ? (
+              <Sphere radius={200} />
+            ) : (
+              <Sphere />
+            )}
+
             <GestureIcon />
             <PanToolAltIcon />
             <span className="sphere_info">Interact with sphere</span>
@@ -122,7 +126,7 @@ function AboutMe() {
         <div className="about_me_panels">
           <Fade delay={300}>
             <div className="about_me_para_1">
-              {Constants.ABOUT_ME_WORK_PARA_1}{' '}
+              {Constants.ABOUT_ME_WORK_PARA_1}{" "}
               <strong>{Constants.ABOUT_ME_WORK_PARA_2}</strong>
               {Constants.ABOUT_ME_WORK_PARA_3}
               <strong>{Constants.ABOUT_ME_WORK_PARA_4}</strong>

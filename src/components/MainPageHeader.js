@@ -1,8 +1,8 @@
-import React from 'react';
-import '../styles/MainPageHeader.css';
-import { Fade, Bounce } from 'react-reveal';
-import AnimatedMe from './AnimatedMe';
-import Constants from './utils/Constant';
+import React from "react";
+import "../styles/MainPageHeader.css";
+import { Fade, Bounce } from "react-reveal";
+import AnimatedMe from "./AnimatedMe";
+import Constants from "./utils/Constant";
 
 function MainPageHeader() {
   return (
@@ -11,9 +11,9 @@ function MainPageHeader() {
         <div className="headerText">
           <Fade delay={200}>
             <h1>
-              {Constants.MAIN_PAGE_HEADER_TEXT_1}  &#8203; 
+              {Constants.MAIN_PAGE_HEADER_TEXT_1} &#8203;
               <br />
-             {Constants.MAIN_PAGE_HEADER_TEXT_2}
+              {Constants.MAIN_PAGE_HEADER_TEXT_2}
               <strong>{Constants.MAIN_PAGE_HEADER_TEXT_3}</strong>
             </h1>
           </Fade>

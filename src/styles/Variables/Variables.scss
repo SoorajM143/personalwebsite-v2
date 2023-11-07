@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 //Colors
 
@@ -13,131 +13,127 @@ $menubg: rgb(26, 26, 26);
 $htmlcolortags: rgb(140 137 137);
 $whitecolor: white;
 $themecolor: #fbd33c;
-$about-themecolor: #88F3CC;
-$work-themecolor: #D25380;
+$about-themecolor: #88f3cc;
+$work-themecolor: #d25380;
 
 //fonts
-$tags-Font: 'La Belle Aurore', cursive;
-$Font-content: 'Bitter',serif;
-$title-font: 'Bitter',serif;
-$content-fonts: 'eurostile', sans-serif;
+$tags-Font: "La Belle Aurore", cursive;
+$Font-content: "Bitter", serif;
+$title-font: "Bitter", serif;
+$content-fonts: "eurostile", sans-serif;
 
 @mixin dot {
-   content: '.';
-   font-family: $Font-content; 
-   border-radius: 8px;
-   height: 13px;
-   width: 13px;
-   display: block;
-   position: relative;
-   bottom: 1.6rem;
+  content: ".";
+  font-family: $Font-content;
+  border-radius: 8px;
+  height: 13px;
+  width: 13px;
+  display: block;
+  position: relative;
+  bottom: 1.6rem;
 }
 
 @mixin h2TagOpen {
-    content: '<h2>';
-        font-family: $tags-Font;
-        font-weight: 100;
-        color: $htmlcolortags;
-        left: -4rem;
-        font-size: 1.25rem;
-        bottom: 4rem;
-        position: absolute;
-    
-} 
-
-@mixin h2TagClose {
-content: '</h2>';
-    font-family: $tags-Font;
-    font-weight: 100;
-    color: $htmlcolortags;
-    left: -4rem;
-    top: 5rem;
-    font-size: 1.25rem;
-    position: absolute;
+  content: "<h2>";
+  font-family: $tags-Font;
+  font-weight: 100;
+  color: $htmlcolortags;
+  left: -4rem;
+  font-size: 1.25rem;
+  bottom: 4rem;
+  position: absolute;
 }
 
-@mixin underline{
-    content: "";
-    position: relative;
-    left: 12rem;
-    height: 4px;
-    display: block;
-    margin-top: 1px;
-    width: 3.5rem;
+@mixin h2TagClose {
+  content: "</h2>";
+  font-family: $tags-Font;
+  font-weight: 100;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+@mixin underline {
+  content: "";
+  position: relative;
+  left: 12rem;
+  height: 4px;
+  display: block;
+  margin-top: 1px;
+  width: 3.5rem;
 }
 
 @mixin para {
-    content: '<p>';
-        font-family: $tags-Font;
-        font-weight: 100;
-        color: $htmlcolortags;
-        left: -4rem;
-        top: 8rem;
-        font-size: 1.25rem;
-        position: absolute;
+  content: "<p>";
+  font-family: $tags-Font;
+  font-weight: 100;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 8rem;
+  font-size: 1.25rem;
+  position: absolute;
 }
 
 @mixin paraEnd {
-    content: '</p>';
-    font-family: $tags-Font;
-    font-weight: 100;
-    color: $htmlcolortags;
-    left: -4rem;
-    top: 29rem;
-    font-size: 1.25rem;
-    position: absolute;
+  content: "</p>";
+  font-family: $tags-Font;
+  font-weight: 100;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 29rem;
+  font-size: 1.25rem;
+  position: absolute;
 }
 
 @mixin section {
-    font-size: 3.8rem;
-        position: relative;
-        left: 12rem;
-        color: $whitecolor;
-        text-align: justify;
-        font-family: $Font-content;
+  font-size: 3.8rem;
+  position: relative;
+  left: 12rem;
+  color: $whitecolor;
+  text-align: justify;
+  font-family: $Font-content;
 }
 
 @mixin h3TagOpen {
-    content: '<h3>';
-    font-family: $tags-Font;
-        font-weight: 100;
-        color: $htmlcolortags;
-        left: -4rem;
-        top: -1.5rem;
-        font-size: 1.25rem;
-        position: absolute;
-
+  content: "<h3>";
+  font-family: $tags-Font;
+  font-weight: 100;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: -1.5rem;
+  font-size: 1.25rem;
+  position: absolute;
 }
 
 @mixin h3TagClose {
-    content: '</h3>';
-    font-family: $tags-Font;
-    font-weight: 100;
-    color: $htmlcolortags;
-    left: -4rem;
-    top: 5rem;
-    font-size: 1.25rem;
-    position: absolute;
+  content: "</h3>";
+  font-family: $tags-Font;
+  font-weight: 100;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
 }
 
 @mixin divOpen {
-    content: '<div>';
-    font-family: $tags-Font;
-    color: $htmlcolortags;
-    left: -4rem;
-    top: 5rem;
-    font-size: 1.25rem;
-    position: absolute;
+  content: "<div>";
+  font-family: $tags-Font;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
 }
 
 @mixin divClose {
-    content: '</div>';
-    font-family: $tags-Font;
-    color: $htmlcolortags;
-    left: -4rem;
-    top: 5rem;
-    font-size: 1.25rem;
-    position: absolute;
+  content: "</div>";
+  font-family: $tags-Font;
+  color: $htmlcolortags;
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
 }
-
-

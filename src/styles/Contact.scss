@@ -1,57 +1,53 @@
-
-@import '../styles/Variables/Variables.scss';
+@import "../styles/Variables/Variables.scss";
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .button_main_contact {
-    position: fixed;
-    top: 39px;
-    right: 0px;
-    z-index:1;
-    text-align: justify;
-    width: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: fixed;
+  top: 39px;
+  right: 0px;
+  z-index: 1;
+  text-align: justify;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button_main_contact svg {
-    width: 2rem;
-    height: 2rem;
-    color: var(--background-color);
+  width: 2rem;
+  height: 2rem;
+  color: var(--background-color);
 }
 
 .button_main_contact span {
-    padding: 5px;
-    position: relative;
-    top: -10px;
-    font-family: $content-fonts;
-    font-size: 18px;
-    color: black;
+  padding: 5px;
+  position: relative;
+  top: -10px;
+  font-family: $content-fonts;
+  font-size: 18px;
+  color: black;
 }
 
 .button_main_contact > a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
-@media(max-width: 700px){
+@media (max-width: 700px) {
+  .button_main_contact {
+    right: -50px;
+  }
 
-    .button_main_contact{
-       right: -50px;
-    }
+  .button_main_contact span {
+    font-size: 14px;
+  }
 
-    .button_main_contact span{
-        font-size: 14px;
-
-    }
-    
-    .button_main_contact svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
+  .button_main_contact svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
-

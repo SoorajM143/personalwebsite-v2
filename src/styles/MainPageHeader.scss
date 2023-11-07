@@ -1,216 +1,208 @@
 @import "../styles/Variables/Variables.scss";
 
-
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-.intro{
-    height: 100vh;
-    position: relative;
+.intro {
+  height: 100vh;
+  position: relative;
 }
 
-.headerText{
-    top: 12rem;
-    width: 50%;
-    left: 6rem;
-    font-size: 6rem;
-    font-family: $content-fonts;
-    font-weight: 300;
-    color: #070d55;
-    position: relative;
-    text-align: justify;
+.headerText {
+  top: 12rem;
+  width: 50%;
+  left: 6rem;
+  font-size: 6rem;
+  font-family: $content-fonts;
+  font-weight: 300;
+  color: #070d55;
+  position: relative;
+  text-align: justify;
 }
 
-.main-page-section{
-    display: flex;
-    height: 200vh;
+.main-page-section {
+  display: flex;
+  height: 200vh;
 }
 .avatar {
-    position: relative;
-    top: 6rem;
-    left: 3rem;
-    width: 40rem;
+  position: relative;
+  top: 6rem;
+  left: 3rem;
+  width: 40rem;
 }
 
 .headerText > h1 {
-    font: inherit;
+  font: inherit;
 }
 
 .headerText p {
-    position: relative;
-    top: 4rem;
-    font-size: 2rem;
-    font-weight: 300;
-    font-family: $content-fonts;
+  position: relative;
+  top: 4rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: $content-fonts;
 }
 
 .headerText p::before {
-    @include para;
-    top: -2rem;
+  @include para;
+  top: -2rem;
 }
 
-.headerText p::after{
-    @include paraEnd;
-    top: 2rem;
-
+.headerText p::after {
+  @include paraEnd;
+  top: 2rem;
 }
 
-.headerText::before{
-    content: '<h1>';
-    font-family: $tags-Font;
-    color: $htmlcolortags;
-    left: -4rem;
-    font-size: 1.25rem;
-    top: -2rem;
-    position: absolute;
-
+.headerText::before {
+  content: "<h1>";
+  font-family: $tags-Font;
+  color: $htmlcolortags;
+  left: -4rem;
+  font-size: 1.25rem;
+  top: -2rem;
+  position: absolute;
 }
 
 .headerText::after {
-    content: '</h1>';
-    font-family: $tags-Font;
-    color: $htmlcolortags;
-    left: -4rem;
-    font-size: 1.25rem;
-    top: 12.5rem;
-    position: absolute;
-
+  content: "</h1>";
+  font-family: $tags-Font;
+  color: $htmlcolortags;
+  left: -4rem;
+  font-size: 1.25rem;
+  top: 12.5rem;
+  position: absolute;
 }
 
-
 .scroll-animation-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    bottom: 75rem;
-    color: #919795;
-    font-family: $content-fonts;
-    font-weight: 100;
-    font-size: 14px;
-    animation-name: bounce;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 75rem;
+  color: #919795;
+  font-family: $content-fonts;
+  font-weight: 100;
+  font-size: 14px;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .vertical_line-main {
-    content: '';
-    height: 200px;
-    width: 0.5px;
-    padding-top: 2px;
-    position: relative;
-    display: block;
-    background-color: #46464a;
+  content: "";
+  height: 200px;
+  width: 0.5px;
+  padding-top: 2px;
+  position: relative;
+  display: block;
+  background-color: #46464a;
 }
 
 @keyframes bounce {
-    from {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(0px);
+  }
 
-    to {
-        transform: translateY(20px);
-    }
-
+  to {
+    transform: translateY(20px);
+  }
 }
 
+@media screen and (max-width: 512px) {
+  .headerText {
+    top: 24rem !important;
+    text-align: center !important;
+    left: 2rem !important;
+  }
 
-@media screen and (max-width: 512px){
-    .headerText {
-       top: 24rem !important;
-       text-align: center !important;
-       left: 2rem !important;
-    }
+  .headerText > h1 {
+    width: 18rem !important;
+    font-size: 29px !important;
+  }
 
-    .headerText  > h1 {
-        width: 18rem !important;
-        font-size: 29px !important;
-    }
+  .headerText::after {
+    top: 4.5rem !important;
+    left: 1.5rem !important;
+    font-size: 1rem !important;
+  }
 
-    .headerText::after{
-        top: 4.5rem !important;
-        left: 1.5rem !important;
-        font-size: 1rem !important;
-    }
+  .headerText::before {
+    font-size: 1rem !important;
+    left: 1.5rem !important;
+  }
 
-    .headerText::before{
-        font-size: 1rem !important;
-        left: 1.5rem !important;
-    }
+  .headerText p {
+    display: none;
+  }
 
-    .headerText p {
-        display: none;
-    }
+  .avatar {
+    left: -9.5rem !important;
+  }
 
-    .avatar{
-        left: -9.5rem !important;
-    }
+  .avatar svg {
+    height: 18rem !important;
+  }
 
-    .avatar svg {
-        height: 18rem !important;
-    }
+  .headerText br {
+    display: none;
+  }
 
-    .headerText br {
-        display:none
-    }
+  .scroll-animation-main {
+    bottom: 51rem !important;
+    left: 0.1rem !important;
+    font-size: 0.7rem !important;
+  }
 
-    .scroll-animation-main{
-        bottom: 51rem !important;
-        left: 0.1rem !important;
-        font-size: 0.7rem !important;
-    }
+  .vertical_line-main {
+    height: 125px !important;
+  }
+}
 
-    .vertical_line-main{
-        height: 125px !important;
-    }
-} 
+@media screen and (max-width: 1000px) {
+  .main-page-section {
+    display: block;
+  }
 
-@media screen and (max-width: 1000px){
+  .headerText {
+    top: 44rem;
+    text-align: center;
+    left: 17rem;
+  }
 
-    .main-page-section{
-        display: block;
-    }
+  .headerText::before {
+    font-size: 2rem;
+  }
 
-    .headerText {
-        top:44rem;
-        text-align: center;
-        left: 17rem;
-     }
+  .headerText::after {
+    font-size: 2rem;
+    top: 9.5rem;
+  }
 
-     .headerText::before{
-        font-size: 2rem;;
-     }
+  .headerText > h1 {
+    width: 22rem;
+    font-size: 47px;
+  }
 
-     .headerText::after{
-        font-size: 2rem;
-        top: 9.5rem;
-     }
+  .headerText p {
+    display: none;
+  }
 
-     .headerText  > h1 {
-        width: 22rem;
-        font-size: 47px;
-    }
+  .avatar {
+    top: 0rem;
+    left: 7rem;
+  }
 
-    .headerText p {
-        display: none;
-    }
+  .scroll-animation-main {
+    bottom: 100rem;
+    left: 0.1rem;
+    font-size: 1.5rem;
+  }
 
-    .avatar{
-        top: 0rem;
-        left: 7rem;
-    }
-
-    .scroll-animation-main{
-        bottom: 100rem;
-        left: 0.1rem;
-        font-size: 1.5rem;
-    }
-
-    .vertical_line-main{
-        height: 20rem;
-    }
+  .vertical_line-main {
+    height: 20rem;
+  }
 }

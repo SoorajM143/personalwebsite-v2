@@ -3,733 +3,714 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .about_me_page {
-    min-height: 100vh;
-    height: 310vh;
-    position: relative;
-    width: 100%;
-    background-color: transparent;
-    font-family: $Font-content;
-    overflow-y: overlay;
+  min-height: 100vh;
+  height: 310vh;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  font-family: $Font-content;
+  overflow-y: overlay;
 }
 
 .about_me_content {
-    width: 100%;
+  width: 100%;
 }
 
-.about_me_content > h1  {
-    font-size: 4.8rem;
-    position: relative;
-    color: #1C494C;
-    text-align: justify;
-    font-family: $content-fonts;
-    left: 6rem;
+.about_me_content > h1 {
+  font-size: 4.8rem;
+  position: relative;
+  color: #1c494c;
+  text-align: justify;
+  font-family: $content-fonts;
+  left: 6rem;
 }
 
 .about_me_main {
-    position: relative;
-    top: 12rem;
-    z-index: 0;
+  position: relative;
+  top: 12rem;
+  z-index: 0;
 }
 
-.about_me_content > h1::before{
-       @include h2TagOpen;
+.about_me_content > h1::before {
+  @include h2TagOpen;
 }
 
-
-.about_underline{
-        @include underline;
-        bottom: 0.5rem;
-        background: $about-themecolor;
-        left: 6rem;
-        width: 10.5rem
+.about_underline {
+  @include underline;
+  bottom: 0.5rem;
+  background: $about-themecolor;
+  left: 6rem;
+  width: 10.5rem;
 }
-.about_me_content>h1::after {
-    @include h2TagClose;
-    top: 7rem;
-
+.about_me_content > h1::after {
+  @include h2TagClose;
+  top: 7rem;
 }
 
 .about_dot {
-    @include dot;
-    background: $about-themecolor !important;
-    bottom: 1.5rem ;
-    left: 26rem !important;
+  @include dot;
+  background: $about-themecolor !important;
+  bottom: 1.5rem;
+  left: 26rem !important;
 }
 
 .about_content {
-    position: relative;
-    line-height: 1.5;
-    top: 7rem;
-    width: 70%;
-    left: 12rem;
-    font-size: 1.3rem;
-    text-align: left;
-    font-family: $content-fonts
+  position: relative;
+  line-height: 1.5;
+  top: 7rem;
+  width: 70%;
+  left: 12rem;
+  font-size: 1.3rem;
+  text-align: left;
+  font-family: $content-fonts;
 }
 
-.about_me_para_1{
-    position: relative;
-    top: 10rem;
-    left: 3rem;
-    line-height: 1.5;
-    width: 50%;
-    font-size: 1.2rem;
-    font-family: $content-fonts;
-    font-weight: 300;
-    color: #1C494C;
-    text-align: left;
+.about_me_para_1 {
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  line-height: 1.5;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: $content-fonts;
+  font-weight: 300;
+  color: #1c494c;
+  text-align: left;
 }
 
-.about_me_para2{
-    position: relative;
-        top: 10rem;
-        left: 15rem;
-        line-height: 1.5;
-        width: 40%;
-        font-size: 1.2rem;
-        font-family: $content-fonts;
-        font-weight: 300;
-        color: #1C494C;
-        text-align: left;
+.about_me_para2 {
+  position: relative;
+  top: 10rem;
+  left: 15rem;
+  line-height: 1.5;
+  width: 40%;
+  font-size: 1.2rem;
+  font-family: $content-fonts;
+  font-weight: 300;
+  color: #1c494c;
+  text-align: left;
 }
 
-.about_me_para3{
-    position: relative;
-        top: 10rem;
-        left: 3rem;
-        line-height: 1.5;
-        width: 50%;
-        font-size: 1.2rem;
-        font-family: $content-fonts;
-        font-weight: 300;
-        color: #1C494C;
-        text-align: left;
+.about_me_para3 {
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+  line-height: 1.5;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: $content-fonts;
+  font-weight: 300;
+  color: #1c494c;
+  text-align: left;
 }
 
-.about_me_para3 span{
-    display: block;
+.about_me_para3 span {
+  display: block;
 }
 
-.about_me_para2 span{
-    display: block;
+.about_me_para2 span {
+  display: block;
 }
 
-.about_me_para2 span:last-of-type{
-    margin-top: 2rem;
+.about_me_para2 span:last-of-type {
+  margin-top: 2rem;
 }
 
 .about_me_para3 span:last-of-type {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .about_me_para_1 a {
-    text-decoration: none;
-    color: #1C494C;
+  text-decoration: none;
+  color: #1c494c;
 }
 
 .about_me_para_1 > span {
-    position: relative;
-    top: 2rem;
-    text-align: left;
+  position: relative;
+  top: 2rem;
+  text-align: left;
 }
 
-.about_me_para_1::before{
-     @include para;
-     top: -2rem;
-     left: -2rem;
+.about_me_para_1::before {
+  @include para;
+  top: -2rem;
+  left: -2rem;
 }
 
-.about_me_para_1::after{
-    @include paraEnd;
-    top: 18.5rem;
-    left: -2rem;
+.about_me_para_1::after {
+  @include paraEnd;
+  top: 16.5rem;
+  left: -2rem;
 }
 
-.about_me_para2::before{
-    @include para;
-    top: -2rem;
-    left: -2rem;
+.about_me_para2::before {
+  @include para;
+  top: -2rem;
+  left: -2rem;
 }
 
-.about_me_para3::before{
-    @include para;
-    top: -2rem;
-    left: -2rem;
+.about_me_para3::before {
+  @include para;
+  top: -2rem;
+  left: -2rem;
 }
 
 .about_me_para3::after {
-    @include paraEnd;
-    top: 17.5rem;
-    left: -2rem;
-    
+  @include paraEnd;
+  top: 14.5rem;
+  left: -2rem;
 }
 
-.about_me_para2::after{
-    @include paraEnd;
-        top: 17.5rem;
-        left: -2rem;
+.about_me_para2::after {
+  @include paraEnd;
+  top: 15.5rem;
+  left: -2rem;
 }
 
-.skill_sphere{
-    position: relative;
-    left: 16rem;
+.skill_sphere {
+  position: relative;
+  left: 16rem;
 }
 
-.about_me_skills svg{
-    position: relative;
-    top: 8rem;
-    right:11rem;
-    color:#1C494C;
-    width: 2rem;
-    height: 2rem;
+.about_me_skills svg {
+  position: relative;
+  top: 8rem;
+  right: 11rem;
+  color: #1c494c;
+  width: 2rem;
+  height: 2rem;
 }
 
 .about_me_skills svg:last-of-type {
-    height: 2rem;
-    width: 2rem;
-    top:10rem;
-    right: 13rem;
+  height: 2rem;
+  width: 2rem;
+  top: 10rem;
+  right: 13rem;
 }
 
-.sphere_info{
-    position: relative;
-    top: 8rem;
-    right: 12rem;
-    color: #1C494C;
-    font-family: $content-fonts;
-    font-weight: 300;
-
+.sphere_info {
+  position: relative;
+  top: 8rem;
+  right: 12rem;
+  color: #1c494c;
+  font-family: $content-fonts;
+  font-weight: 300;
 }
 
 .about_content p {
-    color: #1C494C;
-    margin-bottom: 1.5rem;
-    font-size: 18px;
-    font-family: $Font-content;
-    font-weight: 400;
-    font-style: normal;
+  color: #1c494c;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  font-family: $Font-content;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .about_content h3 {
-    color: #1C494C;
-    margin-bottom: 1.5rem;
-    padding-bottom: 3rem;
-    font-family: $content-fonts;
-    font-weight: 100;
-    font-style: normal;
+  color: #1c494c;
+  margin-bottom: 1.5rem;
+  padding-bottom: 3rem;
+  font-family: $content-fonts;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .about_content p:first-of-type::before {
-  @include para
+  @include para;
 }
 
-.about_content p:last-of-type::after{
-    @include paraEnd
+.about_content p:last-of-type::after {
+  @include paraEnd;
 }
 
 .about_content h3:first-of-type::before {
-    @include h3TagOpen
+  @include h3TagOpen;
 }
 
 .about_content h3:first-of-type::after {
-    @include h3TagClose;
-    top: 6rem;
+  @include h3TagClose;
+  top: 6rem;
 }
 
 .scroll-animation {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 10rem;
-    color:#1C494C;
-    font-family: $content-fonts;
-    font-weight: 100;
-    animation-name: bounce;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10rem;
+  color: #1c494c;
+  font-family: $content-fonts;
+  font-weight: 100;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .scroll-animation > span {
-    padding: 5px;
+  padding: 5px;
 }
 
-.vertical_line{
-   content: '';
-   height: 200px;
-   width: 0.5px;
-   padding-top: 2px;
-   position: relative;
-   display: block;
-   background-color: #1C494C;
+.vertical_line {
+  content: "";
+  height: 200px;
+  width: 0.5px;
+  padding-top: 2px;
+  position: relative;
+  display: block;
+  background-color: #1c494c;
 }
 
 @keyframes bounce {
-    from {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(0px);
+  }
 
-    to{
-        transform: translateY(20px);
-    }
-    
+  to {
+    transform: translateY(20px);
+  }
 }
 
-.about_me_panels{
-    display: flex;
-    position: relative;
-    top: 60rem;
-    z-index: 0;
-
+.about_me_panels {
+  display: flex;
+  position: relative;
+  top: 60rem;
+  z-index: 0;
 }
 
-.about_me_skills{
-    display: flex;
-    position: relative;
-    top: 45rem;
-    z-index:0;
+.about_me_skills {
+  display: flex;
+  position: relative;
+  top: 45rem;
+  z-index: 0;
 }
 
-.about_me_history{
-    display: flex;
-    position: relative;
-    top: 25rem;
-    z-index: 0;
+.about_me_history {
+  display: flex;
+  position: relative;
+  top: 25rem;
+  z-index: 0;
 }
 
-.cityscapes{
-    position: relative;
-    top: 5rem;
-    left: 20rem;
+.cityscapes {
+  position: relative;
+  top: 5rem;
+  left: 20rem;
 }
 
-.cityscape_kochi{
-    position: relative;
-    right: 5rem; 
+.cityscape_kochi {
+  position: relative;
+  right: 5rem;
 }
 
-.cityscape_balloon{
-    position: relative;
-    right: 37rem;
-    top: 2rem;
+.cityscape_balloon {
+  position: relative;
+  right: 37rem;
+  top: 2rem;
 }
 
-.cityscape_dublin{
-   position: relative;
-   top: 15rem;
-   right: 24rem;
+.cityscape_dublin {
+  position: relative;
+  top: 15rem;
+  right: 24rem;
 }
 
 .container-about {
-    position: relative;
-    height: 300px;
-    width: 600px;
-    top: 10rem;
-    left: 5rem;
-    display: flex;
+  position: relative;
+  height: 300px;
+  width: 600px;
+  top: 10rem;
+  left: 5rem;
+  display: flex;
 }
 
 .card-about {
-    display: flex;
-    height: 280px;
-    width: 200px;
-    background-color: #1C494C;
-    border-radius: 10px;
-    box-shadow: -1rem 0 3rem #000;
-    /*   margin-left: -50px; */
-    transition: 0.4s ease-out;
-    position: relative;
-    left: 0px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #1c494c;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-about:not(:first-child) {
-    margin-left: -50px;
+  margin-left: -50px;
 }
 
 .card-about:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
 }
 
-.card-about:hover~.card-about {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
+.card-about:hover ~ .card-about {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
 }
 
 .title-about {
-    color: white;
-    font-weight: 300;
-    position: absolute;
-    left: 20px;
-    top: 15px;
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
 
 .bar-about {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    height: 5px;
-    width: 150px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
 }
 
 .emptybar-about {
-    background-color: #2e3033;
-    width: 100%;
-    height: 100%;
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
 }
 
 .card-about:hover .filledbar-about {
-    width: 120px;
-    transition: 0.4s ease-out;
+  width: 120px;
+  transition: 0.4s ease-out;
 }
 
 .circle-about {
-    position: absolute;
-    top: 150px;
-    left: calc(50% - 60px);
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
 }
 
 .stroke {
-    stroke: white;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: 0.6s ease-out;
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
 }
 
 svg {
-    fill: #17141d;
-    stroke-width: 2px;
+  fill: #17141d;
+  stroke-width: 2px;
 }
 
 .card-about:hover .stroke {
-    stroke-dashoffset: 100;
-    transition: 0.6s ease-out;
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
 }
 
-.walmart-icon{
-    height: 11rem;
-    width: 12rem;
+.walmart-icon {
+  height: 11rem;
+  width: 12rem;
 }
 
-.qatar-icon{
-    height: 8rem;
-    width:11rem;
+.qatar-icon {
+  height: 8rem;
+  width: 11rem;
 }
 
 .infa-icon {
-    height: 4rem;
-    width:11rem;
+  height: 4rem;
+  width: 11rem;
 }
 
-.wipro-icon{
-    height: 9rem;
-    width: 11rem;
+.wipro-icon {
+  height: 9rem;
+  width: 11rem;
 }
 
 @media screen and (max-width: 1000px) {
+  .about_content h3:first-of-type::after {
+    top: 9rem;
+  }
 
-    .about_content h3:first-of-type::after{
-        top: 9rem;
-    }
+  .about_me_main {
+    top: 23rem;
+  }
 
-    .about_me_main{
-        top:23rem;
-    }
+  .scroll-animation {
+    top: 30rem;
+  }
 
-    .scroll-animation{
-        top: 30rem;
-    }
+  .about_me_history {
+    top: 60rem;
+  }
 
-    .about_me_history{
-        top: 60rem;
-    }
+  .about_me_skills {
+    top: 88rem;
+  }
 
-    .about_me_skills{
-        top: 88rem;
-    }
+  .about_me_content > h1 {
+    font-size: 4.2rem;
+  }
 
-    .about_me_content > h1 {
-        font-size: 4.2rem;
+  .cityscape_dublin {
+    right: 16rem;
+  }
 
-    }
+  .cityscape_balloon {
+    top: -2rem;
+    right: 29rem;
+  }
 
-    .cityscape_dublin{
-        right: 16rem;
-    }
-    
-    .cityscape_balloon{
-        top: -2rem;
-        right: 29rem;
-    }
+  .cityscape_kochi {
+    top: 5rem;
+    right: 18rem;
+  }
 
-    .cityscape_kochi{
-        top: 5rem;
-        right: 18rem;
-    }
+  .about_me_para3::after {
+    top: 35rem;
+  }
 
-    .about_me_para3::after{
-        top: 35rem;
-    }
+  .about_me_panels {
+    top: 120rem;
+  }
 
-    .about_me_panels{
-        top: 120rem;
-    }
+  .about_me_para2 {
+    left: 7rem;
+  }
 
-    .about_me_para2{
-        left: 7rem;
-    }
+  .about_me_para2::after {
+    top: 25.5rem;
+  }
 
-    .about_me_para2::after{
-        top: 25.5rem;
-    }
+  .skill_sphere {
+    left: 14rem;
+  }
 
-    .skill_sphere{
-        left: 14rem;
-    }
+  .container-about {
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 17rem 17rem;
+  }
 
-    .container-about{
-        display: grid;
-        grid-template-columns:  12rem 12rem;
-        grid-template-rows: 17rem 17rem;
-    }
-
-    .card-about:not(:first-child){
-        margin-left: 0px;
-    }
-    
+  .card-about:not(:first-child) {
+    margin-left: 0px;
+  }
 }
 
-
 @media screen and (max-width: 512px) {
+  .about_me_main {
+    top: 8rem !important;
+  }
 
-    .about_me_main{
-        top: 8rem !important;
-    }
+  .about_me_page {
+    height: 550vh !important;
+  }
+  .about_me_content > h1 {
+    font-size: 2.2rem !important;
+    left: 2rem !important;
+    bottom: 2rem !important;
+  }
 
-    .about_me_page{
-        height: 550vh !important;
-    }
-    .about_me_content > h1 {
-        font-size: 2.2rem !important;
-        left: 2rem !important;
-        bottom: 2rem !important;
-    }
+  .about_me_content > h1::before {
+    left: -1rem !important;
+    font-size: 1rem !important;
+    bottom: 2.7rem !important;
+  }
 
-    .about_me_content > h1::before{
-        left: -1rem !important;
-        font-size: 1rem !important;
-        bottom: 2.7rem !important;
-    }
+  .about_me_content > h1::after {
+    left: -1rem !important;
+    font-size: 1rem !important;
+    top: 4rem !important;
+  }
 
-    .about_me_content > h1::after{
-        left: -1rem !important;
-        font-size: 1rem !important;
-        top: 4rem !important;
-    }
+  .about_underline {
+    width: 5rem !important;
+    left: 2rem !important;
+    bottom: 2.5rem !important;
+  }
 
-    .about_underline{
-        width: 5rem !important;
-        left: 2rem !important;
-        bottom: 2.5rem !important;
-    }
+  .about_dot {
+    left: 12.2rem !important;
+    bottom: 3.1rem !important;
+    height: 10px !important;
+    width: 10px !important;
+  }
 
-    .about_dot{
-        left: 12.2rem !important;
-        bottom: 3.1rem !important;
-        height: 10px !important;
-        width: 10px !important;
-    }
+  .about_content {
+    left: 2rem !important;
+    top: 5.5rem !important;
+    font-size: 1rem !important;
+  }
 
-    .about_content{
-        left: 2rem !important;
-        top: 5.5rem !important;
-        font-size: 1rem !important;
-    }
+  .about_content h3:first-of-type::before {
+    left: -1rem !important;
+    font-size: 1rem !important;
+  }
 
-    .about_content h3:first-of-type::before{
-        left:-1rem !important;
-        font-size: 1rem !important;
-    }
+  .about_content h3:first-of-type::after {
+    left: -1rem !important;
+    font-size: 1rem !important;
+    top: 14.2rem !important;
+  }
 
-    .about_content h3:first-of-type::after{
-        left: -1rem !important;
-        font-size: 1rem !important;
-        top: 14.2rem !important;
-    }
+  .scroll-animation {
+    top: 4rem !important;
+  }
 
-    .scroll-animation{
-        top: 4rem !important;
-    }
+  .scroll-animation > span {
+    font-size: 10px !important;
+  }
 
-    .scroll-animation > span {
-        font-size: 10px !important;
-    }
+  .vertical_line {
+    width: 0.2px !important;
+  }
 
-    .vertical_line{
-        width: 0.2px !important;
-    }
+  .about_me_history {
+    display: block !important;
+    top: 20rem !important;
+  }
 
-    .about_me_history{
-        display: block !important;
-        top: 20rem !important;
-    }
+  .about_me_para3 {
+    font-size: 0.9rem !important;
+    top: 36rem !important;
+    width: 75% !important;
+  }
 
-    .about_me_para3{
-        font-size: 0.9rem !important;
-        top: 36rem !important;
-        width: 75% !important;
-    }
+  .about_me_para3::before {
+    font-size: 1rem !important;
+  }
 
-    .about_me_para3::before{
-        font-size: 1rem !important;
-    }
+  .about_me_para3::after {
+    font-size: 1rem !important;
+    top: 27.5rem !important;
+  }
 
-    .about_me_para3::after{
-        font-size: 1rem !important;
-        top: 27.5rem !important;
-    }
+  .cityscapes {
+    top: -30rem !important;
+    left: 5rem !important;
+  }
 
-    .cityscapes{
-        top: -30rem !important;
-        left: 5rem !important;
-    }
+  .cityscape_kochi {
+    width: 14rem !important;
+    right: 5rem !important;
+  }
 
-    .cityscape_kochi{
-        width: 14rem !important;
-        right: 5rem !important;
-    }
+  .cityscape_dublin {
+    width: 16rem !important;
+    right: 4rem !important;
+    top: 9rem !important;
+  }
 
-    .cityscape_dublin {
-        width: 16rem !important;
-        right: 4rem !important;
-        top: 9rem !important;
-    }
+  .cityscape_balloon {
+    right: 13rem !important;
+    top: -1rem !important;
+  }
 
-    .cityscape_balloon{
-        right: 13rem !important;
-        top: -1rem !important;
-    }
+  .about_me_skills {
+    display: block !important;
+    top: 45rem !important;
+  }
 
-    .about_me_skills{
-        display: block !important;
-        top: 45rem !important;
-    }
+  .skill_sphere {
+    left: 11.5rem !important;
+  }
 
-    .skill_sphere{
-        left: 11.5rem !important;
-    }
+  .skill_sphere span img {
+    width: 2rem !important;
+  }
 
-   .skill_sphere span img {
-     width: 2rem !important;
-   }
-
-   .sphere_info{
+  .sphere_info {
     font-size: 12px !important;
-   }
+  }
 
-   .about_me_skills svg {
+  .about_me_skills svg {
     width: 19px !important;
-   }
+  }
 
-   .about_me_skills svg:last-of-type{
-    top:9.5rem !important;
+  .about_me_skills svg:last-of-type {
+    top: 9.5rem !important;
     right: 12.3rem !important;
-   }
+  }
 
-
-   .about_me_para2{
+  .about_me_para2 {
     left: 3rem !important;
     font-size: 0.9rem !important;
     width: 70% !important;
     top: 14rem !important;
-   }
+  }
 
-   .about_me_para2::before{
+  .about_me_para2::before {
     font-size: 1rem !important;
-   }
+  }
 
-   .about_me_para2::after{
+  .about_me_para2::after {
     top: 24.5rem !important;
     font-size: 1rem !important;
-   }
+  }
 
-   .about_me_panels{
+  .about_me_panels {
     display: block !important;
     top: 70rem !important;
-   }
+  }
 
-   .about_me_para_1{
+  .about_me_para_1 {
     font-size: 0.9rem !important;
     width: 70% !important;
     top: 25rem !important;
-   }
+  }
 
-   .container-about{
+  .container-about {
     display: grid;
-    grid-template-columns:  8rem 8rem;
+    grid-template-columns: 8rem 8rem;
     grid-template-rows: 9rem 9rem;
     top: -23rem !important;
     left: 2rem;
-   }
+  }
 
-   .card-about{
+  .card-about {
     width: 150px;
     height: 144px;
     box-shadow: 1rem 1rem 3rem #000;
-   }
+  }
 
-
-.card-about:not(:first-child){
+  .card-about:not(:first-child) {
     margin-left: 0px !important;
-}
-.walmart-icon{
+  }
+  .walmart-icon {
     height: 7rem !important;
     width: 7rem !important;
-}
+  }
 
-.wipro-icon{
+  .wipro-icon {
     height: 6rem;
     width: 7rem;
-}
+  }
 
-.qatar-icon{
+  .qatar-icon {
     height: 7rem !important;
     width: 9rem !important;
-}
-.infa-icon{
+  }
+  .infa-icon {
     height: 3rem !important;
     width: 9rem !important;
-}
+  }
 
-.card-about:hover{
+  .card-about:hover {
     transform: none !important;
     transition: none !important;
-}
+  }
 
-.card-about:hover~.card-about{
+  .card-about:hover ~ .card-about {
     transition: none !important;
-}
+  }
 
-.about_me_para_1::before{
+  .about_me_para_1::before {
     font-size: 1rem !important;
-}
+  }
 
-.about_me_para_1::after{
+  .about_me_para_1::after {
     font-size: 1rem !important;
-    top: 27.5rem !important
+    top: 27.5rem !important;
+  }
 }
-
-}
-
-
-
-
-

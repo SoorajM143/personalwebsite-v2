@@ -3,330 +3,327 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-
-.my-work{
-    position: relative;
-    min-height: 100vh;
-    height: 700vh;
-    top: 10rem;
+.my-work {
+  position: relative;
+  min-height: 100vh;
+  height: 700vh;
+  top: 10rem;
 }
 
-.my-works{
-    width: 100%;
+.my-works {
+  width: 100%;
 }
 
-.my-work  h1 {
-    font-size: 4.8rem;
-    position: relative;
-    color: #024463;
-    text-align: justify;
-    font-family: $Font-content;
-    left: 6rem;
+.my-work h1 {
+  font-size: 4.8rem;
+  position: relative;
+  color: #024463;
+  text-align: justify;
+  font-family: $Font-content;
+  left: 6rem;
 }
 
-.my-work h1::before{
-    @include h2TagOpen
+.my-work h1::before {
+  @include h2TagOpen;
 }
 
-.my-work h1::after{
-    @include h2TagClose;
-    top: 6rem;
+.my-work h1::after {
+  @include h2TagClose;
+  top: 6rem;
 }
 
-.work_underline{
-    @include underline;
-    bottom: 0.5rem;
-    background: $work-themecolor;
-    left: 7rem ;
-    width: 6.5rem ;
+.work_underline {
+  @include underline;
+  bottom: 0.5rem;
+  background: $work-themecolor;
+  left: 7rem;
+  width: 6.5rem;
 }
 
 .work_dot {
-    @include dot;
-    background: $work-themecolor;
-    bottom: 2rem;
-    left: 21rem;
+  @include dot;
+  background: $work-themecolor;
+  bottom: 2rem;
+  left: 21rem;
 }
 
-.works-subheader{
-    position: relative;
-    line-height: 1.5;
-    top: 7rem;
-    width: 70%;
-    left: 12rem;
-    font-size: 1.3rem;
-    text-align: left;
-    font-family: $Font-content;
+.works-subheader {
+  position: relative;
+  line-height: 1.5;
+  top: 7rem;
+  width: 70%;
+  left: 12rem;
+  font-size: 1.3rem;
+  text-align: left;
+  font-family: $Font-content;
 }
 
 .works-subheader > h3 {
-    color: #024463;
-    margin-bottom: 1.5rem;
-    padding-bottom: 3rem;
-    font-family: $Font-content;
-    font-weight: 100;
-    font-style: normal;
+  color: #024463;
+  margin-bottom: 1.5rem;
+  padding-bottom: 3rem;
+  font-family: $Font-content;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .works-subheader > h3::before {
-    @include h3TagOpen
+  @include h3TagOpen;
 }
 
 .works-subheader > h3::after {
-    @include h3TagClose;
-    top: 7rem;
+  @include h3TagClose;
+  top: 7rem;
 }
 
 .scroll-animation-work {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 8rem;
-    color:#1C494C;
-    font-family: $content-fonts;
-    font-weight: 100;
-    animation-name: bounce;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 8rem;
+  color: #1c494c;
+  font-family: $content-fonts;
+  font-weight: 100;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .scroll-animation-work > span {
-    padding: 5px;
+  padding: 5px;
 }
 
-.vertical_line-work{
-    content: '';
-    height: 200px;
-    width: 0.5px;
-    padding-top: 2px;
-    position: relative;
-    display: block;
-    background-color: #1C494C;
- }
-
- @keyframes bounce {
-    from {
-        transform: translateY(0px);
-    }
-
-    to{
-        transform: translateY(20px);
-    }
-    
+.vertical_line-work {
+  content: "";
+  height: 200px;
+  width: 0.5px;
+  padding-top: 2px;
+  position: relative;
+  display: block;
+  background-color: #1c494c;
 }
 
-.all-works-header{
-    color: #024463;
-    font-family: $Font-content;
-    text-align: left;
-    position: relative;
-    top: 20rem;
-    left: 2rem;
-    width: 50%;
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
 }
 
-.other-works-header{
-    color: #024463;
-    font-family: $Font-content;
-    text-align: left;
-    position: relative;
-    top: 35rem;
-    left: 2rem;
-    width: 50%;
+.all-works-header {
+  color: #024463;
+  font-family: $Font-content;
+  text-align: left;
+  position: relative;
+  top: 20rem;
+  left: 2rem;
+  width: 50%;
+}
+
+.other-works-header {
+  color: #024463;
+  font-family: $Font-content;
+  text-align: left;
+  position: relative;
+  top: 35rem;
+  left: 2rem;
+  width: 50%;
 }
 
 .other-works-header > h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .all-works-header > h2 {
-    font-size: 2rem;;
+  font-size: 2rem;
 }
 
-.all-work-underline{
-    @include underline;
-    background-color: $work-themecolor;
-    left: 0rem;
-    width: 5.5rem;
+.all-work-underline {
+  @include underline;
+  background-color: $work-themecolor;
+  left: 0rem;
+  width: 5.5rem;
 }
 
-.other-work-dot{
-    @include dot;
-    background-color: $work-themecolor;
-    left: 12.2rem;
-    height: 8px;
-    width: 8px;
-    bottom: 1.3rem;
+.other-work-dot {
+  @include dot;
+  background-color: $work-themecolor;
+  left: 12.2rem;
+  height: 8px;
+  width: 8px;
+  bottom: 1.3rem;
 }
 
-.all-work-dot{
-    @include dot;
-    background-color: $work-themecolor;
-    left: 15.2rem;
-    height: 8px;
-    width: 8px;
-    bottom: 1.3rem;
+.all-work-dot {
+  @include dot;
+  background-color: $work-themecolor;
+  left: 15.2rem;
+  height: 8px;
+  width: 8px;
+  bottom: 1.3rem;
 }
 
-
-.all-works{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 33rem;
-    transition: all .6s ease;
-
+.all-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 33rem;
+  transition: all 0.6s ease;
 }
 
-.work-left{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 14rem;
+.work-left {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 14rem;
 }
 
 .reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.work-left-img{
-    align-items: center;
-    display: flex;
-    width: 55%;
-    justify-content: center;
+.work-left-img {
+  align-items: center;
+  display: flex;
+  width: 55%;
+  justify-content: center;
 }
 
 .work-left-img > img {
-    width: 600px;
-    border-radius: 15px;
-    box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42), 0 35px 75px -35px hsl(225deg 2% 62% / 8%);
-    filter: blur(0);
-    opacity: 1;
-    transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
-    transition: all .6s ease;
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42),
+    0 35px 75px -35px hsl(225deg 2% 62% / 8%);
+  filter: blur(0);
+  opacity: 1;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: all 0.6s ease;
 }
 
-.work-left-img >img:hover {
-    box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
-    filter: blur(0.2px);
-    opacity: 1;
-    transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1.1);
+.work-left-img > img:hover {
+  box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
+  filter: blur(0.2px);
+  opacity: 1;
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1.1);
 }
 
-.work-left-detail{
-    display: flex;
-    width: 45%;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: #ddeff5;
+.work-left-detail {
+  display: flex;
+  width: 45%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ddeff5;
 }
 
-.work-left-detail > h4{
-    font-size: 1.5rem;
-    position: relative;
-    color: #024463;
-    text-align: justify;
-    font-family: $Font-content;
-    margin-bottom: 2rem;
+.work-left-detail > h4 {
+  font-size: 1.5rem;
+  position: relative;
+  color: #024463;
+  text-align: justify;
+  font-family: $Font-content;
+  margin-bottom: 2rem;
 }
 
 .work-left-detail h5 {
-    position: relative;
-    bottom: 1rem;
-    color: #024463;
-    font-family: $Font-content;
-    margin-bottom: 2rem;
+  position: relative;
+  bottom: 1rem;
+  color: #024463;
+  font-family: $Font-content;
+  margin-bottom: 2rem;
 }
 
-.work-detail-dot{
-    @include dot;
-    background: $work-themecolor;
-    bottom: 2.8rem;
-    left: 9.5rem;
-    height: 8px;
-    width: 8px;
+.work-detail-dot {
+  @include dot;
+  background: $work-themecolor;
+  bottom: 2.8rem;
+  left: 9.5rem;
+  height: 8px;
+  width: 8px;
 }
 
 .work-left-detail > p {
-    color: #024463;
-    font-family: $Font-content;
-    text-align: center;
-    margin: 0 0 3rem;
-    line-height: 24px;
+  color: #024463;
+  font-family: $Font-content;
+  text-align: center;
+  margin: 0 0 3rem;
+  line-height: 24px;
 }
 
 .work-left-detail a {
-    width: 10rem;
+  width: 10rem;
 }
 
 .work-left-detail a:hover {
-    transition: all 0.3s ease-in-out;
-    transform: translateY(-6px);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
 }
 
-.work-detail-dot-infa{
-    @include dot;
-    background: $work-themecolor;
-    bottom: 2.8rem;
-    left: 8.7rem;
-    height: 8px;
-    width: 8px;
+.work-detail-dot-infa {
+  @include dot;
+  background: $work-themecolor;
+  bottom: 2.8rem;
+  left: 8.7rem;
+  height: 8px;
+  width: 8px;
 }
 
-.work-detail-dot-walmart{
-    @include dot;
-    background-color: $work-themecolor;
-    bottom: 2.8rem;
-    left: 6.2rem;
-    height: 8px;
-    width: 8px;
+.work-detail-dot-walmart {
+  @include dot;
+  background-color: $work-themecolor;
+  bottom: 2.8rem;
+  left: 6.2rem;
+  height: 8px;
+  width: 8px;
 }
 
 .work-tech {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    position: relative;
-    right: 20px;
-    margin: 1rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  position: relative;
+  right: 20px;
+  margin: 1rem 0 2rem;
 }
 
 .work-tech li {
-    color: #024463;
-    font-family: $Font-content;
-    white-space: nowrap;
-    margin: 0 0 5px 20px;   
-    font-size: 13px;
-    font-weight: bold;
+  color: #024463;
+  font-family: $Font-content;
+  white-space: nowrap;
+  margin: 0 0 5px 20px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.other-works{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 40rem;
-    transition: all 0.6s ease;
+.other-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 40rem;
+  transition: all 0.6s ease;
 }
 
-.work-other-dot{
-    @include dot;
-    background-color: $work-themecolor;
-    left: 8rem;
-    bottom: 2.9rem;
-    height: 8px;
-    width: 8px;
+.work-other-dot {
+  @include dot;
+  background-color: $work-themecolor;
+  left: 8rem;
+  bottom: 2.9rem;
+  height: 8px;
+  width: 8px;
 }
-

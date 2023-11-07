@@ -15,7 +15,7 @@ const APPLICATION_CONST = {
   ABOUT_ME_WORK_PARA_4: 'easyJet.',
   ABOUT_ME_WORK_PARA_5:
     " In my current role ,I'm working on the cloud Data Marketplace for ",
-  ABOUT_ME_WORK_PARA_6: "Informatica's Axon product. ",
+  ABOUT_ME_WORK_PARA_6: "Informatica's Axon product and Master Data Management (MDM) SAAS products. ",
   ABOUT_ME_WORK_PARA_7:
     'These days most of my time is spent on research,coding,learning new tech on LinkedIn/Youtube and designing on Illustrator. I care deeply about creating a seemless user experience. Passionate about UI design and learning new technologies. Out of Office, you ll find me playing guitar, petting all the good dogs and exploring new cuisines.',
   ABOUT_ME_WORK_PARA_8: 'Visit my ',
@@ -24,8 +24,8 @@ const APPLICATION_CONST = {
   ABOUT_ME_SKILL_PARA_1:
     "I've create successful responsive web apps and sites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, ",
   ABOUT_ME_SKILL_PARA_2:
-    'Although my expertise is Front-end development, I have recently tried my hands at designing to expand my portfolio. You can find all the front-end technologies I have experience with in the rotating sphere.',
-  ABOUT_ME_SKILL_PARA_3: 'HTML, CSS, JS ',
+    'Although my expertise is Front-end development, I have recently tried my hands at back-end technologies abd designing to expand my portfolio. You can find all the front-end technologies I have experience with in the rotating sphere.',
+  ABOUT_ME_SKILL_PARA_3: 'HTML, CSS, JS, Typescript and Modern Frameworks like React, ',
   ABOUT_ME_SKILL_PARA_4:
     'building web apps, features, animations, and coding interactive layouts.',
   ABOUT_ME_HISTORY_PARA_1:
@@ -34,7 +34,7 @@ const APPLICATION_CONST = {
   ABOUT_ME_HISTORY_PARA_3:
     'in 2015, I quickly joined the corporate world to begin my journey as a developer. ',
   ABOUT_ME_HISTORY_PARA_4:
-    'After 4 years, in 2019, I quit the comfort of stable job in pursuit of higher education and decided to shift base to not so sunny Ireland. I graduated with ',
+    'In 2019, I decided to shift base to not so sunny Ireland. I graduated with ',
   ABOUT_ME_HISTORY_PARA_5:
     'Master in International Management and Global Business ',
   ABOUT_ME_HISTORY_PARA_6: 'from Univeristy of Limerick.',
