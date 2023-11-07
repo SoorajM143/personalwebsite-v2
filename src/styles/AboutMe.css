@@ -13,7 +13,7 @@
 
 .about_me_page {
   min-height: 100vh;
-  height: 400vh;
+  height: 310vh;
   position: relative;
   width: 100%;
   background-color: transparent;
@@ -30,7 +30,7 @@
   position: relative;
   color: #1C494C;
   text-align: justify;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   left: 6rem;
 }
 
@@ -87,8 +87,8 @@
   position: relative;
   bottom: 1.6rem;
   background: #88F3CC !important;
-  bottom: 2rem;
-  left: 28rem !important;
+  bottom: 1.5rem;
+  left: 26rem !important;
 }
 
 .about_content {
@@ -99,7 +99,7 @@
   left: 12rem;
   font-size: 1.3rem;
   text-align: left;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
 }
 
 .about_me_para_1 {
@@ -289,7 +289,7 @@
   color: #1C494C;
   margin-bottom: 1.5rem;
   padding-bottom: 3rem;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
   font-weight: 100;
   font-style: normal;
 }

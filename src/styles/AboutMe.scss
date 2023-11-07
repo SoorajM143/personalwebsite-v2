@@ -8,7 +8,7 @@
 
 .about_me_page {
     min-height: 100vh;
-    height: 400vh;
+    height: 310vh;
     position: relative;
     width: 100%;
     background-color: transparent;
@@ -25,7 +25,7 @@
     position: relative;
     color: #1C494C;
     text-align: justify;
-    font-family: $Font-content;
+    font-family: $content-fonts;
     left: 6rem;
 }
 
@@ -56,8 +56,8 @@
 .about_dot {
     @include dot;
     background: $about-themecolor !important;
-    bottom: 2rem ;
-    left: 28rem !important;
+    bottom: 1.5rem ;
+    left: 26rem !important;
 }
 
 .about_content {
@@ -68,7 +68,7 @@
     left: 12rem;
     font-size: 1.3rem;
     text-align: left;
-    font-family: $Font-content;
+    font-family: $content-fonts
 }
 
 .about_me_para_1{
@@ -218,7 +218,7 @@
     color: #1C494C;
     margin-bottom: 1.5rem;
     padding-bottom: 3rem;
-    font-family: $Font-content;
+    font-family: $content-fonts;
     font-weight: 100;
     font-style: normal;
 }
