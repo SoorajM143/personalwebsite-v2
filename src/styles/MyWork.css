@@ -290,6 +290,13 @@
   justify-content: center;
 }
 
+.work-left-img-portfolio {
+  align-items: center;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+}
+
 .work-left-img::before {
   content: "<img>";
   font-family: "La Belle Aurore", cursive;
@@ -314,6 +321,30 @@
   top: 20rem;
 }
 
+.work-left-img-portfolio::before {
+  content: "<img>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 4rem;
+  top: -4rem;
+}
+
+.work-left-img-portfolio::after {
+  content: "</img>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 4rem;
+  top: 22rem;
+}
+
 .work-left-img > img {
   width: 600px;
   border-radius: 15px;
@@ -325,6 +356,23 @@
 }
 
 .work-left-img > img:hover {
+  box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
+  filter: blur(0.2px);
+  opacity: 1;
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1.1);
+}
+
+.work-left-img-portfolio > img {
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42), 0 35px 75px -35px hsla(225, 2%, 62%, 0.08);
+  filter: blur(0);
+  opacity: 1;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: all 0.6s ease;
+}
+
+.work-left-img-portfolio > img:hover {
   box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
   filter: blur(0.2px);
   opacity: 1;

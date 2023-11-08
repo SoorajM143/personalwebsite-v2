@@ -75,6 +75,8 @@ const APPLICATION_CONST = {
   WORK_DETAIL_6:
     "E-commerce website for the Mexico and Central American division of Walmart. Maintained and devloped by Wipro Technologies.",
   WORK_DETAIL_7: "Master Data Management SAAS",
+  WORK_SUBDETAIL_7:
+    "Informatica MDM Hub is the best platform available today for deploying MDM solutions across the enterprise. Informatica MDM Hub offers an integrated, model-driven, and flexible enterprise MDM platform that can be used to create and manage all kinds of master data",
   WORK_TECH_JS: "Javascript",
   WORK_TECH_MAP: "Google Maps",
   WORK_TECH_REACT: "React",
@@ -86,7 +88,7 @@ const APPLICATION_CONST = {
   WORK_TECH_SASS: "SASS",
   WORK_OTHER_1: "Personal Portfolio- v1",
   WORK_OTHER_2: "MOOD - Music PLayer",
-  WORK_OTHER_3: "Spotify Profle",
+  WORK_OTHER_3: "Spotify Profile",
   WORK_OTHER_DETAIL_1:
     "The first iteration of Personal Portfolio website created from scratch using React ",
   WORK_OTHER_DETAIL_2:

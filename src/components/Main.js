@@ -13,6 +13,7 @@ function Main() {
     root.style.setProperty("--background-color", "#88CDEC");
     document.title = "Home - Sooraj";
   }, []);
+  
   return (
     <>
       <div className="mainPage">

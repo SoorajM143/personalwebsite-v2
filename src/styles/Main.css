@@ -247,4 +247,38 @@
   .button-52 {
     padding: 13px 50px 13px;
   }
+}
+@media screen and (max-width: 512px) {
+  .mainPage-content > h2 {
+    font-size: 2rem !important;
+    left: 3rem !important;
+  }
+  .mainPage-content > h2::before {
+    font-size: 1rem !important;
+    bottom: 2rem !important;
+    left: -2rem !important;
+  }
+  .mainPage-content > h2::after {
+    font-size: 1rem !important;
+    top: 3rem !important;
+    left: -2rem !important;
+  }
+  .mainPage-content {
+    bottom: 40rem !important;
+  }
+  .main_underline {
+    width: 4rem;
+    left: 3rem !important;
+  }
+  .main_dot {
+    left: 11rem !important;
+    height: 7px !important;
+    width: 7px !important;
+    bottom: 0.6rem !important;
+  }
+}
+@media (min-width: 1000px) {
+  .mainPage-content h2 {
+    font-size: 1.5rem !important;
+  }
 }/*# sourceMappingURL=Main.css.map */

@@ -1,23 +1,22 @@
-import React, { useEffect } from 'react';
-import { Fade, Slide } from 'react-reveal';
-import { Button, ThemeProvider } from '@mui/material';
-import { theme } from './utils/util';
-import '../styles/MyWork.css';
-import Constants from './utils/Constant';
-import QatarTops from '../images/Qatar-tops.PNG';
-import Infa from '../images/infa.PNG';
-import Walmart from '../images/Walmart-mexico.PNG'
-import Portfolio from '../images/portfolio.PNG';
-import Mood from '../images/Mood.PNG';
-import Spotify from '../images/spotify.PNG';
-import MDM from '../images/mdm.png'
+import React, { useEffect } from "react";
+import { Fade, Slide } from "react-reveal";
+import { Button, ThemeProvider } from "@mui/material";
+import { theme } from "./utils/util";
+import "../styles/MyWork.css";
+import Constants from "./utils/Constant";
+import QatarTops from "../images/Qatar-tops.PNG";
+import Infa from "../images/infa.PNG";
+import Walmart from "../images/Walmart-mexico.PNG";
+import Portfolio from "../images/portfolio.PNG";
+import Mood from "../images/Mood.PNG";
+import Spotify from "../images/spotify.PNG";
+import MDM from "../images/mdm.png";
 
 function MyWork() {
-
   useEffect(() => {
     const root = document.documentElement;
-    root.style.setProperty('--background-color', '#FCC8D1');
-    document.title = 'Works - Sooraj';
+    root.style.setProperty("--background-color", "#FCC8D1");
+    document.title = "Works - Sooraj";
   }, []);
 
   return (
@@ -27,221 +26,263 @@ function MyWork() {
           <h1>{Constants.WORK_HEADER}</h1>
         </Fade>
         <Slide right delay={200}>
-        <div className="work_underline"></div>
-        <span className="work_dot"></span>
+          <div className="work_underline"></div>
+          <span className="work_dot"></span>
         </Slide>
         <Fade bottom delay={1000}>
-        <div className='works-subheader'>
-          <h3>
-            {Constants.WORK_SUBHEADER_1}
-            <strong>{Constants.WORK_SUBHEADER_2}</strong>
-            {Constants.WORK_SUBHEADER_3}
-            {Constants.WORK_SUBHEADER_4}
-            <strong>{Constants.WORK_SUBHEADER_5}</strong>
-          </h3>
-        </div>
+          <div className="works-subheader">
+            <h3>
+              {Constants.WORK_SUBHEADER_1}
+              <strong>{Constants.WORK_SUBHEADER_2}</strong>
+              {Constants.WORK_SUBHEADER_3}
+              {Constants.WORK_SUBHEADER_4}
+              <strong>{Constants.WORK_SUBHEADER_5}</strong>
+            </h3>
+          </div>
         </Fade>
       </div>
       <div className="scroll-animation-work">
-            <span>Scroll Down</span>
-            <div className="vertical_line-work"></div>
+        <span>Scroll Down</span>
+        <div className="vertical_line-work"></div>
       </div>
-      <div className='all-works-header'>
-      <Fade top delay={300}>
-        <h2>{Constants.WORK_FEATURED}</h2>
+      <div className="all-works-header">
+        <Fade top delay={300}>
+          <h2>{Constants.WORK_FEATURED}</h2>
         </Fade>
         <Slide right delay={200}>
-        <div className='all-work-underline'></div>
-        <span className='all-work-dot'></span>
+          <div className="all-work-underline"></div>
+          <span className="all-work-dot"></span>
         </Slide>
       </div>
-          <div className='all-works'>
-            <div className='work-left'>
-            <Fade left delay={800}>
-              <div className='work-left-img'>
-                <img id='qatar' src={QatarTops} alt='qatar-tops'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-              <div className='work-left-detail'>
-                <h4>{Constants.WORK_DETAIL_1}</h4>
-                <span className='work-detail-dot'></span>
-                <h5>{Constants.WORK_SUBDETAIL_1}</h5>
-                
-                <p>{Constants.WORK_DETAIL_2}</p>
-                <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_MAP}</li>
-                 <li>{Constants.WORK_TECH_JS}</li>
-                 <li>{Constants.WORK_TECH_OL}</li>
-                 <li>{Constants.WORK_TECH_PG}</li>
-                </ul>
-                <ThemeProvider theme={theme}>
-                  <Button href='https://www.qatarairways.com/en-gr/press-releases/2016/May/pressrelease_fleetmanagementsystem.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
-              </div>
-              </Fade>
+      <div className="all-works">
+        <div className="work-left">
+          <Fade left delay={800}>
+            <div className="work-left-img">
+              <img id="qatar" src={QatarTops} alt="qatar-tops" />
             </div>
-            <div className='work-left reverse'>
-              <Fade right delay={800}>
-            <div className='work-left-img'>
-                <img id='infa' src={Infa} alt='infa'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-            <div className='work-left-detail'>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
+              <h4>{Constants.WORK_DETAIL_1}</h4>
+              <span className="work-detail-dot"></span>
+              <h5>{Constants.WORK_SUBDETAIL_1}</h5>
+
+              <p>{Constants.WORK_DETAIL_2}</p>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_MAP}</li>
+                <li>{Constants.WORK_TECH_JS}</li>
+                <li>{Constants.WORK_TECH_OL}</li>
+                <li>{Constants.WORK_TECH_PG}</li>
+              </ul>
+              <ThemeProvider theme={theme}>
+                <Button
+                  href="https://www.qatarairways.com/en-gr/press-releases/2016/May/pressrelease_fleetmanagementsystem.html"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
+            </div>
+          </Fade>
+        </div>
+        <div className="work-left reverse">
+          <Fade right delay={800}>
+            <div className="work-left-img">
+              <img id="infa" src={Infa} alt="infa" />
+            </div>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
               <h4>{Constants.WORK_DETAIL_3}</h4>
-              <span className='work-detail-dot-infa'></span>
+              <span className="work-detail-dot-infa"></span>
               <h5>{Constants.WORK_SUBDETAIL_2}</h5>
               <p>{Constants.WORK_DETAIL_4}</p>
-              <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_REACT}</li>
-                 <li>{Constants.WORK_TECH_TS}</li>
-                 <li>{Constants.WORK_TECH_JAVA}</li>
-                </ul>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_REACT}</li>
+                <li>{Constants.WORK_TECH_TS}</li>
+                <li>{Constants.WORK_TECH_JAVA}</li>
+              </ul>
               <ThemeProvider theme={theme}>
-                  <Button href='https://www.informatica.com/products/data-governance/cloud-data-marketplace.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
+                <Button
+                  href="https://www.informatica.com/products/data-governance/cloud-data-marketplace.html"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
             </div>
-            </Fade>
+          </Fade>
+        </div>
+        <div className="work-left">
+          <Fade right delay={800}>
+            <div className="work-left-img">
+              <img id="infa" src={MDM} alt="infa" />
             </div>
-            <div className='work-left'>
-              <Fade right delay={800}>
-            <div className='work-left-img'>
-                <img id='infa' src={MDM} alt='infa'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-            <div className='work-left-detail'>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
               <h4>{Constants.WORK_DETAIL_7}</h4>
-              <span className='work-detail-dot-infa-mdm'></span>
+              <span className="work-detail-dot-infa-mdm"></span>
               <h5>{Constants.WORK_SUBDETAIL_2}</h5>
-              <p>{Constants.WORK_DETAIL_4}</p>
-              <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_REACT}</li>
-                 <li>{Constants.WORK_TECH_TS}</li>
-                 <li>{Constants.WORK_TECH_JAVA}</li>
-                </ul>
+              <p>{Constants.WORK_SUBDETAIL_7}</p>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_REACT}</li>
+                <li>{Constants.WORK_TECH_TS}</li>
+                <li>{Constants.WORK_TECH_JAVA}</li>
+              </ul>
               <ThemeProvider theme={theme}>
-                  <Button href='https://www.informatica.com/products/master-data-management.html' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
+                <Button
+                  href="https://www.informatica.com/products/master-data-management.html"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
             </div>
-            </Fade>
+          </Fade>
+        </div>
+        <div className="work-left reverse">
+          <Fade left delay={800}>
+            <div className="work-left-img">
+              <img id="walmart" src={Walmart} alt="walmart" />
             </div>
-            <div className='work-left reverse'>
-            <Fade left delay={800}>
-              <div className='work-left-img'>
-              <img id='walmart' src={Walmart} alt='walmart'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-            <div className='work-left-detail'>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
               <h4>{Constants.WORK_DETAIL_5}</h4>
-              <span className='work-detail-dot-walmart'></span>
+              <span className="work-detail-dot-walmart"></span>
               <h5>{Constants.WORK_SUBDETAIL_3}</h5>
               <p>{Constants.WORK_DETAIL_6}</p>
-              <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_REACT}</li>
-                 <li>{Constants.WORK_TECH_JAVA}</li>
-                </ul>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_REACT}</li>
+                <li>{Constants.WORK_TECH_JAVA}</li>
+              </ul>
               <ThemeProvider theme={theme}>
-                  <Button href='https://super.walmart.com.mx/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
+                <Button
+                  href="https://super.walmart.com.mx/"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
             </div>
-            </Fade>
-            </div>
-          </div>
-          <div className='other-works-header'>
-          <Fade top delay={300}>
-        <h2>{Constants.WORK_OTHER}</h2>
+          </Fade>
+        </div>
+      </div>
+      <div className="other-works-header">
+        <Fade top delay={300}>
+          <h2>{Constants.WORK_OTHER}</h2>
         </Fade>
         <Slide right delay={200}>
-        <div className='all-work-underline'></div>
-        <span className='other-work-dot'></span>
+          <div className="all-work-underline"></div>
+          <span className="other-work-dot"></span>
         </Slide>
-          </div>
-          <div className='other-works'>
-        <div className='work-left'>
-        <Fade left delay={800}>
-              <div className='work-left-img'>
-              <img id='portfolio' src={Portfolio} alt='portfolio'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-            <div className='work-left-detail'>
+      </div>
+      <div className="other-works">
+        <div className="work-left">
+          <Fade left delay={800}>
+            <div className="work-left-img-portfolio">
+              <img id="portfolio" src={Portfolio} alt="portfolio" />
+            </div>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
               <h4>{Constants.WORK_OTHER_1}</h4>
-              <span className='work-other-dot-portfolio'></span>
+              <span className="work-other-dot-portfolio"></span>
               <p>{Constants.WORK_OTHER_DETAIL_1}</p>
-              <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_REACT}</li>
-                  <li>{Constants.WORK_TECH_JS}</li>
-                  <li>{Constants.WORK_TECH_SASS}</li>
-                </ul>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_REACT}</li>
+                <li>{Constants.WORK_TECH_JS}</li>
+                <li>{Constants.WORK_TECH_SASS}</li>
+              </ul>
               <ThemeProvider theme={theme}>
-                  <Button href='https://www.soorajmohan.com/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
+                <Button
+                  href="https://www.soorajmohan.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
             </div>
-            </Fade>
+          </Fade>
         </div>
-        <div className='work-left reverse'>
-        <Fade left delay={800}>
-              <div className='work-left-img'>
-              <img id='mood' src={Mood} alt='mood'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-            <div className='work-left-detail'>
-              <h4>{Constants.WORK_OTHER_2}</h4>
-              <span className='work-other-dot-mood'></span>
-              <p>{Constants.WORK_OTHER_DETAIL_2}</p>
-              <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_REACT}</li>
-                  <li>{Constants.WORK_TECH_SPOTIFY}</li>
-                  <li>{Constants.WORK_TECH_SASS}</li>
-                </ul>
-              <ThemeProvider theme={theme}>
-                  <Button href='https://www.soorajmohan.com/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
+        <div className="work-left reverse">
+          <Fade left delay={800}>
+            <div className="work-left-img-portfolio">
+              <img id="mood" src={Mood} alt="mood" />
             </div>
-            </Fade>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
+              <h4>{Constants.WORK_OTHER_2}</h4>
+              <span className="work-other-dot-mood"></span>
+              <p>{Constants.WORK_OTHER_DETAIL_2}</p>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_REACT}</li>
+                <li>{Constants.WORK_TECH_SPOTIFY}</li>
+                <li>{Constants.WORK_TECH_SASS}</li>
+              </ul>
+              <ThemeProvider theme={theme}>
+                <Button
+                  href="https://github.com/SoorajM143/Music-player"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
+            </div>
+          </Fade>
         </div>
 
-        <div className='work-left'>
-        <Fade left delay={800}>
-              <div className='work-left-img'>
-              <img id='spotify' src={Spotify} alt='spotify'/>
-              </div>
-              </Fade>
-              <Fade delay={200}>
-            <div className='work-left-detail'>
-              <h4>{Constants.WORK_OTHER_3}</h4>
-              <span className='work-other-dot-profile'></span>
-              <p>{Constants.WORK_OTHER_DETAIL_3}</p>
-              <ul className='work-tech'>
-                  <li>{Constants.WORK_TECH_REACT}</li>
-                  <li>{Constants.WORK_TECH_SPOTIFY}</li>
-                  <li>{Constants.WORK_TECH_SASS}</li>
-                </ul>
-              <ThemeProvider theme={theme}>
-                  <Button href='https://www.soorajmohan.com/' rel='noreferrer' target='_blank' color="primary" variant="outlined">
-                    Visit {'→'}
-                  </Button>
-                </ThemeProvider>
+        <div className="work-left">
+          <Fade left delay={800}>
+            <div className="work-left-img-portfolio">
+              <img id="spotify" src={Spotify} alt="spotify" />
             </div>
-            </Fade>
+          </Fade>
+          <Fade delay={200}>
+            <div className="work-left-detail">
+              <h4>{Constants.WORK_OTHER_3}</h4>
+              <span className="work-other-dot-profile"></span>
+              <p>{Constants.WORK_OTHER_DETAIL_3}</p>
+              <ul className="work-tech">
+                <li>{Constants.WORK_TECH_REACT}</li>
+                <li>{Constants.WORK_TECH_SPOTIFY}</li>
+                <li>{Constants.WORK_TECH_SASS}</li>
+              </ul>
+              <ThemeProvider theme={theme}>
+                <Button
+                  href="https://github.com/SoorajM143/personal-spotify-profile"
+                  rel="noreferrer"
+                  target="_blank"
+                  color="primary"
+                  variant="outlined"
+                >
+                  Visit {"→"}
+                </Button>
+              </ThemeProvider>
+            </div>
+          </Fade>
         </div>
-        </div>
+      </div>
     </section>
   );
 }

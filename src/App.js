@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, ScrollRestoration} from 'react-router-dom';
 import Menu from './components/Menu';
 import './Apploader.css';
 import MyWork from './components/MyWork';
@@ -20,19 +20,19 @@ function App() {
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
-  
 
+  
   return (
     <>
       <Router>
-        <ScrollToTop />
         <PreLoader load={isLoading} />
+        <ScrollToTop />
         <div className="App">
           <div className="page-wrap">
             <Menu />
             <Contact />
             <Routes>
-              <Route exact path="/" element={<Main />} />
+              <Route exact path="/" element={<Main />}/>
               <Route exact path="/about-me" element={<AboutMe />} />
               <Route exact path="/work" element={<MyWork />} />
               <Route exact path="/contact" element={<ContactPage />} />
