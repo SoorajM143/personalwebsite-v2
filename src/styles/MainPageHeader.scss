@@ -170,21 +170,22 @@
   .headerText {
     top: 44rem;
     text-align: center;
-    left: 17rem;
+    left: 15rem;
   }
 
   .headerText::before {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    top: -4rem;
   }
 
   .headerText::after {
-    font-size: 2rem;
+    font-size: 1.5rem;
     top: 9.5rem;
   }
 
   .headerText > h1 {
     width: 22rem;
-    font-size: 47px;
+    font-size: 55px;
   }
 
   .headerText p {
@@ -193,11 +194,11 @@
 
   .avatar {
     top: 0rem;
-    left: 7rem;
+    left: 4rem;
   }
 
   .scroll-animation-main {
-    bottom: 100rem;
+    bottom: 80rem;
     left: 0.1rem;
     font-size: 1.5rem;
   }

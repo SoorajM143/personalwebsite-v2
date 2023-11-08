@@ -288,6 +288,12 @@ transform: translate(0%, 100%);
     }
 }
 
+@media screen and (max-width: 512px) {
+    .desc_link_item{
+           display: none;
+    }
+}
+
 @media screen and (max-width: 1000px){
    .nav--list-item{
      font-size: 5rem;

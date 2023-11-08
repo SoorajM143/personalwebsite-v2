@@ -230,10 +230,105 @@
     bottom: 0.6rem !important;
   }
 
+  .mainPage-message {
+    flex-direction: column;
+    left: 0 !important;
+    width: 100%
+  }
+
+  .mainPage-message span:first-of-type {
+    width: 70%;
+  }
+
+  .mainPage-message span::before {
+    font-size: 1rem;;
+  }
+
+  .mainPage-message span::after {
+    font-size: 1rem;;
+  }
+
+  .mainPage-message > * {
+    font-size: 14px !important;
+  }
+  
+  .button-52 {
+    width: 5rem;
+    height: 1rem;
+    font-size: 14px;
+  }
+
+  .mainPage-message svg {
+    display: none !important;
+  }
+
+  .mainPage-content::after {
+    top: 120%;
+    left: 5%;
+    width: 18.5rem;
+  }
+
+  .more_links {
+    top: 10rem;
+    right: 6rem;
+  }
+
+  .more_links > div {
+    font-size: 1.3rem;
+  }
+
+  .more_links_dot{
+    height: 6px;
+    width: 6px;
+    left: 13.8rem !important;
+    bottom: 10px;
+  }
+
+  .home-page-button{
+    top: 13rem;
+    left: 1rem;
+    gap: 1.4rem;
+  }
+
+  .home-page-button svg {
+    font-size: 1rem;
+  }
+
 }
 
-@media (min-width: 1000px){
-  .mainPage-content h2 {
-    font-size: 1.5rem !important;
+@media screen and (max-width: 1000px){
+  .mainPage-message{
+    flex-direction: column;
+    gap:7rem;
+    width: 100%;
+    left: 0;
+  }
+
+  .mainPage-content::after {
+    top: 65%;
+    left: 10%;
+    width: 37.5rem;
+  }
+
+  .mainPage-message span:first-of-type{
+    width: 70%;
+  }
+
+  .mainPage-message svg {
+    display: none !important;
+  }
+
+  .more_links {
+    top: 19rem;
+    right: 14rem;
+  }
+
+  .more_links_dot{
+    left: 30rem !important;
+  }
+
+  .home-page-button {
+    flex-direction: column;
+    left: 0;
   }
 }
