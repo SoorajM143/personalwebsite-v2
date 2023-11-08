@@ -1,8 +1,8 @@
-import React from 'react';
-import { Dialog, DialogContent, DialogTitle, Typography } from '@mui/material';
-import SuccessAnimation from './SuccessAnimation';
-import './ConfirmDialog.css';
-import Constants from '../utils/Constant';
+import React from "react";
+import { Dialog, DialogContent, Typography } from "@mui/material";
+import SuccessAnimation from "./SuccessAnimation";
+import "./ConfirmDialog.css";
+import Constants from "../utils/Constant";
 
 function ConfirmationDialog(props) {
   const { onClose, open } = props;
@@ -16,10 +16,10 @@ function ConfirmationDialog(props) {
         onClose={handleClose}
         open={open}
         sx={{
-          '& .MuiDialog-container': {
-            '& .MuiPaper-root': {
-              width: '100%',
-              maxWidth: '500px', // Set your width here
+          "& .MuiDialog-container": {
+            "& .MuiPaper-root": {
+              width: "100%",
+              maxWidth: "500px", // Set your width here
             },
           },
         }}

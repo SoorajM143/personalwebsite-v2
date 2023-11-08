@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import {
-  LinkedIn,
-  GitHub,
-  Email,
-  MarkunreadTwoTone,
-  RssFeedTwoTone,
-} from "@mui/icons-material";
+import { LinkedIn, GitHub, MarkunreadTwoTone } from "@mui/icons-material";
 
 import "../styles/NavBar.css";
 
