@@ -429,6 +429,10 @@ svg {
 }
 
 @media screen and (max-width: 1000px) {
+
+  .about_me_page{
+    height: 380vh;
+  }
   .about_content h3:first-of-type::after {
     top: 9rem;
   }
@@ -472,11 +476,11 @@ svg {
   }
 
   .about_me_panels {
-    top: 120rem;
+    top: 110rem;
   }
 
   .about_me_para2 {
-    left: 7rem;
+    left: 1rem;
   }
 
   .about_me_para2::after {
@@ -484,7 +488,7 @@ svg {
   }
 
   .skill_sphere {
-    left: 14rem;
+    left: 11rem;
   }
 
   .container-about {
