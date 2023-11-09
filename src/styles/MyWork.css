@@ -290,6 +290,13 @@
   justify-content: center;
 }
 
+.work-left-img-mdm {
+  align-items: center;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+}
+
 .work-left-img-portfolio {
   align-items: center;
   display: flex;
@@ -309,7 +316,31 @@
   top: -8rem;
 }
 
+.work-left-img-mdm::before {
+  content: "<img>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 4rem;
+  top: -8rem;
+}
+
 .work-left-img::after {
+  content: "</img>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 4rem;
+  top: 20rem;
+}
+
+.work-left-img-mdm::after {
   content: "</img>";
   font-family: "La Belle Aurore", cursive;
   color: rgb(140, 137, 137);
@@ -355,7 +386,24 @@
   transition: all 0.6s ease;
 }
 
+.work-left-img-mdm > img {
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42), 0 35px 75px -35px hsla(225, 2%, 62%, 0.08);
+  filter: blur(0);
+  opacity: 1;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: all 0.6s ease;
+}
+
 .work-left-img > img:hover {
+  box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
+  filter: blur(0.2px);
+  opacity: 1;
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1.1);
+}
+
+.work-left-img-mdm > img:hover {
   box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
   filter: blur(0.2px);
   opacity: 1;
@@ -391,6 +439,18 @@
   left: 2px;
 }
 
+.work-left-detail-mdm {
+  display: flex;
+  width: 45%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ddeff5;
+  left: 2px;
+}
+
 .work-left-detail::before {
   content: "<div>";
   font-family: "La Belle Aurore", cursive;
@@ -415,6 +475,30 @@
   left: 0.4rem;
 }
 
+.work-left-detail-mdm::before {
+  content: "<div>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: -3rem;
+  left: 0.4rem;
+}
+
+.work-left-detail-mdm::after {
+  content: "</div>";
+  font-family: "La Belle Aurore", cursive;
+  color: rgb(140, 137, 137);
+  left: -4rem;
+  top: 5rem;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 26rem;
+  left: 0.4rem;
+}
+
 .work-left-detail > h4 {
   font-size: 1.5rem;
   position: relative;
@@ -424,7 +508,24 @@
   margin-bottom: 2rem;
 }
 
+.work-left-detail-mdm > h4 {
+  font-size: 1.5rem;
+  position: relative;
+  color: #024463;
+  text-align: justify;
+  font-family: "eurostile", sans-serif;
+  margin-bottom: 2rem;
+}
+
 .work-left-detail h5 {
+  position: relative;
+  bottom: 1rem;
+  color: #024463;
+  font-family: "Bitter", serif;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail-mdm h5 {
   position: relative;
   bottom: 1rem;
   color: #024463;
@@ -450,7 +551,17 @@
 
 .work-left-detail > p {
   color: #024463;
-  font-family: "Bitter", serif;
+  font-family: "eurostile", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 3rem;
+  line-height: 24px;
+}
+
+.work-left-detail-mdm > p {
+  color: #024463;
+  font-family: "eurostile", sans-serif;
+  font-weight: 600;
   text-align: center;
   margin: 0 0 3rem;
   line-height: 24px;
@@ -460,7 +571,16 @@
   width: 10rem;
 }
 
+.work-left-detail-mdm a {
+  width: 10rem;
+}
+
 .work-left-detail a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
+}
+
+.work-left-detail-mdm a:hover {
   transition: all 0.3s ease-in-out;
   transform: translateY(-6px);
 }
@@ -590,6 +710,9 @@
 }
 
 @media screen and (max-width: 512px) {
+  .my-work {
+    height: 800vh;
+  }
   .my-works h1 {
     font-size: 2.2rem;
     left: 1rem;
@@ -597,7 +720,7 @@
   .my-works h1::before {
     left: 0;
     font-size: 1rem;
-    bottom: 3rem;
+    bottom: 2.5rem;
   }
   .my-works h1::after {
     left: 0;
@@ -614,5 +737,149 @@
     width: 6px;
     left: 7.5rem;
     bottom: 1rem;
+  }
+  .works-subheader {
+    left: 3rem;
+    font-size: 1rem;
+  }
+  .works-subheader > h3::before {
+    font-size: 1rem;
+    left: -2rem;
+  }
+  .works-subheader > h3::after {
+    font-size: 1rem;
+    top: 14rem;
+    left: -2rem;
+  }
+  .all-works-header > h2 {
+    font-size: 1.5rem;
+  }
+  .all-works-header::before {
+    font-size: 1rem;
+  }
+  .all-works-header::after {
+    font-size: 1rem;
+    top: 3rem;
+  }
+  .all-work-dot {
+    left: 10.5rem;
+    bottom: 1.1rem;
+  }
+  .all-work-underline {
+    width: 4.5rem;
+  }
+  .all-works {
+    top: 30rem;
+  }
+  .work-left {
+    flex-direction: column;
+  }
+  .work-left-img {
+    width: 100%;
+  }
+  .work-left-img-mdm {
+    width: 100%;
+  }
+  .work-left-img > img {
+    width: 300px;
+    position: relative;
+    bottom: 4rem;
+  }
+  .work-left-img-mdm > img {
+    width: 300px;
+    position: relative;
+    bottom: 4rem;
+  }
+  .work-left-img::before {
+    font-size: 1rem;
+    left: 3rem;
+    top: -6rem;
+  }
+  .work-left-img-mdm::before {
+    font-size: 1rem;
+    left: 3rem;
+    top: -6rem;
+  }
+  .work-left-img::after {
+    font-size: 1rem;
+    left: 3rem;
+    top: 4rem;
+  }
+  .work-left-img-mdm::after {
+    font-size: 1rem;
+    left: 3rem;
+    top: 6rem;
+  }
+  .work-left-detail {
+    width: 80%;
+    top: 2rem;
+  }
+  .work-left-detail-mdm {
+    width: 80%;
+    top: 2rem;
+  }
+  .work-left-detail::before {
+    font-size: 1rem;
+  }
+  .work-left-detail-mdm::before {
+    font-size: 1rem;
+  }
+  .work-detail-dot {
+    left: 7.5rem;
+    bottom: 2.7rem;
+  }
+  .work-left-detail > h4 {
+    font-size: 1.3rem;
+  }
+  .work-left-detail-mdm > h4 {
+    font-size: 1.1rem;
+  }
+  .work-left-detail > p {
+    font-size: 0.9rem;
+  }
+  .work-left-detail-mdm > p {
+    font-size: 0.9rem;
+  }
+  .work-tech {
+    justify-content: center;
+  }
+  .work-left-detail::after {
+    top: 30rem;
+    font-size: 1rem;
+  }
+  .work-left-detail-mdm::after {
+    top: 31rem;
+    font-size: 1rem;
+  }
+  .work-detail-dot-infa {
+    left: 7rem !important;
+  }
+  .work-detail-dot-infa-mdm {
+    left: 7.9rem;
+    bottom: 2.6rem;
+  }
+  .work-left-img-portfolio {
+    width: 100%;
+  }
+  .work-left-img-portfolio > img {
+    width: 300px;
+    position: relative;
+    bottom: 4rem;
+  }
+  .work-left-img-portfolio::before {
+    font-size: 1rem;
+    left: 3rem;
+    top: -6rem;
+  }
+  .work-left-img-portfolio::after {
+    font-size: 1rem;
+    left: 3rem;
+    top: 4rem;
+  }
+  .other-works-header > h2 {
+    font-size: 1.6rem;
+  }
+  .other-work-dot {
+    left: 9rem;
   }
 }/*# sourceMappingURL=MyWork.css.map */

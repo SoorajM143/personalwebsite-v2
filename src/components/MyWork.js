@@ -121,12 +121,12 @@ function MyWork() {
         </div>
         <div className="work-left">
           <Fade right delay={800}>
-            <div className="work-left-img">
+            <div className="work-left-img-mdm">
               <img id="infa" src={MDM} alt="infa" />
             </div>
           </Fade>
           <Fade delay={200}>
-            <div className="work-left-detail">
+            <div className="work-left-detail-mdm">
               <h4>{Constants.WORK_DETAIL_7}</h4>
               <span className="work-detail-dot-infa-mdm"></span>
               <h5>{Constants.WORK_SUBDETAIL_2}</h5>
