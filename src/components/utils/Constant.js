@@ -23,7 +23,7 @@ const APPLICATION_CONST = {
   ABOUT_ME_SKILL_PARA_1:
     "I've create successful responsive web apps and sites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, ",
   ABOUT_ME_SKILL_PARA_2:
-    "Although my expertise is Front-end development, I have recently tried my hands at back-end technologies abd designing to expand my portfolio. You can find all the front-end technologies I have experience with in the rotating sphere.",
+    "Although my expertise is Front-end development, I have recently tried my hands at back-end technologies and designing to expand my portfolio. You can find all the front-end technologies I have experience with in the rotating sphere.",
   ABOUT_ME_SKILL_PARA_3:
     "HTML, CSS, JS, Typescript and Modern Frameworks like React, ",
   ABOUT_ME_SKILL_PARA_4:
