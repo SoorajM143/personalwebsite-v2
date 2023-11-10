@@ -63,7 +63,7 @@ function NavBar() {
             <li className="nav__list_desc">
               <Link
                 to="/"
-                onClick={() => MenuOpen("#00d084")}
+                onClick={() => MenuOpen("#88F3CC")}
                 className="nav--list-item"
               >
                 Home
