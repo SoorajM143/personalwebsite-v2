@@ -150,6 +150,18 @@
   width: 50%;
 }
 
+.other-works-header::before {
+  @include h3TagOpen;
+  left: -10px;
+  top: -2.5rem;
+}
+
+.other-works-header::after {
+  @include h3TagClose;
+  left: -1rem;
+  top: 4rem;
+}
+
 .other-works-header > h2 {
   font-size: 2rem;
 }
@@ -226,6 +238,20 @@
   justify-content: center;
 }
 
+.work-left-img-mood {
+  align-items: center;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+}
+
+.work-left-img-spotify {
+  align-items: center;
+  display: flex;
+  width: 55%;
+  justify-content: center;
+}
+
 .work-left-img::before {
   @include imgTagOpen;
   left: 4rem;
@@ -257,6 +283,30 @@
 }
 
 .work-left-img-portfolio::after {
+  @include imgTagClose;
+  left: 4rem;
+  top: 22rem;
+}
+
+.work-left-img-mood::before {
+  @include imgTagOpen;
+  left: 4rem;
+  top: -4rem;
+}
+
+.work-left-img-mood::after {
+  @include imgTagClose;
+  left: 4rem;
+  top: 22rem;
+}
+
+.work-left-img-spotify::before {
+  @include imgTagOpen;
+  left: 4rem;
+  top: -4rem;
+}
+
+.work-left-img-spotify::after {
   @include imgTagClose;
   left: 4rem;
   top: 22rem;
@@ -320,6 +370,44 @@
     scale(1.1);
 }
 
+.work-left-img-mood > img {
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42),
+    0 35px 75px -35px hsl(225deg 2% 62% / 8%);
+  filter: blur(0);
+  opacity: 1;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: all 0.6s ease;
+}
+
+.work-left-img-mood > img:hover {
+  box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
+  filter: blur(0.2px);
+  opacity: 1;
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1.1);
+}
+
+.work-left-img-spotify > img {
+  width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 60px 123px -25px rgba(44, 44, 45, 0.42),
+    0 35px 75px -35px hsl(225deg 2% 62% / 8%);
+  filter: blur(0);
+  opacity: 1;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: all 0.6s ease;
+}
+
+.work-left-img-spotify > img:hover {
+  box-shadow: 0 19px 67px -38px rgba(59, 59, 60, 0.8);
+  filter: blur(0.2px);
+  opacity: 1;
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1.1);
+}
+
 .work-left-detail {
   display: flex;
   width: 45%;
@@ -333,6 +421,41 @@
 }
 
 .work-left-detail-mdm {
+  display: flex;
+  width: 45%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ddeff5;
+  left: 2px;
+}
+.work-left-detail-portfolio {
+  display: flex;
+  width: 45%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ddeff5;
+  left: 2px;
+}
+
+.work-left-detail-mood {
+  display: flex;
+  width: 45%;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ddeff5;
+  left: 2px;
+}
+
+.work-left-detail-spotify {
   display: flex;
   width: 45%;
   position: relative;
@@ -368,6 +491,42 @@
   left: 0.4rem;
 }
 
+.work-left-detail-portfolio::before {
+  @include divOpen;
+  top: -3rem;
+  left: 0.4rem;
+}
+
+.work-left-detail-portfolio::after {
+  @include divClose;
+  top: 26rem;
+  left: 0.4rem;
+}
+
+.work-left-detail-mood::before {
+  @include divOpen;
+  top: -3rem;
+  left: 0.4rem;
+}
+
+.work-left-detail-mood::after {
+  @include divClose;
+  top: 26rem;
+  left: 0.4rem;
+}
+
+.work-left-detail-spotify::before {
+  @include divOpen;
+  top: -3rem;
+  left: 0.4rem;
+}
+
+.work-left-detail-spotify::after {
+  @include divClose;
+  top: 26rem;
+  left: 0.4rem;
+}
+
 .work-left-detail > h4 {
   font-size: 1.5rem;
   position: relative;
@@ -386,6 +545,33 @@
   margin-bottom: 2rem;
 }
 
+.work-left-detail-portfolio > h4 {
+  font-size: 1.5rem;
+  position: relative;
+  color: #024463;
+  text-align: justify;
+  font-family: $content-fonts;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail-mood > h4 {
+  font-size: 1.5rem;
+  position: relative;
+  color: #024463;
+  text-align: justify;
+  font-family: $content-fonts;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail-spotify > h4 {
+  font-size: 1.5rem;
+  position: relative;
+  color: #024463;
+  text-align: justify;
+  font-family: $content-fonts;
+  margin-bottom: 2rem;
+}
+
 .work-left-detail h5 {
   position: relative;
   bottom: 1rem;
@@ -395,6 +581,30 @@
 }
 
 .work-left-detail-mdm h5 {
+  position: relative;
+  bottom: 1rem;
+  color: #024463;
+  font-family: $Font-content;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail-portfolio h5 {
+  position: relative;
+  bottom: 1rem;
+  color: #024463;
+  font-family: $Font-content;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail-mood h5 {
+  position: relative;
+  bottom: 1rem;
+  color: #024463;
+  font-family: $Font-content;
+  margin-bottom: 2rem;
+}
+
+.work-left-detail-spotify h5 {
   position: relative;
   bottom: 1rem;
   color: #024463;
@@ -429,11 +639,50 @@
   line-height: 24px;
 }
 
+.work-left-detail-portfolio > p {
+  color: #024463;
+  font-family: $content-fonts;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 3rem;
+  line-height: 24px;
+}
+
+.work-left-detail-mood > p {
+  color: #024463;
+  font-family: $content-fonts;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 3rem;
+  line-height: 24px;
+}
+
+.work-left-detail-spotify > p {
+  color: #024463;
+  font-family: $content-fonts;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 3rem;
+  line-height: 24px;
+}
+
 .work-left-detail a {
   width: 10rem;
 }
 
 .work-left-detail-mdm a {
+  width: 10rem;
+}
+
+.work-left-detail-portfolio a {
+  width: 10rem;
+}
+
+.work-left-detail-mood a {
+  width: 10rem;
+}
+
+.work-left-detail-spotify a {
   width: 10rem;
 }
 .work-left-detail a:hover {
@@ -442,6 +691,21 @@
 }
 
 .work-left-detail-mdm a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
+}
+
+.work-left-detail-portfolio a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
+}
+
+.work-left-detail-mood a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
+}
+
+.work-left-detail-spotify a:hover {
   transition: all 0.3s ease-in-out;
   transform: translateY(-6px);
 }
@@ -532,30 +796,30 @@
 @media screen and (max-width: 512px) {
 
   .my-work{
-    height: 800vh;
+    height: 1100vh !important;
   }
 
   .my-works h1 {
-    font-size: 2.2rem;
-    left: 1rem;
+    font-size: 2.2rem !important;
+    left: 1rem !important;
   }
 
   .my-works h1::before {
-    left: 0;
-    font-size: 1rem;
-    bottom: 2.5rem;
+    left: 0 !important;
+    font-size: 1rem !important;
+    bottom: 2.5rem !important;
   }
 
   .my-works h1::after {
-    left:0;
-    font-size: 1rem;
-    top: 3rem;
+    left:0 !important;
+    font-size: 1rem !important;
+    top: 3rem !important;
   }
 
   .work_underline{
-    width: 2.5rem;
-    bottom: 0;
-    left: 1.2rem;
+    width: 2.5rem !important;
+    bottom: 0 !important;
+    left: 1.2rem !important;
   }
 
   .work_dot {
@@ -571,14 +835,14 @@
   }
   
   .works-subheader > h3::before {
-    font-size: 1rem;
-    left: -2rem;
+    font-size: 1rem !important;
+    left: -2rem !important;
   }
 
   .works-subheader > h3::after {
-    font-size: 1rem;
-    top: 14rem;
-    left: -2rem;
+    font-size: 1rem !important;
+    top: 14rem !important;
+    left: -2rem !important;
 
   }
 
@@ -587,12 +851,12 @@
   }
 
   .all-works-header::before{
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .all-works-header::after{
-    font-size: 1rem;
-    top: 3rem;
+    font-size: 1rem !important;
+    top: 3rem !important;
   }
 
   .all-work-dot{
@@ -622,39 +886,39 @@
   }
 
   .work-left-img > img {
-    width: 300px;
-    position: relative;
-    bottom: 4rem;
+    width: 300px !important;
+    position: relative !important;
+    bottom: 4rem !important;
   }
 
   .work-left-img-mdm > img {
-    width: 300px;
-    position: relative;
-    bottom: 4rem;
+    width: 300px !important;
+    position: relative !important;
+    bottom: 4rem !important;
   }
 
   .work-left-img::before{
-    font-size: 1rem;
-    left: 3rem;
-    top: -6rem;
+    font-size: 1rem !important;
+    left: 3rem !important;
+    top: -6rem !important;
   }
 
   .work-left-img-mdm::before{
-    font-size: 1rem;
-    left: 3rem;
-    top: -6rem;
+    font-size: 1rem !important;
+    left: 3rem !important;
+    top: -6rem !important;
   }
 
   .work-left-img::after{
-    font-size: 1rem;
-    left:3rem;
-    top: 4rem;
+    font-size: 1rem !important;
+    left:3rem !important;
+    top: 4rem !important;
   }
 
   .work-left-img-mdm::after{
-    font-size: 1rem;
-    left:3rem;
-    top: 6rem;
+    font-size: 1rem !important;
+    left:3rem !important;
+    top: 6rem !important;
   }
 
   .work-left-detail {
@@ -667,12 +931,21 @@
     top: 2rem;
   }
 
+  .work-left-detail-spotify {
+    width: 80%;
+    top: 2rem;
+  }
+
   .work-left-detail::before{
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .work-left-detail-mdm::before{
-    font-size: 1rem;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-spotify::before{
+    font-size: 1rem !important;
   }
   .work-detail-dot{
     left: 7.5rem;
@@ -687,6 +960,10 @@
     font-size: 1.1rem;
   }
 
+  .work-left-detail-spotify > h4 {
+    font-size: 1.1rem;
+  }
+
   .work-left-detail > p{
     font-size: 0.9rem;
   }
@@ -695,17 +972,26 @@
     font-size: 0.9rem;
   }
 
+  .work-left-detail-spotify > p{
+    font-size: 0.9rem;
+  }
+
   .work-tech{
     justify-content: center;
   }
   .work-left-detail::after {
-    top: 30rem;
-    font-size: 1rem;
+    top: 30rem !important;
+    font-size: 1rem !important;
   }
 
   .work-left-detail-mdm::after {
-    top: 31rem;
-    font-size: 1rem;
+    top: 31rem !important;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-spotify::after {
+    top: 30rem !important;
+    font-size: 1rem !important;
   }
 
   .work-detail-dot-infa{
@@ -721,22 +1007,114 @@
     width: 100%;
   }
 
+  .work-left-img-mood {
+    width: 100%;
+  }
+
+  .work-left-img-spotify {
+    width: 100%;
+  }
+
   .work-left-img-portfolio > img {
-    width: 300px;
+    width: 300px !important;
     position: relative;
     bottom: 4rem;
   }
 
+  .work-left-img-mood > img {
+    width: 300px !important;
+    position: relative !important;
+    bottom: 4rem !important;
+  }
+
+  .work-left-img-spotify > img {
+    width: 300px !important;
+    position: relative !important;
+    bottom: 4rem !important;
+  }
+
+  .work-left-detail-portfolio{
+    width: 100% !important;
+  }
+
+  .work-left-detail-mood{
+    width: 100% !important;
+  }
+
+  .work-left-detail-spotify{
+    width: 100% !important;
+  }
+
+  .work-left-detail-portfolio::before{
+    left: 2.4rem !important;
+    top: -2rem !important;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-portfolio::after{
+    left: 2.4rem !important;
+    top: 21rem !important;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-mood::before{
+    left: 2.4rem !important;
+    top: -2rem !important;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-mood::after{
+    left: 2.4rem !important;
+    top: 23rem !important;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-spotify::before{
+    left: 2.4rem !important;
+    top: -2rem !important;
+    font-size: 1rem !important;
+  }
+
+  .work-left-detail-spotify::after{
+    left: 2.4rem !important;
+    top: 23rem !important;
+    font-size: 1rem !important;
+  }
+
   .work-left-img-portfolio::before{
-    font-size: 1rem;
-    left: 3rem;
-    top: -6rem;
+    font-size: 1rem !important;
+    left: 3rem !important;
+    top: -6rem !important;
   }
 
   .work-left-img-portfolio::after{
-    font-size: 1rem;
-    left:3rem;
-    top: 4rem;
+    font-size: 1rem !important;
+    left:3rem !important;
+    top: 4rem !important;
+  }
+
+  .work-left-img-spotify::before{
+    font-size: 1rem !important;
+    left: 3rem !important;
+    top: -6rem !important;
+  }
+
+  .work-left-img-spotify::after{
+    font-size: 1rem !important;
+    left:3rem !important;
+    top: 5rem !important;
+  }
+
+  .work-left-img-mood::before{
+    font-size: 1rem !important;
+    left: 3rem !important;
+    top: -6rem !important;
+  }
+
+  .work-left-img-mood::after{
+    font-size: 1rem !important;
+    left:3rem !important;
+    top: 6rem !important;
   }
 
   .other-works-header > h2 {
@@ -745,4 +1123,81 @@
   .other-work-dot{
     left: 9rem;
   }
+
+  .other-works-header::before{
+    font-size: 1rem;
+  }
+
+  .other-works-header::after{
+    font-size: 1rem;
+    top: 3rem;
+  }
+
+
+  .work-other-dot-profile{
+        left: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .my-work{
+    height: 520vh;
+  }
+  .works-subheader > h3::after {
+    top: 12rem;
+  }
+
+  .work-left-img > img {
+    width: 400px;
+  }
+
+  .work-left-detail::after {
+    top: 30rem;
+  }
+
+  .work-left-img-mdm > img {
+    width: 400px;
+  }
+
+  .work-left-detail-mdm > h4 {
+    font-size: 1.3rem;
+  }
+
+  .work-left-detail-mdm::after {
+    top: 31rem;
+  }
+
+  .work-detail-dot-infa-mdm {
+    left: 9.9rem;
+  }
+
+  .work-left-img-portfolio > img {
+    width: 400px;
+  }
+
+  .work-left-img-portfolio::after{
+    top: 15rem;
+  }
+
+  .work-left-detail-portfolio::after{
+    top: 22rem;
+  }
+
+  .work-left-img-mood > img {
+    width: 400px;
+  }
+
+  .work-left-img-mood::after{
+    top: 17rem;
+  }
+
+  .work-left-img-spotify > img{
+    width: 400px;
+  }
+
+  .work-left-img-spotify::after{
+    top: 17rem;
+  }
+
 }

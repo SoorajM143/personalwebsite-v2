@@ -277,55 +277,55 @@
     bottom: 0.6rem !important;
   }
   .mainPage-message {
-    flex-direction: column;
+    flex-direction: column !important;
     left: 0 !important;
-    width: 100%;
+    width: 100% !important;
   }
   .mainPage-message span:first-of-type {
-    width: 70%;
+    width: 70% !important;
   }
   .mainPage-message span::before {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .mainPage-message span::after {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   .mainPage-message > * {
     font-size: 14px !important;
   }
   .button-52 {
-    width: 5rem;
-    height: 1rem;
-    font-size: 14px;
+    width: 5rem !important;
+    height: 1rem !important;
+    font-size: 14px !important;
   }
   .mainPage-message svg {
     display: none !important;
   }
   .mainPage-content::after {
-    top: 120%;
-    left: 5%;
-    width: 18.5rem;
+    top: 92% !important;
+    left: 5% !important;
+    width: 18.5rem !important;
   }
   .more_links {
-    top: 10rem;
-    right: 6rem;
+    top: 10rem !important;
+    right: 6rem !important;
   }
   .more_links > div {
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
   }
   .more_links_dot {
-    height: 6px;
-    width: 6px;
+    height: 6px !important;
+    width: 6px !important;
     left: 13.8rem !important;
-    bottom: 10px;
+    bottom: 10px !important;
   }
   .home-page-button {
-    top: 13rem;
-    left: 1rem;
-    gap: 1.4rem;
+    top: 13rem !important;
+    left: 1rem !important;
+    gap: 1.4rem !important;
   }
   .home-page-button svg {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 }
 @media screen and (max-width: 1000px) {

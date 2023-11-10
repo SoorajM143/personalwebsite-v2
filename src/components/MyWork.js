@@ -198,7 +198,7 @@ function MyWork() {
             </div>
           </Fade>
           <Fade delay={200}>
-            <div className="work-left-detail">
+            <div className="work-left-detail-portfolio">
               <h4>{Constants.WORK_OTHER_1}</h4>
               <span className="work-other-dot-portfolio"></span>
               <p>{Constants.WORK_OTHER_DETAIL_1}</p>
@@ -223,12 +223,12 @@ function MyWork() {
         </div>
         <div className="work-left reverse">
           <Fade left delay={800}>
-            <div className="work-left-img-portfolio">
+            <div className="work-left-img-mood">
               <img id="mood" src={Mood} alt="mood" />
             </div>
           </Fade>
           <Fade delay={200}>
-            <div className="work-left-detail">
+            <div className="work-left-detail-mood">
               <h4>{Constants.WORK_OTHER_2}</h4>
               <span className="work-other-dot-mood"></span>
               <p>{Constants.WORK_OTHER_DETAIL_2}</p>
@@ -254,12 +254,12 @@ function MyWork() {
 
         <div className="work-left">
           <Fade left delay={800}>
-            <div className="work-left-img-portfolio">
+            <div className="work-left-img-spotify">
               <img id="spotify" src={Spotify} alt="spotify" />
             </div>
           </Fade>
           <Fade delay={200}>
-            <div className="work-left-detail">
+            <div className="work-left-detail-spotify">
               <h4>{Constants.WORK_OTHER_3}</h4>
               <span className="work-other-dot-profile"></span>
               <p>{Constants.WORK_OTHER_DETAIL_3}</p>
