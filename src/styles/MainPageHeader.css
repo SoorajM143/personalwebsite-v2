@@ -216,6 +216,9 @@
     top: 30rem !important;
     left: 3rem !important;
   }
+  .headerText > h1 {
+    font-size: 25px !important;
+  }
   .headerText::before {
     left: 0.5rem !important;
     top: -2rem !important;

@@ -41,6 +41,7 @@ const ContactForm = () => {
     } else {
       setAlertOpen(true);
       setError(true);
+      setEmailSent(false);
       if (formError === null) setValue('Enter All Mandatory Fields');
       else setValue('Errors found in the Form');
     }
