@@ -185,3 +185,16 @@ canvas {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+@media screen and (max-width: 480px) {
+    .text{
+        font-size: 10px !important;
+        left: -40% !important;
+    }
+
+    .wrap{
+        left: 44% !important;
+    }
+    
+}

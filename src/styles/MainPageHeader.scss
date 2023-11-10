@@ -207,3 +207,30 @@
     height: 20rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .avatar{
+    left: -7.9rem !important;
+    top: 6rem !important;
+  }
+
+  .headerText{
+    top: 30rem !important;
+    left: 3rem !important;
+  }
+
+  .headerText::before{
+       left: 0.5rem !important;
+       top: -2rem !important;
+  }
+
+  .headerText::after{
+    left: 0.5rem !important;
+    top: 2.5rem !important;
+  }
+
+  .scroll-animation-main{
+    bottom: 70rem !important;
+  }
+  
+}

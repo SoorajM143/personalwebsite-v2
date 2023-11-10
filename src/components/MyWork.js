@@ -209,7 +209,7 @@ function MyWork() {
               </ul>
               <ThemeProvider theme={theme}>
                 <Button
-                  href="https://www.soorajmohan.com/"
+                  href="https://soorajmohan-v1-portfolio.netlify.app/"
                   rel="noreferrer"
                   target="_blank"
                   color="primary"
