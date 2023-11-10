@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { Route, Routes, HashRouter} from 'react-router-dom';
 import Menu from './components/Menu';
 import './Apploader.css';
 import MyWork from './components/MyWork';
@@ -24,7 +24,7 @@ function App() {
   
   return (
     <>
-      <Router>
+      <HashRouter>
         <PreLoader load={isLoading} />
         <ScrollToTop />
         <div className= {isLoading ? "app-none" : "App"}>
@@ -40,7 +40,7 @@ function App() {
             <small className="footer">© MMXXII - Built by Sooraj Mohan</small>
           </div>
         </div>
-      </Router>
+      </HashRouter>
     </>
   );
 }
