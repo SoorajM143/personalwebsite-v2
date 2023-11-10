@@ -423,4 +423,7 @@
     left: 12rem !important;
     bottom: 0.7rem !important;
   }
+  .button-52::after {
+    display: none !important;
+  }
 }/*# sourceMappingURL=Main.css.map */
