@@ -1374,7 +1374,7 @@
 }
 @media screen and (max-width: 480px) {
   .my-work {
-    height: 850vh !important;
+    height: 820vh !important;
   }
   .work_dot {
     left: 8rem !important;
@@ -1410,5 +1410,11 @@
   }
   .work-left-detail-mood > p {
     font-weight: 400 !important;
+  }
+  .work-other-dot-profile {
+    left: 4.5rem !important;
+  }
+  .work-other-dot-mood {
+    left: 8.2rem !important;
   }
 }/*# sourceMappingURL=MyWork.css.map */

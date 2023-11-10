@@ -50,7 +50,7 @@ function Main() {
             <DoubleArrowRounded />
             <Link to="/work">
               <button className="button-52" role="button">
-                Some of my works
+                My works
               </button>
             </Link>
           </div>
