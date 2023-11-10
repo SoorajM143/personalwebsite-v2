@@ -236,6 +236,10 @@ transform: translate(0%, 100%);
     transition: opacity .2s ease, transform .3s ease;
 }
 
+.social-links svg {
+    font-size: 2rem;
+}
+
 .social-links::before{
     content: '';
     position: absolute;
@@ -249,7 +253,7 @@ transform: translate(0%, 100%);
 .social-links li {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 40px 0 0 ;
+    margin: 0 50px 0 0 ;
 }
 
 .social-links li svg {
