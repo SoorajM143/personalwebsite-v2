@@ -398,7 +398,7 @@
     right: 7rem !important;
   }
   .more_links_dot {
-    left: 15.4rem !important;
+    display: none !important;
   }
   .more_links::before {
     top: -2rem !important;
@@ -409,5 +409,8 @@
     left: 9rem !important;
     font-size: 1rem !important;
     top: 2rem !important;
+  }
+  .main_dot {
+    left: 14rem !important;
   }
 }/*# sourceMappingURL=Main.css.map */

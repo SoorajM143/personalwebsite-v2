@@ -3,6 +3,10 @@
   background-color: white;
 }
 
+.app-none{
+  display: none;
+}
+
 .page-wrap{
   min-height: calc(100vh - 40px);
   position: relative;

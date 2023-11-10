@@ -27,7 +27,7 @@ function App() {
       <Router>
         <PreLoader load={isLoading} />
         <ScrollToTop />
-        <div className="App">
+        <div className= {isLoading ? "app-none" : "App"}>
           <div className="page-wrap">
             <Menu />
             <Contact />
