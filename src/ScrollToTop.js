@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router";
 
-const scrolltotop = (props) => {
+const Scrolltotop = (props) => {
   const location = useLocation();
   useEffect(() => {
     if (!location.hash) {
@@ -12,4 +12,4 @@ const scrolltotop = (props) => {
   return <>{props.children}</>
 };
 
-export default scrolltotop;
+export default Scrolltotop;
