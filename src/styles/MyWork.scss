@@ -1201,3 +1201,22 @@
   }
 
 }
+
+
+@media screen and (max-width: 480px) {
+    .work_dot{
+      left: 8rem !important;
+    }
+
+    .all-work-dot{
+    left: 11.5rem !important;
+    }
+
+    .work-detail-dot{
+      left: 8.5rem !important;
+    }
+
+    .work-left-detail > p {
+      font-weight: 400 !important;
+    }
+}
