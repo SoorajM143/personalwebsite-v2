@@ -12,7 +12,7 @@
 }
 
 .contact_page {
-  height: 150vh;
+  height: 135vh;
   position: relative;
   width: 100%;
   background-color: transparent;
@@ -103,7 +103,7 @@
     height: 98vh;
   }
   #contact-form {
-    width: 81% !important;
+    width: 75% !important;
   }
   .contact_info {
     left: 3rem;
@@ -111,7 +111,7 @@
   }
   #contact-form button {
     width: 12rem !important;
-    left: 5.5rem !important;
+    left: 3.5rem !important;
     height: 4vh !important;
   }
   #contact-form::before {

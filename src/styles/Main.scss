@@ -336,13 +336,25 @@
     right: 14rem;
   }
 
+  .more_links::before{
+    left: 16rem;
+  }
+
+  .more_links::after{
+    left: 16rem;
+  }
+
   .more_links_dot{
-    left: 30rem;
+    left: 30rem !important;
   }
 
   .home-page-button {
     flex-direction: column;
     left: 0;
+  }
+
+  .mainPage-message span::after{
+    top: 8.5rem;
   }
 }
 
