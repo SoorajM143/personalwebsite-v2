@@ -350,7 +350,6 @@
     scale(1.1);
 }
 
-
 .work-left-img-portfolio > img {
   width: 600px;
   border-radius: 15px;
@@ -792,10 +791,8 @@
   width: 8px;
 }
 
-
 @media screen and (max-width: 512px) {
-
-  .my-work{
+  .my-work {
     height: 1100vh !important;
   }
 
@@ -811,12 +808,12 @@
   }
 
   .my-works h1::after {
-    left:0 !important;
+    left: 0 !important;
     font-size: 1rem !important;
     top: 3rem !important;
   }
 
-  .work_underline{
+  .work_underline {
     width: 2.5rem !important;
     bottom: 0 !important;
     left: 1.2rem !important;
@@ -829,11 +826,11 @@
     bottom: 1rem;
   }
 
-  .works-subheader{
-    left:3rem;
+  .works-subheader {
+    left: 3rem;
     font-size: 1rem;
   }
-  
+
   .works-subheader > h3::before {
     font-size: 1rem !important;
     left: -2rem !important;
@@ -843,38 +840,36 @@
     font-size: 1rem !important;
     top: 14rem !important;
     left: -2rem !important;
-
   }
 
   .all-works-header > h2 {
     font-size: 1.5rem;
   }
 
-  .all-works-header::before{
+  .all-works-header::before {
     font-size: 1rem !important;
   }
 
-  .all-works-header::after{
+  .all-works-header::after {
     font-size: 1rem !important;
     top: 3rem !important;
   }
 
-  .all-work-dot{
-    left:10.5rem;
+  .all-work-dot {
+    left: 10.5rem;
     bottom: 1.1rem;
   }
 
-  .all-work-underline{
+  .all-work-underline {
     width: 4.5rem;
   }
 
-  .all-works{
+  .all-works {
     top: 30rem;
   }
 
-  .work-left{
+  .work-left {
     flex-direction: column;
-   
   }
 
   .work-left-img {
@@ -897,27 +892,27 @@
     bottom: 4rem !important;
   }
 
-  .work-left-img::before{
+  .work-left-img::before {
     font-size: 1rem !important;
     left: 3rem !important;
     top: -6rem !important;
   }
 
-  .work-left-img-mdm::before{
+  .work-left-img-mdm::before {
     font-size: 1rem !important;
     left: 3rem !important;
     top: -6rem !important;
   }
 
-  .work-left-img::after{
+  .work-left-img::after {
     font-size: 1rem !important;
-    left:3rem !important;
+    left: 3rem !important;
     top: 4rem !important;
   }
 
-  .work-left-img-mdm::after{
+  .work-left-img-mdm::after {
     font-size: 1rem !important;
-    left:3rem !important;
+    left: 3rem !important;
     top: 6rem !important;
   }
 
@@ -936,18 +931,18 @@
     top: 2rem;
   }
 
-  .work-left-detail::before{
+  .work-left-detail::before {
     font-size: 1rem !important;
   }
 
-  .work-left-detail-mdm::before{
+  .work-left-detail-mdm::before {
     font-size: 1rem !important;
   }
 
-  .work-left-detail-spotify::before{
+  .work-left-detail-spotify::before {
     font-size: 1rem !important;
   }
-  .work-detail-dot{
+  .work-detail-dot {
     left: 7.5rem;
     bottom: 2.7rem;
   }
@@ -964,19 +959,19 @@
     font-size: 1.1rem;
   }
 
-  .work-left-detail > p{
+  .work-left-detail > p {
     font-size: 0.9rem;
   }
 
-  .work-left-detail-mdm > p{
+  .work-left-detail-mdm > p {
     font-size: 0.9rem;
   }
 
-  .work-left-detail-spotify > p{
+  .work-left-detail-spotify > p {
     font-size: 0.9rem;
   }
 
-  .work-tech{
+  .work-tech {
     justify-content: center;
   }
   .work-left-detail::after {
@@ -994,11 +989,11 @@
     font-size: 1rem !important;
   }
 
-  .work-detail-dot-infa{
+  .work-detail-dot-infa {
     left: 7rem !important;
   }
 
-  .work-detail-dot-infa-mdm{
+  .work-detail-dot-infa-mdm {
     left: 7.9rem;
     bottom: 2.6rem;
   }
@@ -1033,115 +1028,113 @@
     bottom: 4rem !important;
   }
 
-  .work-left-detail-portfolio{
+  .work-left-detail-portfolio {
     width: 100% !important;
   }
 
-  .work-left-detail-mood{
+  .work-left-detail-mood {
     width: 100% !important;
   }
 
-  .work-left-detail-spotify{
+  .work-left-detail-spotify {
     width: 100% !important;
   }
 
-  .work-left-detail-portfolio::before{
+  .work-left-detail-portfolio::before {
     left: 2.4rem !important;
     top: -2rem !important;
     font-size: 1rem !important;
   }
 
-  .work-left-detail-portfolio::after{
+  .work-left-detail-portfolio::after {
     left: 2.4rem !important;
     top: 21rem !important;
     font-size: 1rem !important;
   }
 
-  .work-left-detail-mood::before{
+  .work-left-detail-mood::before {
     left: 2.4rem !important;
     top: -2rem !important;
     font-size: 1rem !important;
   }
 
-  .work-left-detail-mood::after{
+  .work-left-detail-mood::after {
     left: 2.4rem !important;
     top: 23rem !important;
     font-size: 1rem !important;
   }
 
-  .work-left-detail-spotify::before{
+  .work-left-detail-spotify::before {
     left: 2.4rem !important;
     top: -2rem !important;
     font-size: 1rem !important;
   }
 
-  .work-left-detail-spotify::after{
+  .work-left-detail-spotify::after {
     left: 2.4rem !important;
     top: 23rem !important;
     font-size: 1rem !important;
   }
 
-  .work-left-img-portfolio::before{
+  .work-left-img-portfolio::before {
     font-size: 1rem !important;
     left: 3rem !important;
     top: -6rem !important;
   }
 
-  .work-left-img-portfolio::after{
+  .work-left-img-portfolio::after {
     font-size: 1rem !important;
-    left:3rem !important;
+    left: 3rem !important;
     top: 4rem !important;
   }
 
-  .work-left-img-spotify::before{
+  .work-left-img-spotify::before {
     font-size: 1rem !important;
     left: 3rem !important;
     top: -6rem !important;
   }
 
-  .work-left-img-spotify::after{
+  .work-left-img-spotify::after {
     font-size: 1rem !important;
-    left:3rem !important;
+    left: 3rem !important;
     top: 5rem !important;
   }
 
-  .work-left-img-mood::before{
+  .work-left-img-mood::before {
     font-size: 1rem !important;
     left: 3rem !important;
     top: -6rem !important;
   }
 
-  .work-left-img-mood::after{
+  .work-left-img-mood::after {
     font-size: 1rem !important;
-    left:3rem !important;
+    left: 3rem !important;
     top: 6rem !important;
   }
 
   .other-works-header > h2 {
     font-size: 1.6rem;
   }
-  .other-work-dot{
+  .other-work-dot {
     left: 9rem;
   }
 
-  .other-works-header::before{
+  .other-works-header::before {
     font-size: 1rem;
   }
 
-  .other-works-header::after{
+  .other-works-header::after {
     font-size: 1rem;
     top: 3rem;
   }
 
-
-  .work-other-dot-profile{
-        left: 3.5rem;
+  .work-other-dot-profile {
+    left: 3.5rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
-
-  .my-work{
+  .my-work {
     height: 520vh;
   }
   .works-subheader > h3::after {
@@ -1176,11 +1169,11 @@
     width: 400px;
   }
 
-  .work-left-img-portfolio::after{
+  .work-left-img-portfolio::after {
     top: 15rem;
   }
 
-  .work-left-detail-portfolio::after{
+  .work-left-detail-portfolio::after {
     top: 22rem;
   }
 
@@ -1188,61 +1181,72 @@
     width: 400px;
   }
 
-  .work-left-img-mood::after{
+  .work-left-img-mood::after {
     top: 17rem;
   }
+  .work-left-detail-mood > p,
+  .work-left-detail-portfolio > p,
+  .work-left-detail-spotify > p {
+    font-weight: 400 !important;
+  }
 
-  .work-left-img-spotify > img{
+  .work-left-img-spotify > img {
     width: 400px;
   }
 
-  .work-left-img-spotify::after{
+  .work-left-img-spotify::after {
     top: 17rem;
   }
-
 }
 
-
 @media screen and (max-width: 480px) {
-    .work_dot{
-      left: 8rem !important;
-      bottom: 1.1rem !important;
-    }
 
-    .all-work-dot{
+  .my-work{
+    height: 750vh !important;
+  }
+  .work_dot {
+    left: 8rem !important;
+    bottom: 1.1rem !important;
+  }
+
+  .all-work-dot {
     left: 11.5rem !important;
-    }
+  }
 
-    .work-detail-dot{
-      left: 8.5rem !important;
-    }
+  .work-detail-dot {
+    left: 8.5rem !important;
+  }
 
-    .work-left-detail > p {
-      font-weight: 400 !important;
-    }
+  .work-left-detail > p {
+    font-weight: 400 !important;
+  }
 
-    .work-detail-dot-infa{
-      left: 8rem !important;
-    }
+  .work-detail-dot-infa {
+    left: 8rem !important;
+  }
 
-    .work-left-detail-mdm > h4 {
-      font-size: 1rem !important;
-    }
+  .work-left-detail-mdm > h4 {
+    font-size: 1rem !important;
+  }
 
-    .work-detail-dot-infa-mdm{
-      left: 7.9rem !important;
-      bottom: 2.7rem;
-    }
+  .work-detail-dot-infa-mdm {
+    left: 7.9rem !important;
+    bottom: 2.7rem;
+  }
 
-    .work-left-detail-mdm > p {
-      font-weight: 400 !important;
-    }
+  .work-left-detail-mdm > p {
+    font-weight: 400 !important;
+  }
 
-    .other-work-dot{
-      left: 10rem !important;
-    }
+  .other-work-dot {
+    left: 10rem !important;
+  }
 
-    .work-other-dot-portfolio{
-      left: 8.2rem !important;
-    }
+  .work-other-dot-portfolio {
+    left: 8.2rem !important;
+  }
+
+  .work-left-detail-mood > p {
+    font-weight: 400 !important;
+  }
 }

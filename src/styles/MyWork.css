@@ -1360,6 +1360,11 @@
   .work-left-img-mood::after {
     top: 17rem;
   }
+  .work-left-detail-mood > p,
+  .work-left-detail-portfolio > p,
+  .work-left-detail-spotify > p {
+    font-weight: 400 !important;
+  }
   .work-left-img-spotify > img {
     width: 400px;
   }
@@ -1368,6 +1373,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .my-work {
+    height: 750vh !important;
+  }
   .work_dot {
     left: 8rem !important;
     bottom: 1.1rem !important;
@@ -1399,5 +1407,8 @@
   }
   .work-other-dot-portfolio {
     left: 8.2rem !important;
+  }
+  .work-left-detail-mood > p {
+    font-weight: 400 !important;
   }
 }/*# sourceMappingURL=MyWork.css.map */
