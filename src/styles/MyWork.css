@@ -1410,6 +1410,7 @@
   }
   .work-left-detail-mood > p {
     font-weight: 400 !important;
+    font-size: 0.9rem !important;
   }
   .work-other-dot-profile {
     left: 4.5rem !important;

@@ -20,9 +20,9 @@ const ContactForm = () => {
 
   const submit = () => {
     if (name.length && email && message.length && formError == null) {
-      const serviceId = 'service_l5dtajc';
-      const templateId = 'template_gp15u2c';
-      const userId = '-UCRSjfcZvDKLXw3l';
+      const serviceId = process.env.REACT_APP_SERVICE_ID;
+      const templateId = process.env.REACT_APP_TEMPLATE_ID;
+      const userId = process.env.REACT_APP_USER_ID;
       const templateParams = {
         name,
         email,
