@@ -718,3 +718,27 @@ svg {
     top: 27.5rem !important;
   }
 }
+
+@media screen and (max-width: 480px) {
+
+  .scroll-animation{
+    top: 8rem !important;
+  }
+
+  .scroll-animation > span {
+    font-size: 15px !important;
+  }
+
+  .vertical_line{
+    width: 0.5px !important;
+  }
+
+  .about_me_page{
+    height: 440vh !important;
+  }
+
+  .about_me_history{
+    top: 21rem !important;
+  }
+  
+}
