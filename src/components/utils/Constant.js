@@ -29,12 +29,12 @@ const APPLICATION_CONST = {
   ABOUT_ME_SKILL_PARA_4:
     "building web apps, features, animations, and coding interactive layouts.",
   ABOUT_ME_HISTORY_PARA_1:
-    "Growing up in the city which is known as the 'Silicon Valley of India', I was exposed to the world of software development from a young age and quickly realised the endless potential that it has. After Graduating with a degree in ",
+    "Growing up in Bangalore, often referred to as the 'Silicon Valley of India,' I found myself deeply immersed in the dynamic world of software development from a young age. Recognizing the boundless potential of this field, I took a decisive step by earning a degree in ",
   ABOUT_ME_HISTORY_PARA_2: "Computer Science and Engineering ",
   ABOUT_ME_HISTORY_PARA_3:
-    "in 2015, I quickly joined the corporate world to begin my journey as a developer. ",
+    "in 2015, This marked the beginning of my professional journey, as I enthusiastically ventured into the corporate realm to carve my path as a software developer.",
   ABOUT_ME_HISTORY_PARA_4:
-    "In 2019, I decided to shift base to not so sunny Ireland. I graduated with ",
+    "In 2019, I expanded my horizons by pursuing a master's degree in ",
   ABOUT_ME_HISTORY_PARA_5:
     "Master in International Management and Global Business ",
   ABOUT_ME_HISTORY_PARA_6: "from Univeristy of Limerick.",
@@ -96,5 +96,6 @@ const APPLICATION_CONST = {
   WORK_OTHER_DETAIL_3:
     "Web app for visualizing Spotify data. View your top artists, top tracks, recent played tracks, and detailed audio information for each track.",
 };
+  
 
 export default APPLICATION_CONST;
