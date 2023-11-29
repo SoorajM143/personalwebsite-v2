@@ -11,7 +11,7 @@ function PreLoader(props) {
         <div className="shadow"></div>
         <div className="shadow"></div>
         <div className="shadow"></div>
-        <span className="text"> &nbsp; Testing your patience....</span>
+        <span className="text"> &nbsp; Loading....</span>
       </div>
     </div>
   );
