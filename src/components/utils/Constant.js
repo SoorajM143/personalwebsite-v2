@@ -1,7 +1,7 @@
 const APPLICATION_CONST = {
   ABOUT_ME_HEADER: "About Me",
   ABOUT_ME_SUBHEADER_1: "I'm a ",
-  ABOUT_ME_SUBHEADER_2: "web developer ",
+  ABOUT_ME_SUBHEADER_2: "Software developer ",
   ABOUT_ME_SUBHEADER_3: "and ",
   ABOUT_ME_SUBHEADER_4: "designer ",
   ABOUT_ME_SUBHEADER_5:
@@ -43,7 +43,7 @@ const APPLICATION_CONST = {
   MAIN_PAGE_HEADER_TEXT_2: "name is ",
   MAIN_PAGE_HEADER_TEXT_3: "Sooraj",
   MAIN_PAGE_HEADER_TEXT_4: "I'm a ",
-  MAIN_PAGE_HEADER_TEXT_5: "Web Developer ",
+  MAIN_PAGE_HEADER_TEXT_5: "Software Developer ",
   MAIN_PAGE_HEADER_TEXT_6: "based in ",
   MAIN_PAGE_HEADER_TEXT_7: "Dublin, Ireland",
   MAIN_PAGE_CONTENT_HEADRER: "Lets Talk",
